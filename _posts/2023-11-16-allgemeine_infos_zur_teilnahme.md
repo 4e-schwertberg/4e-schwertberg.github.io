@@ -10,7 +10,7 @@ author: 4e
 image: /assets/img/energy-4828337_640.jpg
 ---
 
-# Allgemeine Information
+# Allgemeine Information zu **4E Schwertberg**
 
 Der Verein 4E Schwertberg möchte aktiv zum Klimaschutz und zur Regionalität beitragen. Wir wollen regional produzierte, erneuerbare Energie zu fairen und stabilen Preisen anbieten.
 
