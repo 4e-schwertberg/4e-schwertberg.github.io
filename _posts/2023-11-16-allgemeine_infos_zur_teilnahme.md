@@ -43,7 +43,23 @@ Abnahmetarif (Stromverbraucher)
 
 # Anmeldung
 
-Haben wir Ihr Interesse geweckt? Dann lassen Sie sich bereits jetzt vormerken indem Sie das vollständig ausgefüllte Anmeldeformular via Mail an uns senden.
+Es freut uns, dass wir Ihr Interesse geweckt haben. Im Folgenden möchten wir Ihnen noch die wichtigsten Informationen zur erfolgreichen Teilnahme
+auflisten.
+
+## Voraussetzungen
+
+- Sie benötigen einen intelligenten Stromzähler, ein sogenanntes [Smart Meter][smartmeter]. Basis der Verrechnung sind Viertelstundenwerte.
+  Der Zähler muss in der Lage sein diese aufzeichenen und übertragen zu können. Mit einem _alten_ Zähler (mit Drehscheibe) ist aus technischen
+  Gründen eine Teilnahme nicht möglich.
+- Sie benötigen eine aufrechten Stromliefervertrag mit einem Lieferanten Ihrer Wahl. Dieser Vertrag bleibt aufrecht und gültig.
+  Die Teilnahme an der EEG ist eine Ergänzung dazu und vollkommen eigenständig geregelt.
+- Sollten Sie als Produzent teilnehmen wollen, dann benötigen Sie einen aufrechten und gültigen Einspeisevertrag mit einem
+  Anbieter Ihrer Wahl. Die Teilnahme an der EEG ist eine Ergänzung und wird vollkommen eigenständig geregelt.
+- Mitgliedschaft beim Verein 4E Schwertberg. Dazu füllen Sie unser Anmeldeformular aus und senden es via Mail an uns.
+- Online-Freischaltung der Viertelstundenwert-Auslesung bei der Fa. Linz Netz. Nähere Informationen hierzu finden Sie auf der [Homepage der Linz Netz GmbH][linznetz].
+  Dort finden Sie auch einen [Leitfaden zur Freischaltung][linznetz-leitfaden], dem Sie folgen können.
+
+Haben wir Ihr Interesse geweckt? Dann senden Sie uns das ausgefüllte Anmeldeformular zu, alle weiteren Informationen erhalten Sie dann von uns.
 
 ## Formulare
 
@@ -52,3 +68,8 @@ Haben wir Ihr Interesse geweckt? Dann lassen Sie sich bereits jetzt vormerken in
 
 > Da wir gerade noch die letzten organisatorischen Schritte klären, bitten wir noch um etwas Geduld. Wir sind um einen Austausch mit allen vorgemerkten Interessenten bemüht.
 {: .prompt-info }
+
+
+[smartmeter]: https://www.e-control.at/konsumenten/smart-meter
+[linznetz]: https://www.linznetz.at/portal/de/home/online_services/serviceportal/verbrauchsdateninformation_1/verbrauchsdateninformation.html#
+[linznetz-leitfaden]: https://www.linznetz.at/media/linz_netz_website/netz_dokumente/leitfaden-vdi.pdf
