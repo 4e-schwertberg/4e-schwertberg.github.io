@@ -55,6 +55,10 @@ Der Ablauf der Anmeldung ist wie folgt:
 * Unser Abrechnungsdienstleister (Linz AG) kontaktiert Sie via Mail sobald dieser Ihren Zählpunkt der EEG zugeordnet hat
 * Erteilen der Genehmigung zur Übermittlung der Viertelstundenwerte von Linz Netz GmbH an die Linz AG
 
+> Erst **nach** erteilter Genehmigung zur Übermittlung der Viertelstundenwerte beginnt eine
+Verrechnung von Energie innerhalb der EEG!
+{: .prompt-warn }
+
 ### Ausfüllen des Anmeldeformulars
 
 Sie finden unser Anmeldeformular [hier](/#example) zum Download oder in ausgedruckter Form in der
