@@ -2,12 +2,17 @@
 title: Allgemeine Information zur Teilnahme
 date: 2023-11-16 21:00:00 +0100
 categories: [Informationen, Anmeldung]
-tags: [anmeldung,teilnahme]
 toc: true
 pin: true
 math: false
 author: 4e
 image: /assets/img/energy-4828337_640.jpg
+---
+
+> Der Inhalt dieser Seite ist veraltet. Bitte wechseln Sie zur Seite [Infos](/infos), um die aktuelle
+> Version anzuzeigen.
+{: .prompt-danger }
+
 ---
 
 # Allgemeine Information zu **4E Schwertberg**
