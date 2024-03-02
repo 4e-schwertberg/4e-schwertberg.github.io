@@ -2,6 +2,7 @@
 layout: page
 title: Tarife
 permalink: /tarife/
+tags: [informationen,tarife]
 icon: fas fa-eur
 order: 4
 ---

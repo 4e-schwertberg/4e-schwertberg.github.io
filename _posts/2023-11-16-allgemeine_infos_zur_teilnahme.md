@@ -2,7 +2,6 @@
 title: Allgemeine Information zur Teilnahme
 date: 2023-11-16 21:00:00 +0100
 categories: [Informationen, Anmeldung]
-tags: [anmeldung,teilnahme]
 toc: true
 pin: true
 math: false

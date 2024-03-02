@@ -2,7 +2,7 @@
 title: Wir starten
 date: 2024-01-31 23:00:00 +0100
 categories: [Informationen]
-tags: [anmeldung,teilnahme]
+tags: [anmeldung,teilnahme,information,tarife]
 toc: false
 pin: true
 math: false
