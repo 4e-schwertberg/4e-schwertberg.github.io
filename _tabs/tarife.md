@@ -2,7 +2,6 @@
 layout: page
 title: Tarife
 permalink: /tarife/
-tags: [informationen,tarife]
 icon: fas fa-eur
 order: 4
 ---
@@ -22,7 +21,7 @@ Abnahmetarif (Stromverbraucher)
 > EEG durch die gesetzlich geregelten Ermäßigungen günstiger
 {: .prompt-tip }
 
-Durch die finanzielle Begünstigung der Netznutzungsentgelte, siehe Tabelle auf der [Info](info) Seite,
+Durch die finanzielle Begünstigung der Netznutzungsentgelte, siehe Tabelle auf der [Infos](/infos) Seite,
 reduziert sich der Bezugstarif allerdings noch um fast 1,7 cent/kWh.
 
 

@@ -2,7 +2,6 @@
 layout: page
 title: Anmeldung
 permalink: /anmeldung/
-tags: [anmeldung,teilnahme]
 toc: true
 icon: fas fa-file-text
 order: 3

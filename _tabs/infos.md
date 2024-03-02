@@ -2,7 +2,6 @@
 layout: page
 title: Infos
 permalink: /infos/
-tags: [informationen,teilnahme]
 icon: fas fa-info-circle
 order: 2
 ---
