@@ -2,7 +2,7 @@
 layout: page
 title: Datenschutz
 permalink: /datenschutz/
-order: 7
+order: 9
 ---
 # Erklärung zur Informationspflicht
 
