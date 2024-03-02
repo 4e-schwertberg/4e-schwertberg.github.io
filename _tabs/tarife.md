@@ -42,7 +42,7 @@ die Strompreisbremse mit der Tarifgestaltung von 4E Schwertberg in Einklang brin
 {: .prompt-info }
 
 Basis der Energiekosten ist der Durchschnittspreis in cent/kWh der 4 Billigstbieter von
-Festpreistarifen lt. Vergleichsplattform durchblicker.at für einen Jahresverbrauch von 3500 kWh
+Festpreistarifen lt. Vergleichsplattform `durchblicker.at` für einen Jahresverbrauch von 3500 kWh
 im Versorgungsgebiet der Linz Netz in 4311 Schwertberg ohne Berücksichtigung von Rabatten[^2].
 
 |  | Energiekosten in cent/kWh netto | 20% USt in cent/kWh | Gesamt-Energiekosten in cent/kWh |
@@ -51,7 +51,7 @@ im Versorgungsgebiet der Linz Netz in 4311 Schwertberg ohne Berücksichtigung vo
 | mit Strompreisbremse  | 10    | 4,99[^4] | 14,99 |
 | Bezug aus der EEG     | 13,3 (15-1,7) | 2,66 | 15,96 |
 
-Für die Richtigkeit und Vollständigkeit obiger Daten wird keine Verantwortung übernommen.
+Dies ist eine vereinfachte Beispielrechnung, alle Angaben ohne Gewähr.
 
 [^1]: Angaben ohne Gewähr - Stand: 24.08.2023
 [^2]: Abfrage am 29.2.2024, 21:45; Preise pro kWh: 28,5;14,95;31,4;24,9;avg: 24,9375
