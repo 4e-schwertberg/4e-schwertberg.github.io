@@ -49,7 +49,7 @@ die Teilnahme an einer Energiegemeinschaft.
 Der Ablauf der Anmeldung ist wie folgt:
 
 * Ausfüllen des Anmeldeformulars
-* Übermittlung des Anmeldeformulars an: {{ site.social.email }}
+* Übermittlung des Anmeldeformulars an: `anmeldung@4e-schwertberg.at`
 * Prüfung des Antrags durch den Vorstand von 4E Schwertberg
 * Sie werden via Mail über den Status Ihres Antrags informiert.
 * Registrierung am Portal des Netzbetreibers (Linz Netz GmbH)
