@@ -52,10 +52,10 @@ Der Ablauf der Anmeldung ist wie folgt:
 * Ausfüllen des Anmeldeformulars
 * Übermittlung des Anmeldeformulars an: `anmeldung@4e-schwertberg.at`
 * Prüfung des Antrags durch den Vorstand von 4E Schwertberg
-* Sie werden via Mail über den Status Ihres Antrags informiert.
+* Sie werden via E-Mail über den Status Ihres Antrags informiert.
 * Registrierung am Portal des Netzbetreibers (Linz Netz GmbH)
 * Aktivierung der Viertelstundenwerte Übermittlung
-* Unser Abrechnungsdienstleister (Linz AG) kontaktiert Sie via Mail sobald dieser Ihren Zählpunkt der Energiegemeinschaft zugeordnet hat
+* Unser Abrechnungsdienstleister (Linz AG) kontaktiert Sie via E-Mail sobald dieser Ihren Zählpunkt der Energiegemeinschaft zugeordnet hat
 * Erteilen der Genehmigung zur Übermittlung der Viertelstundenwerte von Linz Netz GmbH an die Linz AG
 
 > Erst **nach** erteilter Genehmigung zur Übermittlung der Viertelstundenwerte beginnt eine
@@ -73,7 +73,7 @@ falsche Angaben - vor allem zur steuerlichen Situation - zu rechtlichen Konseque
 
 ### Übermittlung des Anmeldeformulars
 
-Das vollständig ausgefüllte und geprüfte Formular übermitteln Sie bitte via Mail an `anmeldung@4e-schwertberg.at`.
+Das vollständig ausgefüllte und geprüfte Formular übermitteln Sie bitte via E-Mail an `anmeldung@4e-schwertberg.at`.
 
 ### Antragsprüfung
 
@@ -82,7 +82,7 @@ diversen Gründen nicht möglich, behält sich der Vorstand vor, den Beginn der 
 aufzuschieben oder diese gänzlich abzulehnen. Dies wird durch technische Gegebenheiten, geltendes
 Recht, sowie die Sicherstellung der Wirtschaftlichkeit des Vereins begründet.
 
-Über den Status der Antragsprüfung werden wir Sie entsprechend via Mail informieren. Da wir jeden Antrag
+Über den Status der Antragsprüfung werden wir Sie entsprechend via E-Mail informieren. Da wir jeden Antrag
 sorgfältig und gewissenhaft prüfen möchten, erlauben Sie uns hier bitte die notwendige Zeit.
 
 ### Registrierung beim Portal des Netzbetreibers
@@ -116,7 +116,7 @@ Dies ist der letzte Schritt zu Ihrer Teilnahme bei der Energiegemeinschaft 4E Sc
 
 Unser Abrechnungsdienstleister (Linz AG) wird Ihren Zählpunkt nach Freigabe Ihrer Mitgliedschaft durch den 
 Vorstand der Energiegemeinschaft 4E Schwertberg zuordnen. Nach erfolgreicher Zuordnung wird Sie unser 
-Abrechnungsdienstleister via Mail kontaktieren, da aufgrund der aktuellen Gesetzeslage eine explizite Freigabe
+Abrechnungsdienstleister via E-Mail kontaktieren, da aufgrund der aktuellen Gesetzeslage eine explizite Freigabe
 der Übermittlung der Viertelstundenwerte von der _Linz Netz GmbH_ an die _Linz AG_ notwendig ist.
 
 Eine Anleitung zur Vorgangsweise finden Sie im [Leitfaden zur Vollmachtserteilung](https://www.linznetz.at//media/linz_netz_website/netz_dokumente/leitfaden-ccm.pdf).

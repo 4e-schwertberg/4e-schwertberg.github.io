@@ -60,7 +60,7 @@ auflisten.
   Die Teilnahme an der EEG ist eine Ergänzung dazu und vollkommen eigenständig geregelt.
 - Sollten Sie als Produzent teilnehmen wollen, dann benötigen Sie einen aufrechten und gültigen Einspeisevertrag mit einem
   Anbieter Ihrer Wahl. Die Teilnahme an der EEG ist eine Ergänzung und wird vollkommen eigenständig geregelt.
-- Mitgliedschaft beim Verein 4E Schwertberg. Dazu füllen Sie unser Anmeldeformular aus und senden es via Mail an uns.
+- Mitgliedschaft beim Verein 4E Schwertberg. Dazu füllen Sie unser Anmeldeformular aus und senden es via E-Mail an uns.
 - Online-Freischaltung der Viertelstundenwert-Auslesung bei der Fa. Linz Netz. Nähere Informationen hierzu finden Sie auf der [Homepage der Linz Netz GmbH][linznetz].
   Dort finden Sie auch einen [Leitfaden zur Freischaltung][linznetz-leitfaden], dem Sie folgen können.
 

@@ -15,7 +15,7 @@ Sobald Sie als Benutzer auf unsere Webseite zugreifen oder diese besuchen wird I
 
 ## Kontakt mit uns
 
-Wenn Sie uns, entweder über unser Kontaktformular auf unserer Webseite, oder per Email kontaktieren, dann werden die von Ihnen an uns übermittelten Daten zwecks Bearbeitung Ihrer Anfrage oder für den Fall von weiteren Anschlussfragen für sechs Monate bei uns gespeichert. Es erfolgt, ohne Ihre Einwilligung, keine Weitergabe Ihrer übermittelten Daten.
+Wenn Sie uns, entweder über unser Kontaktformular auf unserer Webseite, oder per E-Mail kontaktieren, dann werden die von Ihnen an uns übermittelten Daten zwecks Bearbeitung Ihrer Anfrage oder für den Fall von weiteren Anschlussfragen für sechs Monate bei uns gespeichert. Es erfolgt, ohne Ihre Einwilligung, keine Weitergabe Ihrer übermittelten Daten.
 
 
 ## Google Fonts
@@ -78,6 +78,6 @@ Wenn sie vermuten, dass im Zuge der Verarbeitung Ihrer Daten Verstöße gegen da
 ## Sie erreichen uns unter folgenden Kontaktdaten:
 
 * Webseitenbetreiber: 4E Schwertberg - Erneuerbare Energie Effizient Einsetzen
-* Email: info (at) 4e-schwertberg (dot) at
+* E-Mail: info (at) 4e-schwertberg (dot) at
 
 Quelle: [DSGVO Generator Österreich](https://www.rechtstexte-generator.at/dsgvo-generator-oesterreich/) in Kooperation mit [Umzugsfirma in Wien](https://deine-umzugsfirma.at/)
