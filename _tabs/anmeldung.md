@@ -25,17 +25,17 @@ Bevor Sie mit der Anmeldung fortfahren, prüfen Sie bitte, ob alle notwendigen V
 * Sie benötigen einen intelligenten Stromzähler, ein sogenanntes [Smartmeter][smartmeter]. Basis der Verrechnung sind Viertelstundenwerte.
   Der Zähler muss in der Lage sein, diese aufzuzeichnen und übertragen zu können. Leider kann dies nicht jeder Smartmeter. Ihr Netzbetreiber gibt Ihnen Auskunft darüber.
   
-  Mit einem _alten_ Zähler (mit Drehscheibe) ist aus technischen Gründen eine Teilnahme nicht möglich.
+  Mit einem alten Zähler (mit Drehscheibe) ist aus technischen Gründen eine Teilnahme nicht möglich.
 
 * Sie benötigen einen aufrechten Stromliefervertrag mit einem Lieferanten _Ihrer_ Wahl. Dieser Vertrag bleibt _aufrecht_ und _gültig_.
   Die Teilnahme an der Energiegemeinschaft ist eine Ergänzung dazu und vollkommen eigenständig geregelt.
 
 ### Produzent
 
-Fall Sie mit einer Energieerzeugungsanlage, die Energie aus erneuerbaren Quellen liefert, als Produzent
+Falls Sie mit einer Energieerzeugungsanlage, die Energie aus erneuerbaren Quellen liefert, als Produzent
 teilnehmen wollen, dann gilt für Sie zusätzlich zu den obigen Voraussetzungen noch Folgendes:
 
-* Sie benötigen einen aufrechten und gültigen Einspeisevertrag mit einem Abnehmer Ihrer Wahl.
+* Sie benötigen einen aufrechten und gültigen Einspeisevertrag mit einem Abnehmer _Ihrer_ Wahl.
   Die Teilnahme an der Energiegemeinschaft ist eine Ergänzung und wird vollkommen eigenständig geregelt.
 
 ### Unternehmer
@@ -77,13 +77,15 @@ Das vollständig ausgefüllte und geprüfte Formular übermitteln Sie bitte via 
 
 ### Antragsprüfung
 
-Unser vorrangiges Ziel ist es, _jedem_ die Mitgliedschaft zu ermöglichen. Ist dies aber aus
+Unser vorrangiges Ziel ist es, allen, die die Voraussetzungen erfüllen,
+die Mitgliedschaft zu ermöglichen. Ist dies aber aus
 diversen Gründen nicht möglich, behält sich der Vorstand vor, den Beginn der Mitgliedschaft
 aufzuschieben oder diese gänzlich abzulehnen. Dies wird durch technische Gegebenheiten, geltendes
 Recht, sowie die Sicherstellung der Wirtschaftlichkeit des Vereins begründet.
 
-Über den Status der Antragsprüfung werden wir Sie entsprechend via E-Mail informieren. Da wir jeden Antrag
-sorgfältig und gewissenhaft prüfen möchten, erlauben Sie uns hier bitte die notwendige Zeit.
+Über den Status der Antragsprüfung werden wir Sie via E-Mail informieren.
+Für die sorgfältige und gewissenhafte Prüfung Ihres Antrags nehmen wir uns genügend
+Zeit und bitten dafür um Ihr Verständnis.
 
 ### Registrierung beim Portal des Netzbetreibers
 
