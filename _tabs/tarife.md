@@ -18,7 +18,7 @@ Abnahmetarif (Stromverbraucher)
 : 15 cent/kWh netto[^1]
 
 > Selbst wenn Ihr Versorger Ihnen den gleichen Energiepreis bietet, ist die gleiche Bezugsmenge aus der
-> EEG durch die gesetzlich geregelten Ermäßigungen günstiger
+> Energiegemeinschaft durch die gesetzlich geregelten Ermäßigungen günstiger.
 {: .prompt-tip }
 
 Durch die finanzielle Begünstigung der Netznutzungsentgelte, siehe Tabelle auf der [Infos](/infos) Seite,

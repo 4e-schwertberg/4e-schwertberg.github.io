@@ -10,7 +10,9 @@ order: 3
 > Derzeit ist eine Teilnahme aus technischen Gründen nur im Versorgungsbereich der Linz Netz GmbH möglich. 4E ist eine regional Energiegemeinschaft in der regionalen Zone EGR00047. Sie können Ihre Zählpunktnummer [hier](https://services.linznetz.at/energiegemeinschaften/?nav=%2Fde%2Flinz_netz_website%2Fstrom%2Fmein_stromanschluss%2Ferzeugungsanlage_anschliessen%2Fauskunft_zum_versorgungsbereich%2Fauskunft_zum_versorgungsbereich.xhtml#) vorab prüfen.
 {: .prompt-info }
 
-# Anmeldung
+> Kündigen Sie **keinesfalls** Ihre bestehenden Verträge (Lieferung und Bezug). Der Vertrag mit 4E Schwertberg ist eine Ergänzung zu diesen und ersetzt sie nicht. Siehe Kapitel Voraussetzungen.
+{: .prompt-danger }
+
 
 Wir freuen uns sehr, dass Sie sich für eine Teilnahme an der Energiegemeinschaft 4E Schwertberg interessieren.
 Bitte beachten Sie, dass dafür einige Voraussetzungen erfüllt sein müssen und der Ablauf der Anmeldung
@@ -27,16 +29,16 @@ Bevor Sie mit der Anmeldung fortfahren, prüfen Sie bitte, ob alle notwendigen V
   
   Mit einem alten Zähler (mit Drehscheibe) ist aus technischen Gründen eine Teilnahme nicht möglich.
 
-* Sie benötigen einen aufrechten Stromliefervertrag mit einem Lieferanten _Ihrer_ Wahl. Dieser Vertrag bleibt _aufrecht_ und _gültig_.
-  Die Teilnahme an der Energiegemeinschaft ist eine Ergänzung dazu und vollkommen eigenständig geregelt.
+* Sie benötigen eine aufrechte Strombezugsvereinbarung mit einem Lieferanten Ihrer Wahl. Dieser Vertrag bleibt aufrecht und gültig.
+  Die Teilnahme an der Energiegemeinschaft ist eine Ergänzung dazu und ersetzt diesen nicht.
 
 ### Produzent
 
 Falls Sie mit einer Energieerzeugungsanlage, die Energie aus erneuerbaren Quellen liefert, als Produzent
 teilnehmen wollen, dann gilt für Sie zusätzlich zu den obigen Voraussetzungen noch Folgendes:
 
-* Sie benötigen einen aufrechten und gültigen Einspeisevertrag mit einem Abnehmer _Ihrer_ Wahl.
-  Die Teilnahme an der Energiegemeinschaft ist eine Ergänzung und wird vollkommen eigenständig geregelt.
+* Sie benötigen eine aufrechte und gültige Stromliefervereinbarung mit einem Abnehmer Ihrer Wahl.
+  Die Teilnahme an der Energiegemeinschaft ist eine Ergänzung dazu und ersetzt diesen nicht.
 
 ### Unternehmer
 
@@ -60,7 +62,7 @@ Der Ablauf der Anmeldung ist wie folgt:
 
 > Erst **nach** erteilter Genehmigung zur Übermittlung der Viertelstundenwerte beginnt eine
 Verrechnung von Energie innerhalb der Energiegemeinschaft!
-{: .prompt-warn }
+{: .prompt-warning }
 
 ### Ausfüllen des Anmeldeformulars
 

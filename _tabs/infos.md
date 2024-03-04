@@ -10,7 +10,20 @@ order: 2
 
 Eine Vielzahl an Informationen zu Energiegemeinschaften finden Sie auf [energiegemeinschaften.gv.at](https://energiegemeinschaften.gv.at/).
 
-4E Schwertberg ist eine regionale [EEG](https://energiegemeinschaften.gv.at/erneuerbare-energie-gemeinschaften-eeg/).
+4E Schwertberg ist eine regionale [Erneuerbaren-Energie-Gemeinschaft (EEG)](https://energiegemeinschaften.gv.at/erneuerbare-energie-gemeinschaften-eeg/).
+
+Ein Vertrag mit einer Energiegemeinschaft wie 4E Schwertberg ersetzt keine bereits bestehenden Verträge, sondern
+ist eine Ergänzung dazu. Kündigen Sie daher keine bestehenden Verträge. Sie benötigen aufrechte Strombezugs-
+und/oder Stromlieferverträge, um an einer Energiegemeinschaft teilnehmen zu können. Die Teilnahme an einer
+Energiegemeinschaft ist kein Hindernis für einen Anbieterwechsel. Dieser kann weiterhin jederzeit durchgeführt
+werden.
+Dies ist notwendig, da eine Energiegemeinschaft keine Garantien abgeben kann, dass zu jeder Zeit ausreichend Energie
+für die gesamte Gemeinschaft zu Verfügung steht oder die, innerhalb der Energiegemeinschaft erzeugte Energie
+vollständig verbraucht werden kann.
+
+Sie erhalten daher auch eine zusätzliche Abrechnung von der Energiegemeinschaft über die bezogene bzw. gelieferte
+Energiemenge innerhalb der Gemeinschaft. Basis der Verrechnung sind die Viertelstundenwerte Ihres vom Netzbetreiber
+installierten Sartmeters.
 
 # Information zum Verein **4E Schwertberg - Erneuerbare Energien Effizient Einsetzen**
 
@@ -42,7 +55,7 @@ gibt es auch wirtschaftliche Gründe die für eine Teilnahme an einer EEG sprech
 * eine Reduktion der Netzentgelte um 28%
 
 > Selbst wenn Ihr Versorger Ihnen den gleichen Energiepreis bietet, ist die gleiche Bezugsmenge aus der
-> EEG durch die gesetzlich geregelten Ermäßigungen günstiger
+> Energiegemeinschaft durch die gesetzlich geregelten Ermäßigungen günstiger.
 {: .prompt-tip }
 
 Die nachfolgende Tabelle zeigt den finanziellen Vorteil aus der EEG im Netzbereich OÖ. Der Vorteil
