@@ -9,9 +9,9 @@ order: 8
 
 4E Schwertberg - Erneuerbare Energie Effizient Einsetzen
 
-**Vereinssitz und Anschrift**:
+**Anschrift**:
 
-Schacherbergstraße 3 \\
+Unterkoglbergstraße 1\\
 4311 Schwertberg\\
 info (at) 4e-schwertberg (dot) at\\
 \\
