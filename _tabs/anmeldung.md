@@ -66,7 +66,7 @@ Verrechnung von Energie innerhalb der Energiegemeinschaft!
 
 ### Ausfüllen des Anmeldeformulars
 
-Sie finden unser Anmeldeformular [hier](/assets/docs/Aufnahmeantrag_zum_Verein.pdf) zum Download oder in 
+Sie finden unser Anmeldeformular für Bezieher [hier](/assets/docs/Aufnahmeantrag-Kaeufer.pdf) zum Download oder in
 ausgedruckter Form in der Servicestelle der Gemeinde.
 
 Bitte füllen Sie das Formular gewissenhaft, vollständig und wahrheitsgemäß aus. Wir möchten ausdrücklich darauf

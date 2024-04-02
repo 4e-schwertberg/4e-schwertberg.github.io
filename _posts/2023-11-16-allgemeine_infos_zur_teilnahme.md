@@ -68,7 +68,7 @@ Haben wir Ihr Interesse geweckt? Dann senden Sie uns das ausgefüllte Anmeldefor
 
 ## Formulare
 
-- [Anmeldeformular](/assets/docs/Aufnahmeantrag_zum_Verein.pdf)
+- [Anmeldeformular für Bezieher](/assets/docs/Aufnahmeantrag-Kaeufer.pdf)
 - [Vereinsstatuten](/assets/docs/Vereinsstatuten_4E_Schwertberg.pdf)
 
 > Da wir gerade noch die letzten organisatorischen Schritte klären, bitten wir noch um etwas Geduld. Wir sind um einen Austausch mit allen vorgemerkten Interessenten bemüht.

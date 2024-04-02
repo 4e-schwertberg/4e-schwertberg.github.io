@@ -42,7 +42,7 @@ Der Mitgliedsbeitrag beträgt aktuell EUR 15,-- (inkl. 20% USt)[^1] pro Kalender
 
 ## Formulare
 
-- [Anmeldeformular](/assets/docs/Aufnahmeantrag_zum_Verein.pdf)
+- [Anmeldeformular für Bezieher](/assets/docs/Aufnahmeantrag-Kaeufer.pdf)
 - [Vereinsstatuten](/assets/docs/Vereinsstatuten_4E_Schwertberg.pdf)
 
 ## Vorteile für Mitglieder
