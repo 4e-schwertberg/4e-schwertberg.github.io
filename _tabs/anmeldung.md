@@ -66,8 +66,10 @@ Verrechnung von Energie innerhalb der Energiegemeinschaft!
 
 ### Ausfüllen des Anmeldeformulars
 
-Sie finden unser Anmeldeformular für Bezieher [hier](/assets/docs/Aufnahmeantrag-Kaeufer.pdf) zum Download oder in
-ausgedruckter Form in der Servicestelle der Gemeinde.
+Unsere Anmeldeformulare finden Sie nachfolgend verlinkt zum Download.
+
+* Anmeldeformular [Bezieher](/assets/docs/Aufnahmeantrag-Kaeufer.pdf)
+* Anmeldeformular [Produzenten](/assets/docs/Aufnahmeantrag-Einspeiser.pdf)
 
 Bitte füllen Sie das Formular gewissenhaft, vollständig und wahrheitsgemäß aus. Wir möchten ausdrücklich darauf
 hinweisen, dass Sie für die Richtigkeit der Angaben verantwortlich sind und
@@ -76,6 +78,11 @@ falsche Angaben - vor allem zur steuerlichen Situation - zu rechtlichen Konseque
 ### Übermittlung des Anmeldeformulars
 
 Das vollständig ausgefüllte und geprüfte Formular übermitteln Sie bitte via E-Mail an `anmeldung@4e-schwertberg.at`.
+Wir bitten um Verständnis, dass wir Anmeldungen ausschließlich an diese Mail-Adresse akzeptieren.
+
+Alternativ werfen Sie das ausgefüllte Formular bitte in unseren Postkasten in der `Unterkoglbergstraße 1` ein.
+
+Bitte Übermitteln Sie Ihre Anmeldung ausschließlich wie hier beschrieben, um verloren gegangenen Anmeldungen vorzubeugen.
 
 ### Antragsprüfung
 
