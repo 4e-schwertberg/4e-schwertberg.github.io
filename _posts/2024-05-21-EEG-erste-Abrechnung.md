@@ -11,6 +11,14 @@ image: /assets/img/4e-logo-post.jpg
 
 # Die erste Abrechnung
 
+> Bei Fragen zur **Abrechnung**, kontaktieren Sie bitte direkt unseren Abrechnungsdienstleister (Linz AG).
+>
+> Dazu wenden Sie sich an _strom@linzag.at_ oder Sie kontaktieren die Servicehotline unter _0732/3400-5000_.
+>
+> Diese Kontaktmöglichkeiten betreffen _ausschließlich_ Fragen zur Abrechnung. Fragen zur EEG richten Sie bitte weiterhin
+> direkt an uns.
+{: .prompt-info }
+
 ## Ein weiterer Meilenstein für die Erneuerbare-Energie-Gemeinschaft (EEG) 4E Schwertberg
 
 Die EEG _4E Schwertberg – Erneuerbare Energie Effizient Einsetzen_ hat einen weiteren bedeutenden Meilenstein erreicht:
