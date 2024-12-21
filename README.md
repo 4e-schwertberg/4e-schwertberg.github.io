@@ -1,3 +1,18 @@
+# Commands
+## start docker container that contains all the necessary stuff to run this
+```sh
+docker run --rm -it -v $PWD:/app -p 9000:4000 ubuntu:24.04
+
+apt update -y && \
+apt install -y libyaml-0-2 libgmp10 ruby-full jekyll build-essential git
+
+cp -r /app /local-app
+cd /local-app
+bundle install
+bundle exec jekyll b
+bundle exec jekyll s -H 0.0.0.0 -P 4000
+```
+
 # Chirpy Starter
 
 [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
