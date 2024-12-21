@@ -2,7 +2,7 @@
 layout: page
 title: Impressum
 permalink: /impressum/
-order: 8
+order: 15
 ---
 
 **Medieninhaber**:

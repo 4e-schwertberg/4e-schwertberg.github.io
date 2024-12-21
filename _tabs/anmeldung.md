@@ -51,8 +51,8 @@ die Teilnahme an einer Energiegemeinschaft.
 
 Der Ablauf der Anmeldung ist wie folgt:
 
-* Ausfüllen des Anmeldeformulars
-* Übermittlung des Anmeldeformulars an: `anmeldung@4e-schwertberg.at`
+* Ausfüllen des digitalen [Anmeldeformulars](/aufnahmeantrag)
+  * Alternativ: Übermittlung des Anmeldeformulars an: `anmeldung@4e-schwertberg.at`
 * Prüfung des Antrags durch den Vorstand von 4E Schwertberg
 * Sie werden via E-Mail über den Status Ihres Antrags informiert.
 * Registrierung am Portal des Netzbetreibers (Linz Netz GmbH)
@@ -66,6 +66,14 @@ Verrechnung von Energie innerhalb der Energiegemeinschaft!
 
 ### Ausfüllen des Anmeldeformulars
 
+Unser digitales Aufnahmeformular finden Sie [hier](/aufnahmeantrag).
+
+Bitte füllen Sie das Formular gewissenhaft, vollständig und wahrheitsgemäß aus. Wir möchten ausdrücklich darauf
+hinweisen, dass Sie für die Richtigkeit der Angaben verantwortlich sind und
+falsche Angaben - vor allem zur steuerlichen Situation - zu rechtlichen Konsequenzen führen können.
+
+#### Alternativ: Ausfüllen des Anmeldeformulars in Papierform
+
 Unsere Anmeldeformulare finden Sie nachfolgend verlinkt zum Download.
 
 * Anmeldeformular [Bezieher](/assets/docs/Aufnahmeantrag-Kaeufer.pdf)
@@ -76,6 +84,8 @@ hinweisen, dass Sie für die Richtigkeit der Angaben verantwortlich sind und
 falsche Angaben - vor allem zur steuerlichen Situation - zu rechtlichen Konsequenzen führen können.
 
 ### Übermittlung des Anmeldeformulars
+
+Sollten Sie das digitale Aufnahmeformular verwendet haben, können sie diesen Schritt überspringen.
 
 Das vollständig ausgefüllte und geprüfte Formular übermitteln Sie bitte via E-Mail an `anmeldung@4e-schwertberg.at`.
 Wir bitten um Verständnis, dass wir Anmeldungen ausschließlich an diese Mail-Adresse akzeptieren.
