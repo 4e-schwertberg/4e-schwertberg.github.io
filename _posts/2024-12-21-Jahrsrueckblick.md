@@ -70,7 +70,7 @@ verrechnet. Unsere aktuell gültigen Tarife finden Sie [hier](/tarife).
 
 ## Vorteile für Mitglieder
 
-Der Verein 4E Schwertberg bietet seinen Mitgliedern zahlreiche Vorteile:
+Der Verein 4E Schwertberg bietet seinen 81 Mitgliedern (Stand 12/24) zahlreiche Vorteile:
 
 * Faire und stabile Preise: Sowohl Einspeiser, als auch Bezieher profitieren von einem fairen Preis-Leistungs-Verhältnis, welches
   wir in regelmäßigen Abständen evaluieren.
