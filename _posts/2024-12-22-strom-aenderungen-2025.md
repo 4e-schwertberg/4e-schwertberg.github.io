@@ -74,5 +74,5 @@ Alles Weitere zur Anmeldung erfahren Sie [hier](/anmeldung).
 
 ### Quellenangabe
 
-https://www.e-control.at/konsumenten/neues-zum-jaenner-2025
-https://www.arbeiterkammer.at/was-sich-2025-aendert
+* https://www.e-control.at/konsumenten/neues-zum-jaenner-2025
+* https://www.arbeiterkammer.at/was-sich-2025-aendert
