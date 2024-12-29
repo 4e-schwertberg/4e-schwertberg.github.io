@@ -59,8 +59,7 @@ der Netzentgelte senken, da der Gesetzgeber für jene Strommengen, die von der E
 Weiters ist auch eine Befreiung von div. Abgaben, wie der Elektrizitätsabgabe und den Erneuerbaren-Förderbeiträgen vorgesehen. Somit
 lassen sich die Kosten für Strom noch weiter reduzieren.
 
-Anders formuliert: Jede Kilowattstunde Strom, die Sie von einer EEG beziehen, ist bei gleichem Energiepreis um fast ein Drittel
-billiger!
+Anders formuliert: Jede Kilowattstunde Strom, die Sie von einer EEG beziehen, ist bei gleichem Energiepreis billiger!
 
 Da die Mitglieder der 4E Schwertberg nicht nur Energie aus Photovoltaik, sondern auch aus Wasserkraft produzieren, können Sie von den
 vorhin genannten Vorteilen rund um die Uhr profitieren!
