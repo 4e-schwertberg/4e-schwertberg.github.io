@@ -15,7 +15,8 @@ Unterkogelbergstraße 1\\
 4311 Schwertberg\\
 info (at) 4e-schwertberg (dot) at\\
 \\
-ZVR: 1922887273
+ZVR: 1922887273\\
+UID: ATU80460519
 
 **Aufsichtsbehörde**:
 
