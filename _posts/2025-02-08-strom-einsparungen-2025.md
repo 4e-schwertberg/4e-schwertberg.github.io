@@ -1,6 +1,6 @@
 ---
 title: Das Potenzial einer EEG
-date: 2024-12-22 14:00:00 +0100
+date: 2025-02-08 14:00:00 +0100
 categories: [Informationen]
 toc: true
 pin: false
