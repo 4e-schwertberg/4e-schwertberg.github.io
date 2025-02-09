@@ -11,7 +11,7 @@ order: 8
 
 **Anschrift**:
 
-Unterkoglbergstraße 1\\
+Unterkogelbergstraße 1\\
 4311 Schwertberg\\
 info (at) 4e-schwertberg (dot) at\\
 \\
