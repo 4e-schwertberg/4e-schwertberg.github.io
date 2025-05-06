@@ -35,11 +35,11 @@ Energiegemeinschaften die Grundlage der Verrechnung. Wir mussten uns erarbeiten,
 
 ### Daten und Fakten
 
-Bis zum Ende des dritten Quartals 2024 zählte der Verein 59 Miglieder, von denen 14 aktiv Energie einspeisen. Das Handelsvolumen im
+Bis zum Ende des dritten Quartals 2024 zählte der Verein 59 Mitglieder, von denen 14 aktiv Energie einspeisen. Das Handelsvolumen im
 dritten Quartal betrug dabei stolze 36.592 kWh. Dabei sichert uns die Teilnahme der Firma Merckens auch die Stromversorgung in den,
-für Photovoltatik ertragsloseren Wintermonaten und sogar in der Nacht.
+für Photovoltaik ertragsloseren Wintermonaten und sogar in der Nacht.
 
-Nachfolgende Grafik zeigt das Handelsvolumen und die Anzahl der Mitglieder gruppiert nach Produzenten und Verbraucher nach Quartal
+Nachfolgende Grafik zeigt das Handelsvolumen und die Anzahl der Mitglieder gruppiert nach Einspeiser und Verbraucher nach Quartal
 kategorisiert dargestellt.
 
 ![4E Mitglieder und Handelsvolumen Chart 2024 Q1-Q3](/assets/img/Chart-Jahresrueckblick_2024.png){:width="640",:height="480"}

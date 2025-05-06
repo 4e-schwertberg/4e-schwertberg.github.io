@@ -58,7 +58,7 @@ auflisten.
   Gründen eine Teilnahme nicht möglich.
 - Sie benötigen eine aufrechten Stromliefervertrag mit einem Lieferanten Ihrer Wahl. Dieser Vertrag bleibt aufrecht und gültig.
   Die Teilnahme an der EEG ist eine Ergänzung dazu und vollkommen eigenständig geregelt.
-- Sollten Sie als Produzent teilnehmen wollen, dann benötigen Sie einen aufrechten und gültigen Einspeisevertrag mit einem
+- Sollten Sie als Einspeiser teilnehmen wollen, dann benötigen Sie einen aufrechten und gültigen Einspeisevertrag mit einem
   Anbieter Ihrer Wahl. Die Teilnahme an der EEG ist eine Ergänzung und wird vollkommen eigenständig geregelt.
 - Mitgliedschaft beim Verein 4E Schwertberg. Dazu füllen Sie unser Anmeldeformular aus und senden es via E-Mail an uns.
 - Online-Freischaltung der Viertelstundenwert-Auslesung bei der Fa. Linz Netz. Nähere Informationen hierzu finden Sie auf der [Homepage der Linz Netz GmbH][linznetz].
@@ -69,6 +69,7 @@ Haben wir Ihr Interesse geweckt? Dann senden Sie uns das ausgefüllte Anmeldefor
 ## Formulare
 
 - [Anmeldeformular für Bezieher](/assets/docs/Aufnahmeantrag-Kaeufer.pdf)
+- [Anmeldeformular für Bezieher und Einspeiser](/assets/docs/Aufnahmeantrag-Einspeiser.pdf)
 - [Vereinsstatuten](/assets/docs/Vereinsstatuten_4E_Schwertberg.pdf)
 
 > Da wir gerade noch die letzten organisatorischen Schritte klären, bitten wir noch um etwas Geduld. Wir sind um einen Austausch mit allen vorgemerkten Interessenten bemüht.

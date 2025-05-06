@@ -32,13 +32,15 @@ Bevor Sie mit der Anmeldung fortfahren, prüfen Sie bitte, ob alle notwendigen V
 * Sie benötigen eine aufrechte Strombezugsvereinbarung mit einem Lieferanten Ihrer Wahl. Dieser Vertrag bleibt aufrecht und gültig.
   Die Teilnahme an der Energiegemeinschaft ist eine Ergänzung dazu und ersetzt diesen nicht.
 
-### Produzent
+### Einspeiser
 
-Falls Sie mit einer Energieerzeugungsanlage, die Energie aus erneuerbaren Quellen liefert, als Produzent
+Falls Sie mit einer Energieerzeugungsanlage, die Energie aus erneuerbaren Quellen liefert, als Einspeiser
 teilnehmen wollen, dann gilt für Sie zusätzlich zu den obigen Voraussetzungen noch Folgendes:
 
 * Sie benötigen eine aufrechte und gültige Stromliefervereinbarung mit einem Abnehmer Ihrer Wahl.
   Die Teilnahme an der Energiegemeinschaft ist eine Ergänzung dazu und ersetzt diesen nicht.
+
+Bitte beachten Sie dazu unsere Mitgliedschafts-Arten. Diese finden Sie [hier](/infos).
 
 ### Unternehmer
 
@@ -69,7 +71,7 @@ Verrechnung von Energie innerhalb der Energiegemeinschaft!
 Unsere Anmeldeformulare finden Sie nachfolgend verlinkt zum Download.
 
 * Anmeldeformular [Bezieher](/assets/docs/Aufnahmeantrag-Kaeufer.pdf)
-* Anmeldeformular [Produzenten](/assets/docs/Aufnahmeantrag-Einspeiser.pdf)
+* Anmeldeformular [Einspeiser](/assets/docs/Aufnahmeantrag-Einspeiser.pdf)
 
 Bitte füllen Sie das Formular gewissenhaft, vollständig und wahrheitsgemäß aus. Wir möchten ausdrücklich darauf
 hinweisen, dass Sie für die Richtigkeit der Angaben verantwortlich sind und
@@ -80,7 +82,7 @@ falsche Angaben - vor allem zur steuerlichen Situation - zu rechtlichen Konseque
 Das vollständig ausgefüllte und geprüfte Formular übermitteln Sie bitte via E-Mail an `anmeldung@4e-schwertberg.at`.
 Wir bitten um Verständnis, dass wir Anmeldungen ausschließlich an diese Mail-Adresse akzeptieren.
 
-Alternativ werfen Sie das ausgefüllte Formular bitte in unseren Postkasten in der `Unterkoglbergstraße 1` ein.
+Alternativ werfen Sie das ausgefüllte Formular bitte in unseren Postkasten in der `Unterkogelbergstraße 1` ein.
 
 Bitte Übermitteln Sie Ihre Anmeldung ausschließlich wie hier beschrieben, um verloren gegangenen Anmeldungen vorzubeugen.
 
