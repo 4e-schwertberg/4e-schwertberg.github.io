@@ -13,7 +13,8 @@ order: 8
 
 Unterkogelbergstraße 1\\
 4311 Schwertberg\\
-info (at) 4e-schwertberg (dot) at\\
+<i class="fas fa-envelope"></i> info (at) 4e-schwertberg (dot) at\\
+<i class="fas fa-phone"></i> +43 677 629 39 156\\
 \\
 ZVR: 1922887273\\
 UID: ATU80460519

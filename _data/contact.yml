@@ -13,6 +13,11 @@
 - type: rss
   icon: "fas fa-rss"
   noblank: true
+
+- type: phone
+  icon: "fas fa-phone"
+  url: "tel:+4367762939156"
+  noblank: true
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon

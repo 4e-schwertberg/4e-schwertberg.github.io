@@ -13,6 +13,8 @@ order: 3
 > Kündigen Sie **keinesfalls** Ihre bestehenden Verträge (Lieferung und Bezug). Der Vertrag mit 4E Schwertberg ist eine Ergänzung zu diesen und ersetzt sie nicht. Siehe Kapitel Voraussetzungen.
 {: .prompt-danger }
 
+> Wenn Sie noch weitere Fragen haben, erreichen Sie uns telefonisch unter <i class="fas fa-phone"></i> +43 677 629 39 156
+{: .prompt-tip }
 
 Wir freuen uns sehr, dass Sie sich für eine Teilnahme an der Energiegemeinschaft 4E Schwertberg interessieren.
 Bitte beachten Sie, dass dafür einige Voraussetzungen erfüllt sein müssen und der Ablauf der Anmeldung
