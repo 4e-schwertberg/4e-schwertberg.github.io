@@ -40,7 +40,7 @@ wirtschaftlichen Vorteile einer Teilnahme an einer EEG verdeutlicht werden.
 |Energiebezugspreis (brutto) | **18** | **18** |ct/kWh |Brutto-Energiepreis  |
 | **Arbeitsbezogene Netzentgelte und Abgaben** ||
 |Reduktion der Netzgebühren |  | 28 |% |Reduziertes Netzentgelt für Energie aus einer regionalen EEG  |
-|Netznutzung | 6,23 | 6,23 |ct/kWh ||
+|Netznutzung | 6,23 | 4,49 |ct/kWh ||
 |Netzverluste | 0,55 | 0,55 |ct/kWh ||
 |Arbeitsbezogene Netzentgelte gesamt (netto) | **6,784** | **5,040** |ct/kWh|Summe der Netto-Netzentgelte |
 | **Erneuerbaren-Förderbeiträge** |  |
