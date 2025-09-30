@@ -7,6 +7,7 @@ pin: false
 math: false
 author: 4e
 image: /assets/img/4e-logo-post.jpg
+published: false
 ---
 
 # Strom - Was ändert sich im Jahr 2025

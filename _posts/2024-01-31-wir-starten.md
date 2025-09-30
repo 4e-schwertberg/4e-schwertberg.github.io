@@ -8,6 +8,7 @@ pin: false
 math: false
 author: 4e
 image: /assets/img/4e-logo-post.jpg
+published: false
 ---
 
 # Wir starten den Betrieb
