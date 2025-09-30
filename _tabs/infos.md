@@ -66,6 +66,6 @@ gibt es auch wirtschaftliche Gründe die für eine Teilnahme an einer EEG sprech
 > Energiegemeinschaft durch die gesetzlich geregelten Ermäßigungen günstiger.
 {: .prompt-tip }
 
-Ein aktuelles Berechnungsbeispiel finden Sie [hier](/posts/strom-einsparungen-2025/#berechnungsbeispiel)
+Ein aktuelles Berechnungsbeispiel finden Sie [hier](/posts/berechnungsbeispiel/#berechnungsbeispiel)
 
 [^1]: Angaben ohne Gewähr - Stand: 24.08.2023
