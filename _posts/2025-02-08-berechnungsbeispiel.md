@@ -1,5 +1,5 @@
 ---
-title: Das Potenzial einer EEG
+title: Berechnungsbeispiel
 date: 2025-02-08 14:00:00 +0100
 categories: [Informationen]
 toc: true
@@ -7,7 +7,7 @@ pin: false
 math: false
 author: 4e
 image: /assets/img/4e-logo-post.jpg
-published: false
+published: true
 ---
 
 # Das Potenzial einer EEG
