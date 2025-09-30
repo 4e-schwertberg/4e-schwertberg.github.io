@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Informationen
+title: Infos
 permalink: /infos/
 icon: fas fa-info-circle
 order: 2
