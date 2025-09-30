@@ -8,6 +8,7 @@ pin: false
 math: false
 author: 4e
 image: /assets/img/federico-beccari-ahi73ZN5P0Y-unsplash.jpg
+published: false
 ---
 
 # Energiegemeinschaften

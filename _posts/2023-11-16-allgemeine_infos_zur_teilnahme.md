@@ -7,6 +7,7 @@ pin: false
 math: false
 author: 4e
 image: /assets/img/energy-4828337_640.jpg
+published: false
 ---
 
 > Der Inhalt dieser Seite ist veraltet. Bitte wechseln Sie zur Seite [Infos](/infos), um die aktuelle

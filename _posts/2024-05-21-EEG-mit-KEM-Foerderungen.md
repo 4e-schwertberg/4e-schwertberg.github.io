@@ -7,6 +7,7 @@ pin: false
 math: false
 author: 4e
 image: /assets/img/4e-logo-post.jpg
+published: false
 ---
 
 Um über mögliche Förderungen zu sprechen, besuchte KEM-Manager Kurt Leonhartsberger das Vorstandsteam. Die Klima- und Energiemodellregion (KEM) unterstützt die EEG mit Rat und Tat, um die gemeinschaftlichen Ziele zu erreichen.
