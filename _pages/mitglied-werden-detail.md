@@ -1,19 +1,18 @@
 ---
 layout: page
-title: Anmeldung
-permalink: /anmeldung/
+title: Mitglied werden - Details
+permalink: /mitglied-werden-detail/
 toc: true
 icon: fas fa-file-text
-order: 3
 ---
 
-> Derzeit ist eine Teilnahme aus technischen Gründen nur im Versorgungsbereich der Linz Netz GmbH möglich. 4E ist eine regional Energiegemeinschaft in der regionalen Zone EGR00047. Sie können Ihre Zählpunktnummer [hier](https://services.linznetz.at/energiegemeinschaften/?nav=%2Fde%2Flinz_netz_website%2Fstrom%2Fmein_stromanschluss%2Ferzeugungsanlage_anschliessen%2Fauskunft_zum_versorgungsbereich%2Fauskunft_zum_versorgungsbereich.xhtml#) vorab prüfen.
+> Derzeit ist eine Teilnahme aus technischen Gründen nur im Versorgungsbereich der Linz Netz GmbH möglich. 4E ist eine regional Energiegemeinschaft in der **regionalen Zone EGR00047**. Sie können Ihre Zählpunktnummer [hier](https://services.linznetz.at/energiegemeinschaften/auskunft.jsf#) vorab prüfen.
 {: .prompt-info }
 
 > Kündigen Sie **keinesfalls** Ihre bestehenden Verträge (Lieferung und Bezug). Der Vertrag mit 4E Schwertberg ist eine Ergänzung zu diesen und ersetzt sie nicht. Siehe Kapitel Voraussetzungen.
 {: .prompt-danger }
 
-> Wenn Sie noch weitere Fragen haben, erreichen Sie uns telefonisch unter <i class="fas fa-phone"></i> +43 677 629 39 156
+> Wenn Sie noch weitere Fragen haben, erreichen Sie uns telefonisch unter <i class="fas fa-phone"></i> {{ site.data.config4e.contact.phoneNumber }}
 {: .prompt-tip }
 
 Wir freuen uns sehr, dass Sie sich für eine Teilnahme an der Energiegemeinschaft 4E Schwertberg interessieren.
@@ -56,7 +55,7 @@ die Teilnahme an einer Energiegemeinschaft.
 Der Ablauf der Anmeldung ist wie folgt:
 
 * Ausfüllen des Anmeldeformulars
-* Übermittlung des Anmeldeformulars an: `anmeldung@4e-schwertberg.at`
+* Übermittlung des Anmeldeformulars an: `{{ site.data.config4e.contact.mailRegister }}`
 * Prüfung des Antrags durch den Vorstand von 4E Schwertberg
 * Sie werden via E-Mail über den Status Ihres Antrags informiert.
 * Registrierung am Portal des Netzbetreibers (Linz Netz GmbH)
@@ -72,8 +71,8 @@ Verrechnung von Energie innerhalb der Energiegemeinschaft!
 
 Unsere Anmeldeformulare finden Sie nachfolgend verlinkt zum Download.
 
-* Anmeldeformular [Bezieher](/assets/docs/Aufnahmeantrag-Kaeufer.pdf)
-* Anmeldeformular [Einspeiser](/assets/docs/Aufnahmeantrag-Einspeiser.pdf)
+- [{{ site.data.config4e.form_buyer.text }}]({{ site.data.config4e.form_buyer.url }})
+- [{{ site.data.config4e.form_buyer_seller_url.text }}]({{ site.data.config4e.form_buyer_seller_url.url }})
 
 Bitte füllen Sie das Formular gewissenhaft, vollständig und wahrheitsgemäß aus. Wir möchten ausdrücklich darauf
 hinweisen, dass Sie für die Richtigkeit der Angaben verantwortlich sind und
@@ -81,7 +80,7 @@ falsche Angaben - vor allem zur steuerlichen Situation - zu rechtlichen Konseque
 
 ### Übermittlung des Anmeldeformulars
 
-Das vollständig ausgefüllte und geprüfte Formular übermitteln Sie bitte via E-Mail an `anmeldung@4e-schwertberg.at`.
+Das vollständig ausgefüllte und geprüfte Formular übermitteln Sie bitte via E-Mail an `{{ site.data.config4e.contact.mailRegister }}`.
 Wir bitten um Verständnis, dass wir Anmeldungen ausschließlich an diese Mail-Adresse akzeptieren.
 
 Alternativ werfen Sie das ausgefüllte Formular bitte in unseren Postkasten in der `Unterkogelbergstraße 1` ein.

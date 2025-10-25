@@ -2,7 +2,8 @@
 layout: page
 title: Datenschutz
 permalink: /datenschutz/
-order: 9
+icon: fas fa-info-circle
+order: 7
 ---
 # Erklärung zur Informationspflicht
 
@@ -77,7 +78,7 @@ Wenn sie vermuten, dass im Zuge der Verarbeitung Ihrer Daten Verstöße gegen da
 
 ## Sie erreichen uns unter folgenden Kontaktdaten:
 
-* Webseitenbetreiber: 4E Schwertberg - Erneuerbare Energie Effizient Einsetzen
-* E-Mail: info (at) 4e-schwertberg (dot) at
+* Webseitenbetreiber: {{ site.data.config4e.contact.fullName }}
+* E-Mail: {{ site.data.config4e.contact.mailInfo }}
 
 Quelle: [DSGVO Generator Österreich](https://www.rechtstexte-generator.at/dsgvo-generator-oesterreich/) in Kooperation mit [Umzugsfirma in Wien](https://deine-umzugsfirma.at/)

@@ -1,0 +1,33 @@
+# Kontaktdetails
+contact:
+  fullName: "4E Schwertberg - erneuerbare Energie effizient einsetzen"
+  mailInfo: "info@4e-schwertberg.at"
+  mailRegister: "anmeldung@4e-schwertberg.at"
+  phoneNumber: "+43 677 629 39 156"
+  street: "Unterkogelbergstraße 1"
+  zip: "4311"
+  town: "Schwertberg"
+
+details:
+  zvr: "1922887273"
+  uid: "ATU80460519"
+
+# Kosten und Preise
+costs:
+  membershipFeeWithVAT: "15"
+  vat: "20%"
+  price_buyer: "14"
+  price_buyer_unit: "ct/kWh"
+  price_seller: "12"
+  price_seller_unit: "ct/kWh"
+  price_last_change: "1.10.2025"
+
+# Formulare und verlinkte Dokumente
+form_buyer:
+  url: "/assets/docs/Aufnahmeantrag-Kaeufer.pdf"
+  text: "Anmeldeformular Bezieher"
+form_buyer_seller_url:
+  url: "/assets/docs/Aufnahmeantrag-Einspeiser.pdf"
+  text: "Anmeldeformular Einspeiser"
+statuten:
+  url: "/assets/docs/Vereinsstatuten_4E_Schwertberg.pdf"
