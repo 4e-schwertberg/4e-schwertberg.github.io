@@ -24,6 +24,8 @@ Einspeisetarif (Stromlieferant)
 
 Abnahmetarif (Stromverbraucher)
 : {{ site.data.config4e.costs.price_buyer }} {{ site.data.config4e.costs.price_buyer_unit }} netto[^1]
+: > Entspricht einem Arbeitspreis von 10 ct/kWh, durch die gesetzlich garantierten Vergünstigungen bei den Netzgebühren und den Abgaben.
+  {: .prompt-tip }
 
 # Mitgliedsbeitrag
 
