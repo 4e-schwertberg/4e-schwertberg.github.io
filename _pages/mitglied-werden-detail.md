@@ -6,7 +6,7 @@ toc: true
 icon: fas fa-file-text
 ---
 
-> Derzeit ist eine Teilnahme aus technischen Gründen nur im Versorgungsbereich der Linz Netz GmbH möglich. 4E ist eine regional Energiegemeinschaft in der **regionalen Zone EGR00047**. Sie können Ihre Zählpunktnummer [hier](https://services.linznetz.at/energiegemeinschaften/auskunft.jsf#) vorab prüfen.
+> Derzeit ist eine Teilnahme aus technischen Gründen nur im Versorgungsbereich der Linz Netz GmbH möglich. 4E ist eine regional Energiegemeinschaft in der **regionalen Zone EGR00047**. Sie können Ihre Zählpunktnummer [hier](https://www.linznetz.at/portal/de/home/online_services/versorgungsbereichsabfrage/grafischer_versorgungsbereich.html#) vorab prüfen.
 {: .prompt-info }
 
 > Kündigen Sie **keinesfalls** Ihre bestehenden Verträge (Lieferung und Bezug). Der Vertrag mit 4E Schwertberg ist eine Ergänzung zu diesen und ersetzt sie nicht. Siehe Kapitel Voraussetzungen.
