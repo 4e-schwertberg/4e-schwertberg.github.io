@@ -30,7 +30,7 @@ Wir bieten zwei Arten der Mitgliedschaft an:
     <i class="fas fa-exclamation-circle"></i> Die Verrechnung beginnt erst, nachdem Sie der Übertragung der Daten zugestimmt haben.
 
 ### Wichtige Hinweise
-- **Teilnahme nur in der Region der Linz Netz GmbH** möglich. Überprüfen Sie Ihre Zählpunktnummer [hier](https://services.linznetz.at/energiegemeinschaften/auskunft.jsf#).
+- **Teilnahme nur in der Region der Linz Netz GmbH** möglich. Überprüfen Sie Ihre Zählpunktnummer [hier](https://www.linznetz.at/portal/de/home/online_services/versorgungsbereichsabfrage/grafischer_versorgungsbereich.html#).
 - **Keine Kündigung bestehender Verträge** notwendig. Der Vertrag mit 4E ist eine Ergänzung.
 
 Eine detailiertere Beschreibung des Anmeldeprozesses finden Sie [hier](/mitglied-werden-detail/)
