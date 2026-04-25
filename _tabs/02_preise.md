@@ -24,7 +24,7 @@ Einspeisetarif (Stromlieferant)
 
 Abnahmetarif (Stromverbraucher)
 : {{ site.data.config4e.costs.price_buyer }} {{ site.data.config4e.costs.price_buyer_unit }} netto[^1]
-: > Entspricht einem Arbeitspreis von 10 ct/kWh, durch die gesetzlich garantierten Vergünstigungen bei den Netzgebühren und den Abgaben.
+: > Entspricht einem Arbeitspreis von etwa 10 ct/kWh, durch die gesetzlich garantierten Vergünstigungen bei den Netzgebühren und den Abgaben.
   {: .prompt-tip }
 
 # Mitgliedsbeitrag
@@ -35,4 +35,4 @@ Der Mitgliedsbeitrag beträgt **{{ site.data.config4e.costs.membershipFeeWithVAT
 Die Einhebung von Mitgliedsbeiträgen und die Differenz zwischen Ein- und Verkauf dienen dem
 Verein ausschließlich zur Finanzierung der laufenden Betriebskosten. 4E Schwertberg ist nicht gewinnorientiert.
 
-[^1]: Angaben ohne Gewähr - Stand: {{ site.data.config4e.costs.price_last_change }}
+[^1]: Angaben ohne Gewähr - Für das 2. Quartal 2026 verzichten wir auf den Deckungsaufschlag, Betriebskosten werden in diesem Zeitraum aus Rücklagen finanziert. - Stand: {{ site.data.config4e.costs.price_last_change }}

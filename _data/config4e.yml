@@ -7,6 +7,37 @@ contact:
   street: "Unterkogelbergstraße 1"
   zip: "4311"
   town: "Schwertberg"
+  boardMember: [
+    {
+      "role": "Obmann",
+      "firstName": "Florian",
+      "lastName": "Nairz"
+    },
+    {
+      "role": "Kassierin",
+      "firstName": "Beatrix",
+      "lastName": "Hinterkörner"
+    },{
+      "role": "Kassier-Stv.",
+      "firstName": "Johannes",
+      "lastName": "Tinschert"
+    },
+    {
+      "role": "Schriftführerin",
+      "firstName": "Sarah",
+      "lastName": "Loch"
+    },
+    {
+      "role": "Schriftführer-Stv.",
+      "firstName": "Rainer",
+      "lastName": "Gradl"
+    },
+    {
+      "role": "Vorstandsmitglied lt. Statuten §11 Abs. 1 (Umweltausschussvorsitzender der Gemeinde Schwertberg)",
+      "firstName": "Andreas",
+      "lastName": "Karlinger"
+    }
+  ]
 
 details:
   zvr: "1922887273"
@@ -16,11 +47,11 @@ details:
 costs:
   membershipFeeWithVAT: "15"
   vat: "20%"
-  price_buyer: "14"
+  price_buyer: "12"
   price_buyer_unit: "ct/kWh"
   price_seller: "12"
   price_seller_unit: "ct/kWh"
-  price_last_change: "1.10.2025"
+  price_last_change: "01.04.2026"
 
 # Formulare und verlinkte Dokumente
 form_buyer:

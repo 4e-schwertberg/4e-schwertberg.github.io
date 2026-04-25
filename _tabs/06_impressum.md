@@ -18,6 +18,16 @@ order: 6
 ZVR: {{ site.data.config4e.details.zvr }}\\
 UID: {{ site.data.config4e.details.uid }}
 
+{% if site.data.config4e.contact.boardMember %}
+**Vorstandsmitglieder**
+
+<ul>
+{% for m in site.data.config4e.contact.boardMember %}
+<li>{{ m.role }}: {{ m.firstName }} {{ m.lastName }}</li>
+{% endfor %}
+{% endif %}
+</ul>
+
 **Vereinsstatuten**
 : [Vereinsstatuten_4E_Schwertberg.pdf]({{ site.data.config4e.statuten.url }})
 
