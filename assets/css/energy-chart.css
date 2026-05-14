@@ -1,0 +1,89 @@
+.energy-chart-wrapper {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  font-family: Arial, sans-serif;
+}
+
+.energy-chart {
+  display: flex;
+  gap: 80px;
+  align-items: flex-end;
+}
+
+.bar {
+  width: 120px;
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+}
+
+.seg { width: 100%; }
+
+.energy { background: #8FBFA3; }
+.grid   { background: #7EA6E0; }
+.taxes  { background: #E7B47A; }
+.vat    { background: #BFA2DB; }
+
+.label {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.savings {
+  position: absolute;
+  bottom: 100%;
+  width: 100%;
+  border: 2px dashed #2e7d32;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #2e7d32;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+/* LEGEND */
+.legend {
+  min-width: 240px;
+}
+
+.legend-title {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.legend-sub {
+  font-size: 0.75rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.delta-badge {
+  display: inline-block;
+  background: #e8f5e9;
+  color: #2e7d32;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  border-radius: 2px;
+}
+
+.energy { background: #8FBFA3; }
+.grid   { background: #7EA6E0; }
+.taxes  { background: #E7B47A; }
+.vat    { background: #BFA2DB; }

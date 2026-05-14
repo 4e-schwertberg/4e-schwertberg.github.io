@@ -49,9 +49,20 @@ costs:
   vat: "20%"
   price_buyer: "12"
   price_buyer_unit: "ct/kWh"
-  price_seller: "12"
+  price_seller: "10"
   price_seller_unit: "ct/kWh"
   price_last_change: "01.04.2026"
+
+  energy_chart:
+    conventional:
+      grid: 6.057
+      levies: 0.723
+      taxPercent: 20.0
+    eeg:
+      regional:
+        grid: 4.497
+        levies: 0.0
+        taxPercent: 20.0
 
 # Formulare und verlinkte Dokumente
 form_buyer:
