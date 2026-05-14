@@ -49,7 +49,7 @@ costs:
   vat: "20%"
   price_buyer: "12"
   price_buyer_unit: "ct/kWh"
-  price_seller: "12"
+  price_seller: "10"
   price_seller_unit: "ct/kWh"
   price_last_change: "01.04.2026"
 
