@@ -13,6 +13,8 @@ order: 2
 
 Der Mitgliedsbeitrag beträgt **{{ site.data.config4e.costs.membershipFeeWithVAT }} EUR pro Jahr (inkl. {{ site.data.config4e.costs.vat }} USt)** für jeden Zählpunkt.
 
+## Tarife
+
 Einspeisetarif (Stromlieferant)
 : {{ site.data.config4e.costs.price_seller }} {{ site.data.config4e.costs.price_seller_unit }} netto[^1]
 
