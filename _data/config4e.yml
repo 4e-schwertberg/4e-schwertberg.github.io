@@ -53,6 +53,17 @@ costs:
   price_seller_unit: "ct/kWh"
   price_last_change: "01.04.2026"
 
+  energy_chart:
+    conventional:
+      grid: 6.057
+      levies: 0.723
+      taxPercent: 20.0
+    eeg:
+      regional:
+        grid: 4.497
+        levies: 0.0
+        taxPercent: 20.0
+
 # Formulare und verlinkte Dokumente
 form_buyer:
   url: "/assets/docs/Aufnahmeantrag-Kaeufer.pdf"

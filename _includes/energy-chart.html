@@ -1,0 +1,98 @@
+{% assign c = site.data.config4e.costs %}
+
+{% assign energy = c.price_buyer | plus: 0 %}
+{% assign conv = c.energy_chart.conventional %}
+{% assign eeg = c.energy_chart.eeg.regional %}
+
+<!-- CONVENTIONAL -->
+{% assign conv_vat_rate = conv.taxPercent | plus: 0 | divided_by: 100 %}
+{% assign conv_sub = energy | plus: conv.grid | plus: conv.levies %}
+{% assign conv_vat = conv_sub | times: conv_vat_rate %}
+{% assign conv_total = conv_sub | plus: conv_vat %}
+
+<!-- EEG -->
+{% assign eeg_vat_rate = eeg.taxPercent | plus: 0 | divided_by: 100 %}
+{% assign eeg_grid = eeg.grid %}
+{% assign eeg_sub = energy | plus: eeg_grid | plus: eeg.levies %}
+{% assign eeg_vat = eeg_sub | times: eeg_vat_rate %}
+{% assign eeg_total = eeg_sub | plus: eeg_vat %}
+
+{% assign savings = conv_total | minus: eeg_total | times: -1.0 %}
+
+<div class="energy-chart-wrapper">
+
+  <!-- LEFT: CHART -->
+  <div class="energy-chart">
+
+    <!-- STANDARD -->
+    <div class="bar-container">
+      <div class="bar">
+
+        <div class="seg energy" style="height: {{ energy | times: 10 }}px"></div>
+        <div class="seg grid"   style="height: {{ conv.grid | times: 10 }}px"></div>
+        <div class="seg taxes"  style="height: {{ conv.levies | times: 10 }}px"></div>
+        <div class="seg vat"    style="height: {{ conv_vat | times: 10 }}px"></div>
+
+      </div>
+
+      <div class="label">
+        Conventional<br>
+        <b>{{ conv_total | round: 2 }} ct/kWh</b>
+      </div>
+    </div>
+
+    <!-- EEG -->
+    <div class="bar-container">
+      <div class="bar">
+
+        <div class="seg energy" style="height: {{ energy | times: 10 }}px"></div>
+        <div class="seg grid"   style="height: {{ eeg_grid | times: 10 }}px"></div>
+        <div class="seg taxes"  style="height: {{ eeg.levies | times: 10 }}px"></div>
+        <div class="seg vat"    style="height: {{ eeg_vat | times: 10 }}px"></div>
+
+        <div class="savings" style="height: {{ savings | times: 10 }}px">
+          {{ savings | round: 2 }} ct
+        </div>
+
+      </div>
+
+      <div class="label">
+        4E Schwertberg<br>
+        <b>{{ eeg_total | round: 2 }} ct/kWh</b>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- RIGHT: LEGEND -->
+  <div class="legend">
+
+    <!-- KPI HEADER -->
+    <div class="legend-title">
+      Einsparung
+      <div class="legend-sub">
+        EEG vs. konventionell
+      </div>
+    </div>
+
+    <!-- DELTA BADGE -->
+    <div class="delta-badge">
+      ↘ {{ savings | round: 2 }} ct/kWh
+    </div>
+
+    <!-- LEGEND ITEMS -->
+    <div class="legend-item">
+      <span class="dot vat"></span> Mehrwertsteuer
+    </div>
+    <div class="legend-item">
+      <span class="dot taxes"></span> Abgaben
+    </div>
+    <div class="legend-item">
+      <span class="dot grid"></span> Netzgebühren
+    </div>
+    <div class="legend-item">
+      <span class="dot energy"></span> Energiepreis
+    </div>
+  </div>
+
+</div>
