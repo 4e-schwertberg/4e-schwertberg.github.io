@@ -1,0 +1,360 @@
+---
+layout: page
+title: Aufnahmeantrag
+permalink: /aufnahmeantrag/
+icon: fas fa-info-circle
+order: 8
+hidden: true
+---
+
+
+<style>
+  .f4e-card{
+    --f4e-green:#1B5E45;
+    --f4e-green-dark:#0F3D2C;
+    --f4e-turquoise:#0FA9A0;
+    --f4e-turquoise-dark:#0B847D;
+    --f4e-turquoise-tint:#E6F6F4;
+    --f4e-bg:#FFFFFF;
+    --f4e-bg-soft:#F4F8F6;
+    --f4e-border:#D9E2DD;
+    --f4e-text:#16201C;
+    --f4e-muted:#5C6B64;
+    --f4e-error:#B3261E;
+    --f4e-radius:10px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    max-width:660px;
+    margin:0 auto;
+    background:var(--f4e-bg);
+    border:1px solid var(--f4e-border);
+    border-radius:var(--f4e-radius);
+    overflow:hidden;
+    box-shadow:0 1px 3px rgba(15,30,25,.07);
+    color:var(--f4e-text);
+  }
+  .f4e-card *{box-sizing:border-box;}
+  .f4e-head{
+    background:linear-gradient(135deg, var(--f4e-green) 0%, var(--f4e-turquoise-dark) 130%);
+    color:#fff; padding:28px 32px 24px; position:relative;
+  }
+  .f4e-head svg{position:absolute;top:24px;right:28px;}
+  .f4e-eyebrow{text-transform:uppercase; letter-spacing:.08em; font-size:12px; font-weight:600; color:#BDF0EA; margin:0 0 6px;}
+  .f4e-head h2{margin:0; font-size:22px; line-height:1.3; font-weight:700; max-width:480px;}
+  .f4e-head p{margin:10px 0 0; font-size:14px; line-height:1.5; color:#E3F2EE; max-width:480px;}
+  .f4e-body{padding:28px 32px 32px;}
+
+  .f4e-segment{display:flex; gap:8px; margin-bottom:22px; background:var(--f4e-bg-soft); border:1px solid var(--f4e-border); border-radius:10px; padding:5px;}
+  .f4e-segment input{position:absolute; opacity:0; pointer-events:none;}
+  .f4e-segment label{flex:1; text-align:center; padding:11px 10px; border-radius:7px; font-size:14px; font-weight:600; cursor:pointer; color:var(--f4e-muted); transition:background .15s, color .15s;}
+  .f4e-segment input:checked + label{background:var(--f4e-green); color:#fff;}
+  .f4e-segment label .f4e-segment-sub{display:block; font-weight:400; font-size:11.5px; margin-top:2px; opacity:.85;}
+
+  .f4e-section-label{text-transform:uppercase; letter-spacing:.06em; font-size:12px; font-weight:700; color:var(--f4e-green); margin:0 0 16px; padding-bottom:8px; border-bottom:1px solid var(--f4e-border);}
+  .f4e-section{margin-top:32px;}
+  .f4e-section:first-of-type{margin-top:0;}
+  .f4e-section.f4e-tint{background:var(--f4e-turquoise-tint); border:1px solid #C7E9E5; border-radius:10px; padding:20px 20px 8px;}
+  .f4e-section.f4e-tint .f4e-section-label{color:var(--f4e-turquoise-dark); border-bottom-color:#C7E9E5;}
+
+  .f4e-row{display:flex; gap:14px;}
+  .f4e-row > .f4e-field{flex:1; min-width:0;}
+  .f4e-field{margin-bottom:18px;}
+  .f4e-field label{display:block; font-size:14px; font-weight:600; margin-bottom:6px;}
+  .f4e-field .f4e-hint{font-size:12.5px; color:var(--f4e-muted); margin-top:5px; line-height:1.45;}
+  .f4e-field input[type=text], .f4e-field input[type=email], .f4e-field input[type=tel], .f4e-field input[type=number]{
+    width:100%; padding:11px 12px; border:1px solid var(--f4e-border); border-radius:8px;
+    font-size:15px; font-family:inherit; color:var(--f4e-text); background:var(--f4e-bg-soft);
+    transition:border-color .15s, box-shadow .15s;
+  }
+  .f4e-field input:focus{outline:none; border-color:var(--f4e-turquoise); box-shadow:0 0 0 3px rgba(15,169,160,.18); background:#fff;}
+  .f4e-zp-row{display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
+  .f4e-zp-prefix{font-family:monospace; font-size:15px; font-weight:700; background:var(--f4e-bg-soft); border:1px solid var(--f4e-border); border-radius:8px; padding:11px 12px; color:var(--f4e-muted); white-space:nowrap;}
+  .f4e-zp-row input{flex:1; min-width:160px; font-family:monospace; letter-spacing:1px;}
+
+  .f4e-field-inline-btn{display:flex; gap:8px; align-items:center;}
+  .f4e-field-inline-btn input{flex:1;}
+  .f4e-btn-secondary{flex-shrink:0; padding:10px 14px; font-size:13px; font-weight:600; border:1px solid var(--f4e-turquoise); color:var(--f4e-turquoise-dark); background:#fff; border-radius:8px; cursor:pointer; white-space:nowrap; transition:background .15s;}
+  .f4e-btn-secondary:hover{background:var(--f4e-turquoise-tint);}
+
+  .f4e-radio-list{display:flex; flex-direction:column; gap:8px;}
+  .f4e-radio-item{display:flex; gap:10px; align-items:flex-start; padding:11px 12px; border:1px solid var(--f4e-border); border-radius:8px; background:var(--f4e-bg-soft); cursor:pointer;}
+  .f4e-radio-item input{margin-top:2px; accent-color:var(--f4e-green); flex-shrink:0; cursor:pointer;}
+  .f4e-radio-item label{font-size:14px; cursor:pointer;}
+  .f4e-radio-item.checked{border-color:var(--f4e-green); background:#EAF4EF;}
+  .f4e-sub-radios{margin:8px 0 0 28px; display:flex; flex-direction:column; gap:6px;}
+
+  .f4e-check{display:flex; gap:11px; align-items:flex-start; padding:14px; border:1px solid var(--f4e-border); border-radius:8px; background:var(--f4e-bg-soft); margin-bottom:12px;}
+  .f4e-check input[type=checkbox]{margin-top:3px; width:18px; height:18px; accent-color:var(--f4e-green); flex-shrink:0; cursor:pointer;}
+  .f4e-check label{font-size:13.5px; line-height:1.55; color:var(--f4e-text); cursor:pointer;}
+  .f4e-tag{display:inline-block; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; padding:2px 6px; border-radius:4px; margin-left:6px; vertical-align:1px; background:#FBEAE9; color:var(--f4e-error);}
+
+  .f4e-info-box{font-size:12.5px; line-height:1.55; color:var(--f4e-text); background:#fff; border:1px solid var(--f4e-border); border-radius:8px; padding:10px 12px; margin:0 0 16px;}
+  .f4e-info-box strong{color:var(--f4e-green-dark);}
+
+  .f4e-pdf-btn{margin-top:10px; width:100%; padding:13px; background:#fff; color:var(--f4e-turquoise-dark); font-size:15px; font-weight:700; border:2px solid var(--f4e-turquoise); border-radius:8px; cursor:pointer; transition:background .15s;}
+  .f4e-pdf-btn:hover{background:var(--f4e-turquoise-tint);}
+  .f4e-pdf-btn:disabled{opacity:.6; cursor:not-allowed;}
+  .f4e-foot{margin-top:14px; font-size:12px; line-height:1.6; color:var(--f4e-muted); text-align:center;}
+  .f4e-foot a{color:var(--f4e-turquoise-dark);}
+  .f4e-msg{margin-top:16px; padding:12px 14px; border-radius:8px; font-size:14px; display:none;}
+  .f4e-msg.show{display:block;}
+  .f4e-msg.ok{background:#E1F3ED; color:var(--f4e-green-dark); border:1px solid #BCE3D4;}
+  .f4e-msg.err{background:#FBEAE9; color:var(--f4e-error); border:1px solid #F3C8C5;}
+
+  [hidden]{display:none !important;}
+
+  @media (max-width:480px){
+    .f4e-head{padding:22px 20px;}
+    .f4e-body{padding:22px 20px 26px;}
+    .f4e-head svg{display:none;}
+    .f4e-row{flex-direction:column; gap:0;}
+  }
+</style>
+
+<div class="f4e-card">
+  <div class="f4e-head">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="8" fill="#0FA9A0"/>
+      <g stroke="#BDF0EA" stroke-width="2.4" stroke-linecap="round">
+        <line x1="20" y1="2" x2="20" y2="7"/><line x1="20" y1="33" x2="20" y2="38"/>
+        <line x1="2" y1="20" x2="7" y2="20"/><line x1="33" y1="20" x2="38" y2="20"/>
+        <line x1="7.5" y1="7.5" x2="11" y2="11"/><line x1="29" y1="29" x2="32.5" y2="32.5"/>
+        <line x1="32.5" y1="7.5" x2="29" y2="11"/><line x1="11" y1="29" x2="7.5" y2="32.5"/>
+      </g>
+    </svg>
+    <p class="f4e-eyebrow">Aufnahmeantrag</p>
+    <h2>Mitglied werden bei 4E Schwertberg</h2>
+    <p>Bitte füllen Sie alle Abschnitte vollständig aus.</p>
+  </div>
+
+  <div class="f4e-body">
+    <form id="f4e-form">
+      <!-- Personal details -->
+      <div class="f4e-section">
+        <p class="f4e-section-label">Persönliche Angaben</p>
+
+        <div class="f4e-segment">
+          <input type="radio" id="typ-person" name="Antragstellertyp" value="Person" checked>
+          <label for="typ-person">Privatperson</label>
+          <input type="radio" id="typ-firma" name="Antragstellertyp" value="Firma">
+          <label for="typ-firma">Firma</label>
+        </div>
+
+        <div id="block-person">
+          <div class="f4e-row">
+            <div class="f4e-field">
+              <label for="f-vorname">Vorname</label>
+              <input type="text" id="f-vorname" name="Vorname" required autocomplete="given-name">
+            </div>
+            <div class="f4e-field">
+              <label for="f-nachname">Nachname</label>
+              <input type="text" id="f-nachname" name="Nachname" required autocomplete="family-name">
+            </div>
+          </div>
+        </div>
+
+        <div id="block-firma" hidden>
+          <div class="f4e-field">
+            <label for="f-firma">Firmenname</label>
+            <input type="text" id="f-firma" name="Firmenname" autocomplete="organization">
+          </div>
+        </div>
+
+        <div class="f4e-row">
+          <div class="f4e-field" style="flex:2;">
+            <label for="f-strasse">Straße und Hausnummer</label>
+            <input type="text" id="f-strasse" name="Strasse_Hausnummer" required autocomplete="street-address">
+          </div>
+          <div class="f4e-field" style="flex:1;">
+            <label for="f-plz">PLZ</label>
+            <input type="text" id="f-plz" name="PLZ" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" required autocomplete="postal-code">
+          </div>
+        </div>
+
+        <div class="f4e-field">
+          <label for="f-ort">Ort</label>
+          <input type="text" id="f-ort" name="Ort" required autocomplete="address-level2">
+        </div>
+
+        <div class="f4e-row">
+          <div class="f4e-field">
+            <label for="f-email">E-Mail-Adresse</label>
+            <input type="email" id="f-email" name="email" required autocomplete="email">
+          </div>
+          <div class="f4e-field">
+            <label for="f-tel">Telefonnummer <span style="font-weight:400;color:var(--f4e-muted);">(optional)</span></label>
+            <input type="tel" id="f-tel" name="Telefon" autocomplete="tel">
+          </div>
+        </div>
+
+        <div class="f4e-field">
+          <label for="f-uid">UID-Nr. <span style="font-weight:400;color:var(--f4e-muted);">(falls vorhanden)</span></label>
+          <input type="text" id="f-uid" name="UID_Nummer" placeholder="ATU...">
+        </div>
+      </div>
+
+      <!-- Membership type -->
+      <div class="f4e-section">
+        <p class="f4e-section-label">Art der Teilnahme</p>
+        <div class="f4e-segment">
+          <input type="radio" id="rolle-bezieher" name="Rolle" value="Bezieher" checked>
+          <label for="rolle-bezieher">Bezieher</label>
+          <input type="radio" id="rolle-bezieher-einspeiser" name="Rolle" value="Bezieher und Einspeiser">
+          <label for="rolle-bezieher-einspeiser">Bezieher und Einspeiser</label>
+        </div>
+      </div>
+
+      <!-- Meter point -->
+      <div class="f4e-section">
+        <p class="f4e-section-label">Zählpunkt</p>
+
+        <div class="f4e-field">
+          <label for="f-zaehlpunkt">Zählpunktnr. <span style="font-weight:400;color:var(--f4e-muted);">(steht auf der Stromrechnung oder Netzzugangszusage)</span></label>
+          <div class="f4e-zp-row">
+            <span class="f4e-zp-prefix">AT 003100 00000</span>
+            <input type="text" id="f-zaehlpunkt" name="Zaehlpunkt_Rest" inputmode="numeric" pattern="[0-9]{20}" maxlength="20" placeholder="20 weitere Ziffern" required>
+          </div>
+        </div>
+
+        <div class="f4e-field">
+          <label for="f-teilnahmefaktor-bezieher">Teilnahmefaktor Bezieher (%)</label>
+          <input type="number" id="f-teilnahmefaktor-bezieher" name="Teilnahmefaktor_Bezieher" min="1" max="100" step="1" value="100" required>
+          <p class="f4e-hint">100 % bedeuten, Sie beziehen keine Energie aus einer anderen Energiegemeinschaft.</p>
+        </div>
+
+        <div class="f4e-field" id="block-teilnahmefaktor-einspeiser" hidden>
+          <label for="f-teilnahmefaktor-einspeiser">Teilnahmefaktor Einspeiser (%)</label>
+          <input type="number" id="f-teilnahmefaktor-einspeiser" name="Teilnahmefaktor_Einspeiser" min="1" max="100" step="1" value="100">
+          <p class="f4e-hint">100 % bedeuten, Sie verkaufen keine Energie an eine andere Energiegemeinschaft.</p>
+        </div>
+
+        <div class="f4e-field" id="block-strombedarf">
+          <label for="f-strombedarf">Strombedarf pro Jahr <span style="font-weight:400;color:var(--f4e-muted);">(optional, geschätzt, kWh)</span></label>
+          <input type="number" id="f-strombedarf" name="Strombedarf_kWh" min="0" step="1">
+          <p class="f4e-hint" id="hint-preis-kaeufer">Zum Preis (gem. Vereinsbeschluss) von 12 ct/kWh (exkl. 20 % USt) von erneuerbarer Energie gem. dem Vereinszweck.</p>
+        </div>
+
+        <div class="f4e-field" id="block-anlagengroesse" hidden>
+          <label for="f-anlagengroesse">Anlagengröße (kWp)</label>
+          <input type="number" id="f-anlagengroesse" name="Anlagengroesse_kWp" min="0" step="0.1">
+          <p class="f4e-hint">Zum Preis (gem. Vereinsbeschluss) von 10 ct/kWh (exkl. 20 % USt) von erneuerbarer Energie gem. dem Vereinszweck.</p>
+        </div>
+      </div>
+
+      <!-- VAT status -->
+      <div class="f4e-section">
+        <p class="f4e-section-label">USt-steuerliche Behandlung, ich bin ein(e)</p>
+
+        <div class="f4e-radio-list" id="ust-radio-list">
+          <div class="f4e-radio-item">
+            <input type="radio" id="ust-1" name="USt_Behandlung" value="Privater bzw. Kleinunternehmer (< € 55.000,-- Umsatz p.a.)" required>
+            <label for="ust-1">Privater bzw. Kleinunternehmer (&lt; € 55.000,-- Umsatz p.a.)</label>
+          </div>
+          <div class="f4e-radio-item">
+            <input type="radio" id="ust-2" name="USt_Behandlung" value="Unternehmer (20% USt)">
+            <label for="ust-2">Unternehmer (20% USt)</label>
+          </div>
+          <div class="f4e-radio-item">
+            <input type="radio" id="ust-3" name="USt_Behandlung" value="pauschalierter Landwirt (13% USt)">
+            <label for="ust-3">pauschalierter Landwirt (13% USt)</label>
+          </div>
+          <div class="f4e-radio-item">
+            <input type="radio" id="ust-4" name="USt_Behandlung" value="Gemeinde - Betrieb gewerblicher Art">
+            <label for="ust-4">Gemeinde – Betrieb gewerblicher Art</label>
+          </div>
+          <div class="f4e-radio-item">
+            <input type="radio" id="ust-5" name="USt_Behandlung" value="Gemeinde - Kein Betrieb gewerblicher Art">
+            <label for="ust-5">Gemeinde – Kein Betrieb gewerblicher Art</label>
+          </div>
+        </div>
+
+        <div class="f4e-check" style="margin-top:16px;">
+          <input type="checkbox" id="steuer-confirm" name="Steuerliche_Bestaetigung" value="Ja" required>
+          <label for="steuer-confirm">
+            Ich hafte für die Richtigkeit und Vollständigkeit meiner Angaben, insbesondere zur steuerlichen Behandlung, und werde jede Änderung unaufgefordert und unverzüglich dem Verein 4E Schwertberg schriftlich bekannt geben.<span class="f4e-tag">Pflicht</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Bank account / SEPA -->
+      <div class="f4e-section f4e-tint">
+        <p class="f4e-section-label">Bankverbindung &amp; SEPA-Lastschriftmandat</p>
+
+        <div class="f4e-info-box">
+          <strong>Mitgliedsbeitrag:</strong> € 12,50 pro Kalenderjahr und Mitglied (exkl. 20 % USt). Zahlungen/Gutschriften erfolgen ausschließlich mittels Bankeinzug.<br><br>
+          <strong>Gläubiger-Identifikationsnummer von 4E Schwertberg:</strong> AT70ZZZ00000077537<br>
+          4E Schwertberg – Erneuerbare Energie Effizient Einsetzen, Unterkoglbergstraße 1, 4311 Schwertberg. Die Mandatsreferenz wird Ihnen nach Annahme Ihres Antrags separat mitgeteilt.
+        </div>
+
+        <div class="f4e-field">
+          <label for="f-bank">Kreditinstitut <span style="font-weight:400;color:var(--f4e-muted);">(genaue Bezeichnung, optional)</span></label>
+          <input type="text" id="f-bank" name="Kreditinstitut">
+        </div>
+
+        <div class="f4e-row">
+          <div class="f4e-field" style="flex:2;">
+            <label for="f-iban">IBAN</label>
+            <input type="text" id="f-iban" name="IBAN" placeholder="AT..." required autocomplete="off" style="text-transform:uppercase;">
+          </div>
+          <div class="f4e-field" style="flex:1;">
+            <label for="f-bic">BIC <span style="font-weight:400;color:var(--f4e-muted);">(optional)</span></label>
+            <input type="text" id="f-bic" name="BIC" autocomplete="off" style="text-transform:uppercase;">
+          </div>
+        </div>
+
+        <div class="f4e-field">
+          <label for="f-kontoinhaber">Kontoinhaber:in</label>
+          <div class="f4e-field-inline-btn">
+            <input type="text" id="f-kontoinhaber" name="Kontoinhaber" required>
+            <button type="button" class="f4e-btn-secondary" id="btn-uebernehmen">Von oben übernehmen</button>
+          </div>
+        </div>
+
+        <div class="f4e-check">
+          <input type="checkbox" id="sepa-confirm" name="SEPA_Mandat_Zustimmung" value="Ja" required>
+          <label for="sepa-confirm">
+            <strong>SEPA-Lastschriftmandat:</strong> Ich ermächtige 4E Schwertberg, Zahlungen von meinem oben genannten Konto mittels Lastschrift einzuziehen. Zugleich weise ich mein Kreditinstitut an, die von 4E Schwertberg auf mein Konto gezogenen Lastschriften einzulösen. Hinweis: Ich kann innerhalb von acht Wochen, beginnend mit dem Belastungsdatum, die Erstattung des belasteten Betrags verlangen. Es gelten dabei die mit meinem Kreditinstitut vereinbarten Bedingungen.<span class="f4e-tag">Pflicht</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Confirmations & consent -->
+      <div class="f4e-section">
+        <p class="f4e-section-label">Bestätigung &amp; Einwilligung</p>
+
+        <div class="f4e-check">
+          <input type="checkbox" id="statuten-confirm" name="Vereinsstatuten_Erhalt" value="Ja" required>
+          <label for="statuten-confirm">
+            Hiermit bestätige ich den Erhalt einer Abschrift der derzeit gültigen <a href="/assets/docs/Vereinsstatuten_4E_Schwertberg.pdf" target="_blank" rel="noopener">Vereinsstatuten</a>.<span class="f4e-tag">Pflicht</span>
+          </label>
+        </div>
+
+        <div class="f4e-check">
+          <input type="checkbox" id="consent1" name="Bestaetigung_Angaben" value="Ja" required>
+          <label for="consent1">
+            Ich bestätige, dass meine Angaben richtig sind und vom Verein im Rahmen der Vereinstätigkeiten verarbeitet werden dürfen. Änderungen melde ich umgehend.<span class="f4e-tag">Pflicht</span>
+          </label>
+        </div>
+
+        <div class="f4e-check">
+          <input type="checkbox" id="consent2" name="Einwilligung_Abrechnung" value="Ja" required>
+          <label for="consent2">
+            Ich willige ein, dass meine Daten dem Abrechnungsdienstleister zur Abrechnung im Rahmen der 4E Schwertberg zur Verfügung gestellt und verarbeitet werden dürfen.<span class="f4e-tag">Pflicht</span>
+          </label>
+        </div>
+
+        <p class="f4e-field" style="font-size:12.5px;color:var(--f4e-muted);margin-top:14px;">
+          Die Zustimmung zur Datenverarbeitung kann jederzeit schriftlich widerrufen werden. Weitere Unterlagen (z.B. Netzzusatzvertrag, 1/4h-Auslesebestätigung) reichen Sie bitte separat nach.
+        </p>
+      </div>
+
+      <button type="button" class="f4e-pdf-btn" id="btn-pdf">📄 Antrag als ausgefülltes PDF herunterladen</button>
+      <div class="f4e-msg" id="f4e-msg"></div>
+      <p class="f4e-foot">
+        Der PDF-Download erfolgt lokal in Ihrem Browser, ohne dass Daten an Dritte übertragen werden.
+      </p>
+    </form>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<script src="/assets/js/myform.js"></script>
