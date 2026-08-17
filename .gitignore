@@ -20,5 +20,7 @@ package-lock.json
 
 # Misc
 assets/js/dist
+assets/js/*.dev.js
+assets/js/*.bak
 
 *.odg
