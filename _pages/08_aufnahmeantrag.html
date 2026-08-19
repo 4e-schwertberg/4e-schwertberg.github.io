@@ -207,11 +207,11 @@ hidden: true
       <div class="f4e-section">
         <p class="f4e-section-label">Zählpunkt</p>
 
-        <div class="f4e-field">
-          <label for="f-zaehlpunkt">Zählpunktnr. <span style="font-weight:400;color:var(--f4e-muted);">(steht auf der Stromrechnung oder Netzzugangszusage)</span></label>
+        <div class="f4e-field" id="block-zaehlpunkt-bezieher">
+          <label for="f-zaehlpunkt-bezieher">Zählpunktnummer Bezieher <span style="font-weight:400;color:var(--f4e-muted);">(steht auf der Stromrechnung oder Netzzugangszusage)</span></label>
           <div class="f4e-zp-row">
             <span class="f4e-zp-prefix">AT 003100 00000</span>
-            <input type="text" id="f-zaehlpunkt" name="Zaehlpunkt_Rest" inputmode="numeric" pattern="[0-9]{20}" maxlength="20" placeholder="20 weitere Ziffern" required>
+            <input type="text" id="f-zaehlpunkt-bezieher" name="Zaehlpunkt_Bezieher_Rest" inputmode="numeric" pattern="[0-9]{20}" maxlength="20" placeholder="20 weitere Ziffern" required>
           </div>
         </div>
 
@@ -220,17 +220,23 @@ hidden: true
           <input type="number" id="f-teilnahmefaktor-bezieher" name="Teilnahmefaktor_Bezieher" min="1" max="100" step="1" value="100" required>
           <p class="f4e-hint">100 % bedeuten, Sie beziehen keine Energie aus einer anderen Energiegemeinschaft.</p>
         </div>
-
-        <div class="f4e-field" id="block-teilnahmefaktor-einspeiser" hidden>
-          <label for="f-teilnahmefaktor-einspeiser">Teilnahmefaktor Einspeiser (%)</label>
-          <input type="number" id="f-teilnahmefaktor-einspeiser" name="Teilnahmefaktor_Einspeiser" min="1" max="100" step="1" value="100">
-          <p class="f4e-hint">100 % bedeuten, Sie verkaufen keine Energie an eine andere Energiegemeinschaft.</p>
-        </div>
-
         <div class="f4e-field" id="block-strombedarf">
           <label for="f-strombedarf">Strombedarf pro Jahr <span style="font-weight:400;color:var(--f4e-muted);">(optional, geschätzt, kWh)</span></label>
           <input type="number" id="f-strombedarf" name="Strombedarf_kWh" min="0" step="1">
           <p class="f4e-hint" id="hint-preis-kaeufer">Zum Preis (gem. Vereinsbeschluss) von 12 ct/kWh (exkl. 20 % USt) von erneuerbarer Energie gem. dem Vereinszweck.</p>
+        </div>
+
+        <div class="f4e-field" id="block-zaehlpunkt-einspeiser" hidden>
+          <label for="f-zaehlpunkt-einspeiser">Zählpunktnummer Einspeiser <span style="font-weight:400;color:var(--f4e-muted);">(steht auf der Stromrechnung oder Netzzugangszusage)</span></label>
+          <div class="f4e-zp-row">
+            <span class="f4e-zp-prefix">AT 003100 00000</span>
+            <input type="text" id="f-zaehlpunkt-einspeiser" name="Zaehlpunkt_Einspeiser_Rest" inputmode="numeric" pattern="[0-9]{20}" maxlength="20" placeholder="20 weitere Ziffern" required>
+          </div>
+        </div>
+        <div class="f4e-field" id="block-teilnahmefaktor-einspeiser" hidden>
+          <label for="f-teilnahmefaktor-einspeiser">Teilnahmefaktor Einspeiser (%)</label>
+          <input type="number" id="f-teilnahmefaktor-einspeiser" name="Teilnahmefaktor_Einspeiser" min="1" max="100" step="1" value="100">
+          <p class="f4e-hint">100 % bedeuten, Sie verkaufen keine Energie an eine andere Energiegemeinschaft.</p>
         </div>
 
         <div class="f4e-field" id="block-anlagengroesse" hidden>
