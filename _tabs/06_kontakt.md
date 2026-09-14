@@ -1,6 +1,6 @@
 ---
 title: Kontakt
-order: 5
+order: 6
 icon: fas fa-address-book
 permalink: /kontakt/
 ---
