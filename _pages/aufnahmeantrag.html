@@ -178,7 +178,7 @@ hidden: true
         <div class="f4e-row">
           <div class="f4e-field">
             <label for="f-email">E-Mail-Adresse</label>
-            <input type="email" id="f-email" name="email" required autocomplete="email">
+            <input type="email" id="f-email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required autocomplete="email">
           </div>
           <div class="f4e-field">
             <label for="f-tel">Telefonnummer <span style="font-weight:400;color:var(--f4e-muted);">(optional)</span></label>
@@ -223,14 +223,14 @@ hidden: true
         <div class="f4e-field" id="block-strombedarf">
           <label for="f-strombedarf">Strombedarf pro Jahr <span style="font-weight:400;color:var(--f4e-muted);">(optional, geschätzt, kWh)</span></label>
           <input type="number" id="f-strombedarf" name="Strombedarf_kWh" min="0" step="1">
-          <p class="f4e-hint" id="hint-preis-kaeufer">Zum Preis (gem. Vereinsbeschluss) von 12 ct/kWh (exkl. 20 % USt) von erneuerbarer Energie gem. dem Vereinszweck.</p>
+          <p class="f4e-hint" id="hint-preis-kaeufer">Zum <a href="/preise">Preis</a> gem. Vereinsbeschluss von erneuerbarer Energie gem. dem Vereinszweck.</p>
         </div>
 
         <div class="f4e-field" id="block-zaehlpunkt-einspeiser" hidden>
-          <label for="f-zaehlpunkt-einspeiser">Zählpunktnummer Einspeiser <span style="font-weight:400;color:var(--f4e-muted);">(steht auf der Stromrechnung oder Netzzugangszusage)</span></label>
+          <label for="f-zaehlpunkt-einspeiser">Zählpunktnummer Einspeiser <span style="font-weight:400;color:var(--f4e-muted);">(steht auf der Stromrechnung oder Netzzugangszusage, startet mit '99')</span></label>
           <div class="f4e-zp-row">
             <span class="f4e-zp-prefix">AT 003100 00000</span>
-            <input type="text" id="f-zaehlpunkt-einspeiser" name="Zaehlpunkt_Einspeiser_Rest" inputmode="numeric" pattern="[0-9]{20}" maxlength="20" placeholder="20 weitere Ziffern" required>
+            <input type="text" id="f-zaehlpunkt-einspeiser" name="Zaehlpunkt_Einspeiser_Rest" inputmode="numeric" pattern="99[0-9]{18}" maxlength="20" placeholder="20 weitere Ziffern" required>
           </div>
         </div>
         <div class="f4e-field" id="block-teilnahmefaktor-einspeiser" hidden>
@@ -242,7 +242,7 @@ hidden: true
         <div class="f4e-field" id="block-anlagengroesse" hidden>
           <label for="f-anlagengroesse">Anlagengröße (kWp)</label>
           <input type="number" id="f-anlagengroesse" name="Anlagengroesse_kWp" min="0" step="0.1">
-          <p class="f4e-hint">Zum Preis (gem. Vereinsbeschluss) von 10 ct/kWh (exkl. 20 % USt) von erneuerbarer Energie gem. dem Vereinszweck.</p>
+          <p class="f4e-hint">Zum <a href="/preise">Preis</a> gem. Vereinsbeschluss von erneuerbarer Energie gem. dem Vereinszweck.</p>
         </div>
       </div>
 
