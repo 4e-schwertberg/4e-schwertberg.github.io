@@ -20,17 +20,15 @@ Wir bieten zwei Arten der Mitgliedschaft an:
 - **Bezieher und Einspeiser:** Wenn Sie nicht nur Energie beziehen, sondern auch selbst erneuerbare Energie (zB. durch PV-Anlagen) in die Gemeinschaft einspeisen möchten.
 
 ## So funktioniert die Anmeldung
-1. **Formular ausfüllen und abschicken**: Wählen Sie das richtige Formular (Bezieher oder Einspeiser).
-   - [{{ site.data.config4e.form_buyer.text }}]({{ site.data.config4e.form_buyer.url }})
-   - [{{ site.data.config4e.form_buyer_seller_url.text }}]({{ site.data.config4e.form_buyer_seller_url.url }})
+1. **Formular ausfüllen und abschicken**:
+  Füllen Sie entweder unser [Online-Formular](/aufnahmeantrag) aus, oder laden Sie den entsprechenden Mitgliedsantrag herunter ([{{ site.data.config4e.form_buyer.text }}]({{ site.data.config4e.form_buyer.url }}), [{{ site.data.config4e.form_buyer_seller_url.text }}]({{ site.data.config4e.form_buyer_seller_url.url }})).
 
-    Senden Sie das Formular per E-Mail an `{{ site.data.config4e.contact.mailRegister }}` oder werfen Sie es in unseren Briefkasten. Wir prüfen Ihren Antrag und informieren Sie per E-Mail.
+    Senden Sie das Formular anschließend per E-Mail an `{{ site.data.config4e.contact.mailRegister }}` oder werfen Sie es in unseren Briefkasten. Wir prüfen Ihren Antrag und informieren Sie per E-Mail.
 2. **Viertelstundenwerte aktivieren**: Melden Sie sich im [Online-Portal der Linz Netz GmbH](https://www.linznetz.at/) an. Sollten Sie noch keine Zugang besitzen, registrieren Sie sich. Aktivieren Sie die Übertragung der Viertelstundenwerte (Menüpunkt Online-Services - Meine Verbräuche - Viertelstundenwerde aktivieren).
-3. **Vollmacht erteilen**: Sobald Ihr Zählpunkt zugeordnet ist, erhalten Sie eine E-Mail zur Erteilung einer Vollmacht zur Ausleseung der Viertelstundenwerte. Erteilen Sie die Genehmigung, damit die Verrechnung starten kann.
-    <i class="fas fa-exclamation-circle"></i> Die Verrechnung beginnt erst, nachdem Sie der Übertragung der Daten zugestimmt haben.
+3. **Vollmacht erteilen**: Sobald Ihr Zählpunkt zugeordnet ist, erhalten Sie eine E-Mail zur Erteilung einer Vollmacht zur Ausleseung der Viertelstundenwerte. Erteilen Sie die Genehmigung, damit die Verrechnung starten kann. <i class="fas fa-exclamation-circle"></i> Die Verrechnung beginnt erst, nachdem Sie der Übertragung der Daten zugestimmt haben.
 
 ### Wichtige Hinweise
-- **Teilnahme nur in der Region der Linz Netz GmbH** möglich. Überprüfen Sie Ihre Zählpunktnummer [hier](https://www.linznetz.at/portal/de/home/online_services/versorgungsbereichsabfrage/grafischer_versorgungsbereich.html#).
+- **Teilnahme nur in der Region der Linz Netz GmbH** möglich. Überprüfen Sie Ihre Zählpunktnummer [hier](https://www.linznetz.at/portal/de/home/online_services/versorgungsbereichsabfrage/grafischer_versorgungsbereich.html#). Die _Regional-ID_ muss **EGR00047** sein.
 - **Keine Kündigung bestehender Verträge** notwendig. Der Vertrag mit 4E ist eine Ergänzung.
 
 Eine detailiertere Beschreibung des Anmeldeprozesses finden Sie [hier](/mitglied-werden-detail/)
