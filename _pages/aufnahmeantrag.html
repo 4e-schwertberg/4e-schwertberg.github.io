@@ -66,9 +66,6 @@ hidden: true
     transition:border-color .15s, box-shadow .15s;
   }
   .f4e-field input:focus{outline:none; border-color:var(--f4e-turquoise); box-shadow:0 0 0 3px rgba(15,169,160,.18); background:#fff;}
-  .f4e-zp-row{display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
-  .f4e-zp-prefix{font-family:monospace; font-size:15px; font-weight:700; background:var(--f4e-bg-soft); border:1px solid var(--f4e-border); border-radius:8px; padding:11px 12px; color:var(--f4e-muted); white-space:nowrap;}
-  .f4e-zp-row input{flex:1; min-width:160px; font-family:monospace; letter-spacing:1px;}
 
   .f4e-field-inline-btn{display:flex; gap:8px; align-items:center;}
   .f4e-field-inline-btn input{flex:1;}
@@ -208,11 +205,9 @@ hidden: true
         <p class="f4e-section-label">Zählpunkt</p>
 
         <div class="f4e-field" id="block-zaehlpunkt-bezieher">
-          <label for="f-zaehlpunkt-bezieher">Zählpunktnummer Bezieher <span style="font-weight:400;color:var(--f4e-muted);">(steht auf der Stromrechnung oder Netzzugangszusage)</span></label>
-          <div class="f4e-zp-row">
-            <span class="f4e-zp-prefix">AT 003100 00000</span>
-            <input type="text" id="f-zaehlpunkt-bezieher" name="Zaehlpunkt_Bezieher_Rest" inputmode="numeric" pattern="[0-9]{20}" maxlength="20" placeholder="20 weitere Ziffern" required>
-          </div>
+          <label for="f-zaehlpunkt-bezieher">Zählpunktnummer für den Strombezug</label>
+          <input type="text" id="f-zaehlpunkt-bezieher" name="Zaehlpunkt_Bezieher_Rest" inputmode="text" autocomplete="off" spellcheck="false" maxlength="45" placeholder="AT 003100 00000 …" style="font-family:monospace;" aria-describedby="hint-zp-bezieher" required>
+          <p class="f4e-hint" id="hint-zp-bezieher">Steht auf Ihrer Stromrechnung (33 Zeichen, beginnt mit AT 003100 00000). Sie können die ganze Nummer einfügen oder nur die letzten 20 Ziffern. Leerzeichen sind egal.</p>
         </div>
 
         <div class="f4e-field">
@@ -227,11 +222,9 @@ hidden: true
         </div>
 
         <div class="f4e-field" id="block-zaehlpunkt-einspeiser" hidden>
-          <label for="f-zaehlpunkt-einspeiser">Zählpunktnummer Einspeiser <span style="font-weight:400;color:var(--f4e-muted);">(steht auf der Stromrechnung oder Netzzugangszusage, startet mit '99')</span></label>
-          <div class="f4e-zp-row">
-            <span class="f4e-zp-prefix">AT 003100 00000</span>
-            <input type="text" id="f-zaehlpunkt-einspeiser" name="Zaehlpunkt_Einspeiser_Rest" inputmode="numeric" pattern="99[0-9]{18}" maxlength="20" placeholder="20 weitere Ziffern" required>
-          </div>
+          <label for="f-zaehlpunkt-einspeiser">Zählpunktnummer für die Einspeisung</label>
+          <input type="text" id="f-zaehlpunkt-einspeiser" name="Zaehlpunkt_Einspeiser_Rest" inputmode="text" autocomplete="off" spellcheck="false" maxlength="45" placeholder="AT 003100 00000 99…" style="font-family:monospace;" aria-describedby="hint-zp-einspeiser" required>
+          <p class="f4e-hint" id="hint-zp-einspeiser">Eigene Nummer für Ihre Einspeisung, steht auf der Einspeise-Rechnung oder Netzzugangszusage. Nach AT 003100 00000 folgen 20 Ziffern, die mit 99 beginnen.</p>
         </div>
         <div class="f4e-field" id="block-teilnahmefaktor-einspeiser" hidden>
           <label for="f-teilnahmefaktor-einspeiser">Teilnahmefaktor Einspeiser (%)</label>

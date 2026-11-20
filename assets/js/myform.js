@@ -22,6 +22,51 @@
   typPerson.addEventListener('change', applyTyp);
   typFirma.addEventListener('change', applyTyp);
 
+  /* --- Zählpunkt validation --- */
+  // The PDF template prints this prefix next to the field, so only the last 20 digits are written into it.
+  var ZP_PREFIX = 'AT00310000000';
+  var zpBezieher = document.getElementById('f-zaehlpunkt-bezieher');
+  var zpEinspeiser = document.getElementById('f-zaehlpunkt-einspeiser');
+
+  function zpStrip(raw){ return raw.replace(/[\s.\-]/g, '').toUpperCase(); }
+
+  function zpRest(raw){
+    var v = zpStrip(raw);
+    if (v.length === 33 && v.indexOf(ZP_PREFIX) === 0) v = v.slice(13);
+    return /^\d{20}$/.test(v) ? v : null;
+  }
+
+  function zpMessage(input){
+    var v = zpStrip(input.value);
+    if (!v) return '';
+    if (v.indexOf('AT') === 0 && v.indexOf(ZP_PREFIX) !== 0 && ZP_PREFIX.indexOf(v) !== 0){
+      return 'Diese Zählpunktnummer gehört nicht zum Netz der Linz Netz GmbH (sie muss mit AT 003100 00000 beginnen). Eine Teilnahme ist nur im Netz der Linz Netz GmbH möglich.';
+    }
+    var rest = zpRest(input.value);
+    if (rest === null){
+      return 'Bitte geben Sie die Zählpunktnummer vollständig ein: alle 33 Zeichen (beginnt mit AT 003100 00000) oder nur die letzten 20 Ziffern.';
+    }
+    if (input === zpEinspeiser && rest.slice(0, 2) !== '99'){
+      return 'Die Zählpunktnummer für die Einspeisung beginnt nach AT 003100 00000 mit 99. Bitte prüfen Sie Ihre Angabe.';
+    }
+    return '';
+  }
+
+  function updateZaehlpunktValidity(){
+    var einspeiserVisible = !document.getElementById('block-zaehlpunkt-einspeiser').hidden;
+    var msgEinspeiser = einspeiserVisible ? zpMessage(zpEinspeiser) : '';
+    if (einspeiserVisible && !msgEinspeiser){
+      var a = zpRest(zpBezieher.value), b = zpRest(zpEinspeiser.value);
+      if (a !== null && a === b){
+        msgEinspeiser = 'Strombezug und Einspeisung haben zwei verschiedene Zählpunktnummern. Bitte prüfen Sie Ihre Angaben.';
+      }
+    }
+    zpBezieher.setCustomValidity(zpMessage(zpBezieher));
+    zpEinspeiser.setCustomValidity(msgEinspeiser);
+  }
+  zpBezieher.addEventListener('input', updateZaehlpunktValidity);
+  zpEinspeiser.addEventListener('input', updateZaehlpunktValidity);
+
   /* --- Membership type --- */
   var rolleRadios = form.querySelectorAll('input[name="Rolle"]');
   var blockStrombedarf = document.getElementById('block-strombedarf');
@@ -37,6 +82,7 @@
     document.getElementById('f-zaehlpunkt-einspeiser').required = isBeidemitglied;
     document.getElementById('block-teilnahmefaktor-einspeiser').hidden = !isBeidemitglied;
     document.getElementById('f-teilnahmefaktor-einspeiser').required = isBeidemitglied;
+    updateZaehlpunktValidity();
   }
   rolleRadios.forEach(function(r){ r.addEventListener('change', applyRolle); });
 
@@ -102,7 +148,7 @@
     setText('txtBezieherEmailAdresse',      data.email);
     setText('txtBezieherTelefonnummer',     data.Telefon);
     setText('txtBezieherUidNummer',         data.UID_Nummer);
-    setText('txtBezieherZaehlpunktnummer',  data.Zaehlpunkt_Bezieher_Rest);
+    setText('txtBezieherZaehlpunktnummer',  zpRest(data.Zaehlpunkt_Bezieher_Rest));
     setText('nbrBezieherTeilnahmefaktor',   data.Teilnahmefaktor_Bezieher);
     setText('nbrBezieherStrombedarf',       data.Strombedarf_kWh);
     setText('txtBezieherKontoName',         data.Kontoinhaber);
@@ -117,7 +163,7 @@
       setText('txtEinspeiserEmailAdresse',      data.email);
       setText('txtEinspeiserTelefonnummer',     data.Telefon);
       setText('txtEinspeiserUidNummer',         data.UID_Nummer);
-      setText('txtEinspeiserZaehlpunktnummer',  data.Zaehlpunkt_Einspeiser_Rest);
+      setText('txtEinspeiserZaehlpunktnummer',  zpRest(data.Zaehlpunkt_Einspeiser_Rest));
       setText('nbrEinspeiserTeilnahmefaktor',   data.Teilnahmefaktor_Einspeiser);
       setText('nbrEinspeiserAnlagengroesse',    data.Anlagengroesse_kWp);
       setText('txtEinspeiserKontoName',         data.Kontoinhaber);
@@ -205,6 +251,7 @@
   }
 
   document.getElementById('btn-pdf').addEventListener('click', function(){
+    updateZaehlpunktValidity();
     if (!form.reportValidity()) return;
     var btn = this;
     var originalText = btn.textContent;
