@@ -5,80 +5,111 @@ permalink: /datenschutz/
 icon: fas fa-info-circle
 order: 7
 ---
-# Erklärung zur Informationspflicht
 
-## Datenschutzerklärung
+{% assign c = site.data.config4e.contact %}
+Hier erklären wir, welche persönlichen Daten wir verarbeiten, wofür wir sie brauchen und welche Rechte Sie haben.
 
-In folgender Datenschutzerklärung informieren wir Sie über die wichtigsten Aspekte der Datenverarbeitung im Rahmen unserer Webseite. Wir erheben und verarbeiten personenbezogene Daten nur auf Grundlage der gesetzlichen Bestimmungen (Datenschutzgrundverordnung, Telekommunikationsgesetz 2003).
+Stand: November 2026
 
-Sobald Sie als Benutzer auf unsere Webseite zugreifen oder diese besuchen wird Ihre IP-Adresse, Beginn sowie Beginn und Ende der Sitzung erfasst. Dies ist technisch bedingt und stellt somit ein berechtigtes Interesse iSv Art 6 Abs 1 lit f DSGVO.
+## Wer ist verantwortlich?
 
+{{ c.fullName }}\\
+{{ c.street }}, {{ c.zip }} {{ c.town }}\\
+ZVR-Zahl: {{ site.data.config4e.details.zvr }}\\
+E-Mail: {{ c.mailInfo }}\\
+Telefon: {{ c.phoneNumber }}
 
-## Kontakt mit uns
+Für unseren Verein ist keine Datenschutzbeauftragte bzw. kein Datenschutzbeauftragter vorgeschrieben. Bei Fragen zum Datenschutz schreiben Sie uns bitte an {{ c.mailInfo }}.
 
-Wenn Sie uns, entweder über unser Kontaktformular auf unserer Webseite, oder per E-Mail kontaktieren, dann werden die von Ihnen an uns übermittelten Daten zwecks Bearbeitung Ihrer Anfrage oder für den Fall von weiteren Anschlussfragen für sechs Monate bei uns gespeichert. Es erfolgt, ohne Ihre Einwilligung, keine Weitergabe Ihrer übermittelten Daten.
+## Besuch dieser Website
 
+### Hosting bei GitHub Pages
 
-## Google Fonts
+Diese Website liegt bei GitHub Pages. Anbieter ist GitHub, Inc., 88 Colton Street, San Francisco, CA 94107, USA.
 
-Unsere Website verwendet Schriftarten von „Google Fonts“. Der Dienstanbieter dieser Funktion ist:
+Wenn Sie die Website aufrufen, überträgt Ihr Browser technisch notwendige Daten an die Server von GitHub: vor allem Ihre IP-Adresse, Datum und Uhrzeit, die aufgerufene Seite sowie Browser und Betriebssystem. Das sind personenbezogene Daten. GitHub braucht sie, um die Seiten auszuliefern und die Server vor Angriffen zu schützen. GitHub kann diese Daten auch in den USA verarbeiten.
 
-* Google Ireland Limited Gordon House, Barrow Street Dublin 4. Ireland
+- Rechtsgrundlage: unser berechtigtes Interesse an einer sicheren und funktionierenden Website (Art. 6 Abs. 1 lit. f DSGVO).
+- Übermittlung in die USA: GitHub, Inc. ist nach dem EU-US Data Privacy Framework zertifiziert. Für die Übermittlung gilt damit der Angemessenheitsbeschluss der EU-Kommission vom 10. Juli 2023 (Art. 45 DSGVO).
+- Wir selbst bekommen diese Daten nicht zu sehen und werten sie nicht aus.
+- Mehr dazu: [Datenschutzerklärung von GitHub](https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement)
 
-Tel: +353 1 543 1000
+{% comment %} TODO(Florian): Unter https://www.dataprivacyframework.gov/list prüfen, ob „GitHub, Inc.“ aktiv zertifiziert ist. Falls nicht, den Punkt „Übermittlung in die USA“ neu formulieren. {% endcomment %}
 
-Beim Aufrufen dieser Webseite lädt Ihr Browser Schriftarten und speichert diese in den Cache. Da Sie, als Besucher der Webseite, Daten des Dienstanbieters empfangen kann Google unter Umständen Cookies auf Ihrem Rechner setzen oder analysieren.
+### Keine Cookies, keine Analyse
 
-Die Nutzung von „Google-Fonts“ dient der Optimierung unserer Dienstleistung und der einheitlichen Darstellung von Inhalten. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar.
+Wir setzen keine Cookies und verwenden keine Analyse- oder Tracking-Werkzeuge. Schriften, Symbole und Programmteile liegen auf unserem eigenen Webspace. Es werden keine Inhalte von anderen Anbietern nachgeladen.
 
-Weitere Informationen zu Google Fonts erhalten Sie unter folgendem Link:
+Wenn Sie zwischen heller und dunkler Darstellung umschalten, speichert Ihr Browser diese Einstellung auf Ihrem Gerät (im sogenannten „Local Storage“). Diese Information wird nicht an uns übertragen. Sie können sie jederzeit in Ihrem Browser löschen.
 
-* https://developers.google.com/fonts/faq
+### Links zu anderen Websites
 
-Weitere Informationen über den Umgang mit Nutzerdaten von Google können Sie der Datenschutzerklärung entnehmen:
+Wir verlinken auf andere Websites, zum Beispiel auf das Portal der Linz Netz GmbH. Erst wenn Sie einen solchen Link anklicken, werden Daten an den jeweiligen Anbieter übertragen. Dort gilt dann dessen Datenschutzerklärung.
 
-* https://policies.google.com/privacy?hl=de
+## Kontakt per E-Mail oder Telefon
 
-Google verarbeitet die Daten auch in den USA, hat sich jedoch dem
-EU-US Privacy-Shield unterworfen.
+Wenn Sie uns schreiben oder anrufen, verwenden wir Ihre Angaben nur, um Ihre Anfrage zu beantworten.
 
-https://www.privacyshield.gov/EU-US-Framework
+- Rechtsgrundlage: Geht es um eine Mitgliedschaft, ist das für die Mitgliedschaft notwendig (Art. 6 Abs. 1 lit. b DSGVO). Sonst beruht es auf unserem berechtigten Interesse, Anfragen zu beantworten (Art. 6 Abs. 1 lit. f DSGVO).
+- Speicherdauer: Wir löschen die Nachrichten sechs Monate nach Abschluss Ihrer Anfrage. Gehören sie zu Ihrer Mitgliedschaft, gilt die Speicherdauer im nächsten Abschnitt.
+- Unsere E-Mails liegen bei unserem E-Mail-Anbieter Zoho Corporation B.V., Beneluxlaan 4B, 3527 HT Utrecht, Niederlande. Er verarbeitet die Daten in unserem Auftrag in Rechenzentren in der EU.
 
+{% comment %} TODO(Florian): Bestätigen, dass die Postfächer bei Zoho liegen, das Konto in der EU-Region (zoho.eu) läuft und ein Auftragsverarbeitungsvertrag (DPA) abgeschlossen ist. Sonst Anbieter, Anschrift und Ort der Verarbeitung anpassen. {% endcomment %}
 
-## Server-Log Files
+## Mitgliedschaft und Abrechnung {#mitgliedschaft}
 
-Diese Webseite und der damit verbundene Provider erhebt im Zuge der Webseitennutzung automatisch Informationen im Rahmen sogenannter „Server-Log Files“. Dies betrifft insbesondere:
+### Welche Daten?
 
-* IP-Adresse oder Hostname
-* den verwendeten Browser
-* Aufenthaltsdauer auf der Webseite sowie Datum und Uhrzeit
-* aufgerufene Seiten der Webseite
-* Spracheinstellungen und Betriebssystem
-* „Leaving-Page“ (auf welcher URL hat der Benutzer die Webseite verlassen)
-* ISP (Internet Service Provider)
+Wenn Sie Mitglied werden möchten, verarbeiten wir:
 
-Diese erhobenen Informationen werden nicht personenbezogen verarbeitet oder mit personenbezogenen Daten in Verbindung gebracht.
+- Name bzw. Firmenname, Adresse, E-Mail-Adresse, Telefonnummer (freiwillig) und UID-Nummer (falls vorhanden)
+- Zählpunktnummer(n), Teilnahmefaktor sowie geschätzten Strombedarf bzw. Anlagengröße (freiwillig)
+- Ihre umsatzsteuerliche Einstufung
+- Bankverbindung (IBAN, BIC, Kreditinstitut, Kontoinhaber:in) und SEPA-Lastschriftmandat
+- nach Ihrem Beitritt: Ihre Viertelstundenwerte (Strommengen je 15 Minuten), die Ihnen zugeteilte Strommenge aus der Gemeinschaft sowie Abrechnungs- und Zahlungsdaten
 
-Der Webseitenbetreiber behält es sich vor, im Falle von Bekanntwerden rechtswidriger Tätigkeiten, diese Daten auszuwerten oder zu überprüfen.
+### Wie funktioniert das Online-Formular?
 
+Das Online-Formular erstellt die PDFs direkt in Ihrem Browser. Ihre Eingaben werden dabei nicht an uns oder andere übertragen. Wir erhalten Ihre Daten erst, wenn Sie uns die PDFs per E-Mail schicken oder in unseren Briefkasten werfen.
 
-## Ihre Rechte als Betroffener
+### Wofür und auf welcher Rechtsgrundlage?
 
-Sie als Betroffener haben bezüglich Ihrer Daten, welche bei uns gespeichert sind grundsätzlich ein Recht auf:
+- Prüfung Ihres Antrags, Verwaltung Ihrer Mitgliedschaft, Zuordnung Ihres Zählpunkts zur Energiegemeinschaft, Abrechnung von Strom und Mitgliedsbeitrag sowie Einzug per SEPA-Lastschrift: Das ist für die Mitgliedschaft notwendig (Art. 6 Abs. 1 lit. b DSGVO).
+- Meldungen an den Netzbetreiber und Datenaustausch nach dem Energierecht (Elektrizitätswirtschaftsgesetz – ElWG) sowie Buchhaltung und Steuern (z. B. Bundesabgabenordnung, Umsatzsteuergesetz): Dazu sind wir gesetzlich verpflichtet (Art. 6 Abs. 1 lit. c DSGVO).
 
-* Auskunft
-* Löschung der Daten
-* Berichtigung der Daten
-* Übertragbarkeit der Daten
-* Wiederruf und Widerspruch zur Datenverarbeitung
-* Einschränkung
+Ohne die Pflichtangaben im Antrag können wir Sie nicht aufnehmen. Für diese Verarbeitungen brauchen wir keine Einwilligung.
 
-Wenn sie vermuten, dass im Zuge der Verarbeitung Ihrer Daten Verstöße gegen das Datenschutzrecht passiert sind, so haben Sie die Möglichkeit sich bei uns ( info (at) 4e-schwertberg (dot) at) oder der Datenschutzbehörde zu beschweren.
+### Wer bekommt Ihre Daten?
 
+- Unser Abrechnungsdienstleister LINZ STROM Vertrieb GmbH & Co KG erstellt in unserem Auftrag die Abrechnungen und Gutschriften.
+- Der Netzbetreiber Linz Netz GmbH ordnet Ihren Zählpunkt der Energiegemeinschaft zu und liefert die Viertelstundenwerte. Der Datenaustausch läuft über das Datenaustausch-System der österreichischen Energiewirtschaft (EDA).
+- Unsere Bank und Ihre Bank erhalten die Daten, die für Abbuchungen und Gutschriften nötig sind.
+- Unser E-Mail-Anbieter (siehe oben), wenn Sie uns per E-Mail schreiben.
+- Behörden, Gerichte oder unsere Steuerberatung, wenn wir gesetzlich dazu verpflichtet sind.
 
-## Sie erreichen uns unter folgenden Kontaktdaten:
+Im Verein sehen nur die Vorstandsmitglieder, die für Aufnahme und Abrechnung zuständig sind, sowie die Rechnungsprüfer:innen Ihre Daten. Wir verkaufen Ihre Daten nicht und verwenden sie nicht für Werbung.
 
-* Webseitenbetreiber: {{ site.data.config4e.contact.fullName }}
-* E-Mail: {{ site.data.config4e.contact.mailInfo }}
+{% comment %} TODO(Florian): Offizielle Firmenbezeichnung des Abrechnungsdienstleisters bestätigen (altes PDF: „LINZ STROM Vertrieb GmbH & Co KG“) und prüfen, ob ein Auftragsverarbeitungsvertrag besteht. Tritt LINZ STROM als eigene Verantwortliche auf, „in unserem Auftrag“ streichen. {% endcomment %}
 
-Quelle: [DSGVO Generator Österreich](https://www.rechtstexte-generator.at/dsgvo-generator-oesterreich/) in Kooperation mit [Umzugsfirma in Wien](https://deine-umzugsfirma.at/)
+### Wie lange speichern wir?
+
+- Abgelehnte oder zurückgezogene Anträge löschen wir spätestens sechs Wochen nach der Entscheidung.
+- Mitgliedsdaten speichern wir, solange Sie Mitglied sind. Nach Ihrem Austritt löschen wir sie, sobald die letzte Abrechnung erledigt ist.
+- Abrechnungs- und Buchhaltungsunterlagen müssen wir sieben Jahre aufbewahren (§ 132 Bundesabgabenordnung).
+
+{% comment %} TODO(Florian): Frist „sechs Wochen“ für abgelehnte Anträge bestätigen oder anpassen (auch im Hinweis im Online-Antrag). {% endcomment %}
+
+## Ihre Rechte
+
+Sie haben das Recht auf
+
+- Auskunft über Ihre Daten (Art. 15 DSGVO),
+- Berichtigung (Art. 16 DSGVO),
+- Löschung (Art. 17 DSGVO),
+- Einschränkung der Verarbeitung (Art. 18 DSGVO),
+- Datenübertragbarkeit (Art. 20 DSGVO) und
+- Widerspruch gegen Verarbeitungen, die auf unserem berechtigten Interesse beruhen (Art. 21 DSGVO).
+
+Schreiben Sie uns dazu einfach an {{ c.mailInfo }}.
+
+Wenn Sie meinen, dass wir Ihre Daten nicht richtig verarbeiten, können Sie sich bei der Österreichischen Datenschutzbehörde beschweren: Barichgasse 40–42, 1030 Wien, [www.dsb.gv.at](https://www.dsb.gv.at). Wir freuen uns aber, wenn Sie sich vorher bei uns melden.
