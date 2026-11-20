@@ -2,7 +2,6 @@
 layout: page
 title: Anmeldung Schritt für Schritt
 permalink: /mitglied-werden-detail/
-toc: true
 icon: fas fa-file-text
 ---
 
