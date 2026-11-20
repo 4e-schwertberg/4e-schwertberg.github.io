@@ -65,10 +65,11 @@ costs:
   price_seller_unit: "ct/kWh"
   price_last_change: "01.04.2026"
 
+  # Linz Netz 2026, NE 7 ohne Leistungsmessung: grid = Netznutzung 5,57 + Netzverlust 0,487; eeg grid = 4,01 (regional, -28 %) + 0,487; levies = Elektrizitätsabgabe 0,1 + Erneuerbaren-Förderbeitrag 0,583 (auf Netznutzung) + 0,037 (auf Netzverlust, laut Linz Netz Preisblatt) (ct/kWh netto)
   energy_chart:
     conventional:
       grid: 6.057
-      levies: 0.723
+      levies: 0.720
       taxPercent: 20.0
     eeg:
       regional:
