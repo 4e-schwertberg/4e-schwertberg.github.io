@@ -286,9 +286,9 @@ hidden: true
         <p class="f4e-section-label">Bankverbindung &amp; SEPA-Lastschriftmandat</p>
 
         <div class="f4e-info-box">
-          <strong>Mitgliedsbeitrag:</strong> € 12,50 pro Kalenderjahr und Mitglied (exkl. 20 % USt). Zahlungen/Gutschriften erfolgen ausschließlich mittels Bankeinzug.<br><br>
-          <strong>Gläubiger-Identifikationsnummer von 4E Schwertberg:</strong> AT70ZZZ00000077537<br>
-          4E Schwertberg – Erneuerbare Energie Effizient Einsetzen, Unterkoglbergstraße 1, 4311 Schwertberg. Die Mandatsreferenz wird Ihnen nach Annahme Ihres Antrags separat mitgeteilt.
+          <strong>Mitgliedsbeitrag:</strong> € {{ site.data.config4e.costs.membershipFeeNet }} zuzüglich {{ site.data.config4e.costs.vat }} USt (= € {{ site.data.config4e.costs.membershipFeeWithVAT }},00) pro Kalenderjahr und Zählpunkt. Zahlungen und Gutschriften laufen ausschließlich über Ihr Bankkonto.<br><br>
+          <strong>Gläubiger-Identifikationsnummer von 4E Schwertberg:</strong> {{ site.data.config4e.details.sepaCreditorId }}<br>
+          {{ site.data.config4e.contact.fullName }}, {{ site.data.config4e.contact.street }}, {{ site.data.config4e.contact.zip }} {{ site.data.config4e.contact.town }}. Die Mandatsreferenz teilen wir Ihnen nach Annahme Ihres Antrags mit.
         </div>
 
         <div class="f4e-field">
