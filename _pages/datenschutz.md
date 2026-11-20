@@ -49,7 +49,7 @@ Wir verlinken auf andere Websites, zum Beispiel auf das Portal der Linz Netz Gmb
 Wenn Sie uns schreiben oder anrufen, verwenden wir Ihre Angaben nur, um Ihre Anfrage zu beantworten.
 
 - Rechtsgrundlage: Geht es um eine Mitgliedschaft, ist das für die Mitgliedschaft notwendig (Art. 6 Abs. 1 lit. b DSGVO). Sonst beruht es auf unserem berechtigten Interesse, Anfragen zu beantworten (Art. 6 Abs. 1 lit. f DSGVO).
-- Speicherdauer: Wir löschen die Nachrichten sechs Monate nach Abschluss Ihrer Anfrage. Gehören sie zu Ihrer Mitgliedschaft, gilt die Speicherdauer im nächsten Abschnitt.
+- Speicherdauer: Wir bewahren Ihre Nachrichten drei Jahre nach Abschluss Ihrer Anfrage auf. So können wir später nachvollziehen, was wir Ihnen geantwortet haben. Ansprüche daraus verjähren in der Regel nach drei Jahren (§ 1489 ABGB). Rechtsgrundlage ist unser berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO). Gehören die Nachrichten zu Ihrer Mitgliedschaft oder Abrechnung, gilt die Speicherdauer im nächsten Abschnitt.
 - Unsere E-Mails liegen bei unserem E-Mail-Anbieter Zoho Corporation B.V., Beneluxlaan 4B, 3527 HT Utrecht, Niederlande. Er verarbeitet die Daten in unserem Auftrag in Rechenzentren in der EU.
 
 {% comment %} TODO(Florian): Bestätigen, dass die Postfächer bei Zoho liegen, das Konto in der EU-Region (zoho.eu) läuft und ein Auftragsverarbeitungsvertrag (DPA) abgeschlossen ist. Sonst Anbieter, Anschrift und Ort der Verarbeitung anpassen. {% endcomment %}
@@ -60,10 +60,12 @@ Wenn Sie uns schreiben oder anrufen, verwenden wir Ihre Angaben nur, um Ihre Anf
 
 Wenn Sie Mitglied werden möchten, verarbeiten wir:
 
-- Name bzw. Firmenname, Adresse, E-Mail-Adresse, Telefonnummer (freiwillig) und UID-Nummer (falls vorhanden)
-- Zählpunktnummer(n), Teilnahmefaktor sowie geschätzten Strombedarf bzw. Anlagengröße (freiwillig)
+- Name bzw. Firmenname, Adresse und E-Mail-Adresse
+- UID-Nummer, falls Sie eine haben
+- Zählpunktnummer(n) und Teilnahmefaktor
 - Ihre umsatzsteuerliche Einstufung
-- Bankverbindung (IBAN, BIC, Kreditinstitut, Kontoinhaber:in) und SEPA-Lastschriftmandat
+- Bankverbindung (IBAN, Kontoinhaber:in, BIC, Kreditinstitut) und SEPA-Lastschriftmandat
+- Freiwillige Angaben: Telefonnummer, geschätzter Strombedarf bzw. Anlagengröße
 - nach Ihrem Beitritt: Ihre Viertelstundenwerte (Strommengen je 15 Minuten), die Ihnen zugeteilte Strommenge aus der Gemeinschaft sowie Abrechnungs- und Zahlungsdaten
 
 ### Wie funktioniert das Online-Formular?
@@ -79,7 +81,7 @@ Ohne die Pflichtangaben im Antrag können wir Sie nicht aufnehmen. Für diese Ve
 
 ### Wer bekommt Ihre Daten?
 
-- Unser Abrechnungsdienstleister LINZ STROM Vertrieb GmbH & Co KG erstellt in unserem Auftrag die Abrechnungen und Gutschriften.
+- Unser Abrechnungsdienstleister erstellt in unserem Auftrag die Abrechnungen und Gutschriften. Er verarbeitet dafür Ihre Mitglieds-, Bank- und Energiedaten. Den Namen des Unternehmens nennen wir Ihnen gerne auf Anfrage.
 - Der Netzbetreiber Linz Netz GmbH ordnet Ihren Zählpunkt der Energiegemeinschaft zu und liefert die Viertelstundenwerte. Der Datenaustausch läuft über das Datenaustausch-System der österreichischen Energiewirtschaft (EDA).
 - Unsere Bank und Ihre Bank erhalten die Daten, die für Abbuchungen und Gutschriften nötig sind.
 - Unser E-Mail-Anbieter (siehe oben), wenn Sie uns per E-Mail schreiben.
@@ -87,15 +89,14 @@ Ohne die Pflichtangaben im Antrag können wir Sie nicht aufnehmen. Für diese Ve
 
 Im Verein sehen nur die Vorstandsmitglieder, die für Aufnahme und Abrechnung zuständig sind, sowie die Rechnungsprüfer:innen Ihre Daten. Wir verkaufen Ihre Daten nicht und verwenden sie nicht für Werbung.
 
-{% comment %} TODO(Florian): Offizielle Firmenbezeichnung des Abrechnungsdienstleisters bestätigen (altes PDF: „LINZ STROM Vertrieb GmbH & Co KG“) und prüfen, ob ein Auftragsverarbeitungsvertrag besteht. Tritt LINZ STROM als eigene Verantwortliche auf, „in unserem Auftrag“ streichen. {% endcomment %}
+{% comment %} TODO(Florian): Abrechnungsdienstleister bis 31.12.2026 LINZ STROM Vertrieb GmbH & Co KG, ab 1.1.2027 eegfaktura (Name nur auf Anfrage, Art. 13 Abs. 1 lit. e DSGVO). Für beide prüfen, ob ein Auftragsverarbeitungsvertrag besteht und ob die Daten in der EU verarbeitet werden; wenn ja, „in der EU“ ergänzen. Tritt ein Dienstleister als eigene Verantwortliche auf, „in unserem Auftrag“ streichen. {% endcomment %}
 
 ### Wie lange speichern wir?
 
-- Abgelehnte oder zurückgezogene Anträge löschen wir spätestens sechs Wochen nach der Entscheidung.
-- Mitgliedsdaten speichern wir, solange Sie Mitglied sind. Nach Ihrem Austritt löschen wir sie, sobald die letzte Abrechnung erledigt ist.
-- Abrechnungs- und Buchhaltungsunterlagen müssen wir sieben Jahre aufbewahren (§ 132 Bundesabgabenordnung).
-
-{% comment %} TODO(Florian): Frist „sechs Wochen“ für abgelehnte Anträge bestätigen oder anpassen (auch im Hinweis im Online-Antrag). {% endcomment %}
+- **Während Ihrer Mitgliedschaft** speichern wir Ihre Mitgliedsdaten.
+- **Nach Ihrem Austritt** bewahren wir alle Unterlagen zu Abrechnung und Buchhaltung sieben Jahre auf, gerechnet ab dem Ende des Jahres Ihrer letzten Abrechnung. Dazu gehören Ihr Aufnahmeantrag, das SEPA-Lastschriftmandat, Rechnungen und Gutschriften, Zahlungen, Ihre Viertelstundenwerte und die Ihnen zugeteilten Strommengen sowie E-Mails zu Ihrer Mitgliedschaft und Abrechnung. Dazu sind wir gesetzlich verpflichtet (§ 132 Bundesabgabenordnung, Art. 6 Abs. 1 lit. c DSGVO). In dieser Zeit verwenden wir die Unterlagen auch, um Ihre Fragen zur Abrechnung zu beantworten (Art. 6 Abs. 1 lit. f DSGVO). Braucht das Finanzamt sie für ein laufendes Verfahren, bewahren wir sie so lange auf, bis es abgeschlossen ist.
+- Angaben, die wir für die Abrechnung nicht brauchen (Telefonnummer, geschätzter Strombedarf, Anlagengröße), löschen wir nach Ihrer letzten Abrechnung.
+- **Abgelehnte oder zurückgezogene Anträge:** Ihre Bankdaten und das SEPA-Lastschriftmandat löschen wir spätestens einen Monat nach der Entscheidung. Den Antrag selbst und unseren Schriftverkehr dazu bewahren wir drei Jahre nach der Entscheidung auf, damit wir uns gegen mögliche Ansprüche wegen der Ablehnung verteidigen können. Diese verjähren nach drei Jahren (§ 1489 ABGB). Rechtsgrundlage ist unser berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO).
 
 ## Ihre Rechte
 
