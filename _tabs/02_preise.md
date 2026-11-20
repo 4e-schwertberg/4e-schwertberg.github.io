@@ -25,15 +25,22 @@ Abnahmetarif (Sie beziehen Strom aus der Gemeinschaft)
 
 Diese Tarife gelten seit {{ costs.price_last_change }}.
 
-## Grafische Darstellung Gesamtpreis
+## Was kostet eine kWh insgesamt? {#vergleich}
 
-Die folgende Grafik soll zeigen, woher die Einsparung der EEG kommt. Basis der Verrechnung ist der oben angegebene Energiepreis, sowie das [Preisblatt](https://www.linznetz.at//media/linz_netz_website/netz_dokumente/Strom-Netzentgelte-Abgaben-2026.pdf) der Linz Netz GmbH.
-
-Die angezeigten Preise sind die brutto _Gesamtkosten pro verrechneter kWh_. Darin enthalten sind Energiepreis, Abgaben und Steuern.
-
-Stand: Jänner 2026, Irrtümer vorbehalten!
+Die Grafik zeigt, wie sich der Preis für eine kWh zusammensetzt und woher die Ersparnis kommt. Grundlage sind unser Abnahmetarif und das [Preisblatt 2026 der Linz Netz GmbH](https://www.linznetz.at/media/linz_netz_website/netz_dokumente/Strom-Netzentgelte-Abgaben-2026.pdf) (Netzentgelte und Abgaben, gültig ab 1. Jänner 2026).
 
 {% include energy-chart.html %}
+
+**So haben wir gerechnet:**
+
+- Haushalt im Netz der Linz Netz GmbH (Netzebene 7, ohne Leistungsmessung), Regionalbereich, Werte 2026.
+- Alle Preise pro kWh und brutto, also inklusive 20 % Umsatzsteuer.
+- Für den herkömmlichen Strombezug setzen wir denselben Energiepreis an wie unseren Abnahmetarif. Ihr Stromlieferant kann mehr oder weniger verlangen.
+- Wir nehmen an, dass die ganze kWh aus der Gemeinschaft kommt. In Wirklichkeit deckt die Gemeinschaft nur einen Teil Ihres Verbrauchs ab. Für den Rest zahlen Sie die normalen Preise.
+- Bei den Abgaben rechnen wir mit 0,1 Cent Elektrizitätsabgabe pro kWh, wie sie 2026 für Haushalte gilt.
+- Fixe Kosten pro Jahr sind nicht enthalten, zum Beispiel Mitgliedsbeitrag, Messentgelt, Leistungspreis und Erneuerbaren-Förderpauschale.
+
+Irrtümer vorbehalten.
 
 ## Vorteile für Mitglieder {#vorteile}
 

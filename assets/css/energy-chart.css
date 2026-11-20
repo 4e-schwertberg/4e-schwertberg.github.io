@@ -2,7 +2,8 @@
   display: flex;
   gap: 50px;
   align-items: flex-start;
-  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+  row-gap: 24px;
 }
 
 .energy-chart {
@@ -83,7 +84,12 @@
   border-radius: 2px;
 }
 
-.energy { background: #8FBFA3; }
-.grid   { background: #7EA6E0; }
-.taxes  { background: #E7B47A; }
-.vat    { background: #BFA2DB; }
+.energy-table { margin-top: 1.5rem; }
+.energy-table td { text-align: right; font-variant-numeric: tabular-nums; }
+@media (max-width: 576px) {
+  .energy-chart { gap: 24px; }
+  .bar { width: 90px; }
+  .legend { min-width: 0; }
+  .table-wrapper > .energy-table thead th,
+  .table-wrapper > .energy-table tbody tr td { white-space: normal; padding: .4rem .5rem; }
+}
