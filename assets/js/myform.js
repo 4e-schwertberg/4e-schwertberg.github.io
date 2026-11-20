@@ -63,7 +63,7 @@
   applyRolle();
 
   /* ============================================================ */
-  /* PDF generation (pdf-lib) â€” fills the form template locally   */
+  /* PDF generation (pdf-lib) — fills the form template locally   */
   /* in the browser; no server involved.                          */
   /* ============================================================ */
 
@@ -95,7 +95,7 @@
       try { pdfForm.getCheckBox(name).check(); } catch(e){}
     }
 
-    // Bezieher page (page 0) â€” always filled
+    // Bezieher page (page 0) — always filled
     setText('txtBezieherVorname',           vorname);
     setText('txtBezieherNachname',          nachname);
     setText('txtBezieherAdresse',           fullAddress);
@@ -109,7 +109,7 @@
     setText('txtBezieherKontoIban',         data.IBAN);
     if (data.Vereinsstatuten_Erhalt) checkField('chkBezieherStatuten');
 
-    // Einspeiser page (page 1) â€” only for combined membership
+    // Einspeiser page (page 1) — only for combined membership
     if (isBeidemitglied){
       setText('txtEinspeiserVorname',           vorname);
       setText('txtEinspeiserNachname',          nachname);
@@ -128,14 +128,14 @@
     // VAT status: one checkbox field per page
     var ust = data.USt_Behandlung || '';
     var UST_BEZIEHER = {
-      'Privater bzw. Kleinunternehmer (< â‚¬ 55.000,-- Umsatz p.a.)': 'chkBezieherSteuerKleinunternehmer',
+      'Privater bzw. Kleinunternehmer (< € 55.000,-- Umsatz p.a.)': 'chkBezieherSteuerKleinunternehmer',
       'Unternehmer (20% USt)':                                       'chkBezieherSteuerUnternehmer',
       'pauschalierter Landwirt (13% USt)':                           'chkBezieherSteuerLandwirt',
       'Gemeinde - Betrieb gewerblicher Art':                         'chkBezieherSteuerGemeindeGewerbe',
       'Gemeinde - Kein Betrieb gewerblicher Art':                    'chkBezieherSteuerGemeindeKeinGewerbe'
     };
     var UST_EINSPEISER = {
-      'Privater bzw. Kleinunternehmer (< â‚¬ 55.000,-- Umsatz p.a.)': 'chkEinspeiserSteuerKleinunternehmer',
+      'Privater bzw. Kleinunternehmer (< € 55.000,-- Umsatz p.a.)': 'chkEinspeiserSteuerKleinunternehmer',
       'Unternehmer (20% USt)':                                       'chkEinspeiserSteuerUnternehmer',
       'pauschalierter Landwirt (13% USt)':                           'chkEinspeiserSteuerLandwirt',
       'Gemeinde - Betrieb gewerblicher Art':                         'chkEinspeiserSteuerGemeindeGewerbe',
@@ -209,7 +209,7 @@
     var btn = this;
     var originalText = btn.textContent;
     btn.disabled = true;
-    btn.textContent = 'PDF wird erstellt â€¦';
+    btn.textContent = 'PDF wird erstellt …';
     msg.className = 'f4e-msg';
     Promise.allSettled([generatePdf(), generateSepa()])
       .then(function(results){
