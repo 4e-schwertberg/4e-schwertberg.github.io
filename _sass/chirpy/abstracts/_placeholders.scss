@@ -1,0 +1,90 @@
+@use 'variables' as v;
+@use 'mixins' as mx;
+
+%heading {
+  color: var(--heading-color);
+  font-weight: 400;
+  font-family: v.$font-family-heading;
+  scroll-margin-top: 3.5rem;
+}
+
+%anchor {
+  .anchor {
+    font-size: 80%;
+  }
+
+  @media (hover: hover) {
+    .anchor {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.25s ease-in, visibility 0s ease-in 0.25s;
+    }
+
+    &:hover {
+      .anchor {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.25s ease-in, visibility 0s ease-in 0s;
+      }
+    }
+  }
+}
+
+%table-cell {
+  padding: 0.4rem 1rem;
+  font-size: 95%;
+  white-space: nowrap;
+}
+
+%link-hover {
+  color: #d2603a !important;
+  border-bottom: 1px solid #d2603a;
+  text-decoration: none;
+}
+
+%link-color {
+  color: var(--link-color);
+}
+
+%link-underline {
+  border-bottom: 1px solid var(--link-underline-color);
+}
+
+%clickable-transition {
+  transition: all 0.3s ease-in-out;
+}
+
+%no-cursor {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+%rounded {
+  border-radius: v.$radius-lg;
+}
+
+%sidebar-links {
+  color: var(--sidebar-muted-color);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+%text-highlight {
+  color: var(--text-muted-highlight-color);
+  font-weight: 600;
+}
+
+%text-xs {
+  font-size: 0.8rem;
+}
+
+%btn-color {
+  button i {
+    color: #999999;
+  }
+}
+

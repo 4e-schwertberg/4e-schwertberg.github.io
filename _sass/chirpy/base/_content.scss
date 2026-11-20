@@ -1,0 +1,45 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/breakpoints' as bp;
+
+h2,
+h3,
+h4 {
+  @include bp.xl {
+    scroll-margin-top: 2rem;
+  }
+}
+
+/* Inline code (kramdown emits `code.highlighter-rouge`) */
+.highlighter-rouge {
+  color: var(--highlighter-rouge-color);
+  margin-top: 0.5rem;
+  margin-bottom: 1.2em; /* overrides Bootstrap's inline-code style */
+}
+
+code {
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  color: var(--code-color);
+
+  &.highlighter-rouge {
+    font-size: v.$code-font-size;
+    padding: 3px 5px;
+    overflow-wrap: break-word;
+    border-radius: v.$radius-sm;
+    background-color: var(--inline-code-bg);
+  }
+
+  a > &.highlighter-rouge {
+    padding-bottom: 0; /* show link's underline */
+    color: inherit;
+  }
+
+  a:hover > &.highlighter-rouge {
+    border-bottom: none;
+  }
+
+  blockquote & {
+    color: inherit;
+  }
+}
