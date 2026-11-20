@@ -43,8 +43,10 @@ hidden: true
   .f4e-head p{margin:10px 0 0; font-size:14px; line-height:1.5; color:#E3F2EE; max-width:480px;}
   .f4e-body{padding:28px 32px 32px;}
 
-  .f4e-segment{display:flex; gap:8px; margin-bottom:22px; background:var(--f4e-bg-soft); border:1px solid var(--f4e-border); border-radius:10px; padding:5px;}
-  .f4e-segment input{position:absolute; opacity:0; pointer-events:none;}
+  .f4e-segment{min-width:0; margin:0 0 22px; display:flex; gap:8px; background:var(--f4e-bg-soft); border:1px solid var(--f4e-border); border-radius:10px; padding:5px;}
+  .f4e-segment input{position:absolute; opacity:0; width:1px; height:1px;}
+  .f4e-segment input:focus-visible + label{outline:3px solid var(--f4e-turquoise); outline-offset:2px;}
+  .f4e-sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;}
   .f4e-segment label{flex:1; text-align:center; padding:11px 10px; border-radius:7px; font-size:14px; font-weight:600; cursor:pointer; color:var(--f4e-muted); transition:background .15s, color .15s;}
   .f4e-segment input:checked + label{background:var(--f4e-green); color:#fff;}
   .f4e-segment label .f4e-segment-sub{display:block; font-weight:400; font-size:11.5px; margin-top:2px; opacity:.85;}
@@ -72,7 +74,7 @@ hidden: true
   .f4e-btn-secondary{flex-shrink:0; padding:10px 14px; font-size:13px; font-weight:600; border:1px solid var(--f4e-turquoise); color:var(--f4e-turquoise-dark); background:#fff; border-radius:8px; cursor:pointer; white-space:nowrap; transition:background .15s;}
   .f4e-btn-secondary:hover{background:var(--f4e-turquoise-tint);}
 
-  .f4e-radio-list{display:flex; flex-direction:column; gap:8px;}
+  .f4e-radio-list{display:flex; flex-direction:column; gap:8px; border:0; padding:0; margin:0; min-width:0;}
   .f4e-radio-item{display:flex; gap:10px; align-items:flex-start; padding:11px 12px; border:1px solid var(--f4e-border); border-radius:8px; background:var(--f4e-bg-soft); cursor:pointer;}
   .f4e-radio-item input{margin-top:2px; accent-color:var(--f4e-green); flex-shrink:0; cursor:pointer;}
   .f4e-radio-item label{font-size:14px; cursor:pointer;}
@@ -125,21 +127,23 @@ hidden: true
     </svg>
     <p class="f4e-eyebrow">Aufnahmeantrag</p>
     <h2>Mitglied werden bei 4E Schwertberg</h2>
-    <p>Bitte füllen Sie alle Abschnitte vollständig aus.</p>
+    <p>Füllen Sie das Formular aus. Am Ende erhalten Sie zwei PDFs, die Sie uns schicken.</p>
   </div>
 
   <div class="f4e-body">
     <form id="f4e-form">
+      <p class="f4e-hint" style="margin-top:0;">Alle Felder ohne den Zusatz „optional“ müssen ausgefüllt werden.</p>
       <!-- Personal details -->
       <div class="f4e-section">
         <p class="f4e-section-label">Persönliche Angaben</p>
 
-        <div class="f4e-segment">
+        <fieldset class="f4e-segment">
+          <legend class="f4e-sr-only">Antragsteller:in</legend>
           <input type="radio" id="typ-person" name="Antragstellertyp" value="Person" checked>
           <label for="typ-person">Privatperson</label>
           <input type="radio" id="typ-firma" name="Antragstellertyp" value="Firma">
           <label for="typ-firma">Firma</label>
-        </div>
+        </fieldset>
 
         <div id="block-person">
           <div class="f4e-row">
@@ -197,12 +201,13 @@ hidden: true
       <!-- Membership type -->
       <div class="f4e-section">
         <p class="f4e-section-label">Art der Teilnahme</p>
-        <div class="f4e-segment">
+        <fieldset class="f4e-segment">
+          <legend class="f4e-sr-only">Art der Teilnahme</legend>
           <input type="radio" id="rolle-bezieher" name="Rolle" value="Bezieher" checked>
           <label for="rolle-bezieher">Bezieher</label>
           <input type="radio" id="rolle-bezieher-einspeiser" name="Rolle" value="Bezieher und Einspeiser">
           <label for="rolle-bezieher-einspeiser">Bezieher und Einspeiser</label>
-        </div>
+        </fieldset>
       </div>
 
       <!-- Meter point -->
@@ -217,13 +222,13 @@ hidden: true
 
         <div class="f4e-field">
           <label for="f-teilnahmefaktor-bezieher">Teilnahmefaktor Bezieher (%)</label>
-          <input type="number" id="f-teilnahmefaktor-bezieher" name="Teilnahmefaktor_Bezieher" min="1" max="100" step="1" value="100" required>
-          <p class="f4e-hint">100 % bedeuten, Sie beziehen keine Energie aus einer anderen Energiegemeinschaft.</p>
+          <input type="number" id="f-teilnahmefaktor-bezieher" name="Teilnahmefaktor_Bezieher" min="1" max="100" step="1" value="100" aria-describedby="hint-teilnahmefaktor-bezieher" required>
+          <p class="f4e-hint" id="hint-teilnahmefaktor-bezieher">Normalerweise 100 %. Weniger nur, wenn Sie auch von einer anderen Energiegemeinschaft Strom beziehen.</p>
         </div>
         <div class="f4e-field" id="block-strombedarf">
           <label for="f-strombedarf">Strombedarf pro Jahr <span style="font-weight:400;color:var(--f4e-muted);">(optional, geschätzt, kWh)</span></label>
-          <input type="number" id="f-strombedarf" name="Strombedarf_kWh" min="0" step="1">
-          <p class="f4e-hint" id="hint-preis-kaeufer">Zum <a href="/preise">Preis</a> gem. Vereinsbeschluss von erneuerbarer Energie gem. dem Vereinszweck.</p>
+          <input type="number" id="f-strombedarf" name="Strombedarf_kWh" min="0" step="1" aria-describedby="hint-strombedarf">
+          <p class="f4e-hint" id="hint-strombedarf">Ihre Angabe hilft uns bei der Planung.</p>
         </div>
 
         <div class="f4e-field" id="block-zaehlpunkt-einspeiser" hidden>
@@ -233,14 +238,14 @@ hidden: true
         </div>
         <div class="f4e-field" id="block-teilnahmefaktor-einspeiser" hidden>
           <label for="f-teilnahmefaktor-einspeiser">Teilnahmefaktor Einspeiser (%)</label>
-          <input type="number" id="f-teilnahmefaktor-einspeiser" name="Teilnahmefaktor_Einspeiser" min="1" max="100" step="1" value="100">
-          <p class="f4e-hint">100 % bedeuten, Sie verkaufen keine Energie an eine andere Energiegemeinschaft.</p>
+          <input type="number" id="f-teilnahmefaktor-einspeiser" name="Teilnahmefaktor_Einspeiser" min="1" max="100" step="1" value="100" aria-describedby="hint-teilnahmefaktor-einspeiser">
+          <p class="f4e-hint" id="hint-teilnahmefaktor-einspeiser">Normalerweise 100 %. Weniger nur, wenn Sie auch an eine andere Energiegemeinschaft Strom liefern.</p>
         </div>
 
         <div class="f4e-field" id="block-anlagengroesse" hidden>
           <label for="f-anlagengroesse">Anlagengröße (kWp)</label>
-          <input type="number" id="f-anlagengroesse" name="Anlagengroesse_kWp" min="0" step="0.1">
-          <p class="f4e-hint">Zum <a href="/preise">Preis</a> gem. Vereinsbeschluss von erneuerbarer Energie gem. dem Vereinszweck.</p>
+          <input type="number" id="f-anlagengroesse" name="Anlagengroesse_kWp" min="0" step="0.1" aria-describedby="hint-anlagengroesse">
+          <p class="f4e-hint" id="hint-anlagengroesse">Ihre Angabe hilft uns bei der Planung.</p>
         </div>
       </div>
 
@@ -248,7 +253,8 @@ hidden: true
       <div class="f4e-section">
         <p class="f4e-section-label">USt-steuerliche Behandlung, ich bin ein(e)</p>
 
-        <div class="f4e-radio-list" id="ust-radio-list">
+        <fieldset class="f4e-radio-list" id="ust-radio-list">
+          <legend class="f4e-sr-only">USt-steuerliche Behandlung</legend>
           <div class="f4e-radio-item">
             <input type="radio" id="ust-1" name="USt_Behandlung" value="Privater bzw. Kleinunternehmer (< € 55.000,-- Umsatz p.a.)" required>
             <label for="ust-1">Privater bzw. Kleinunternehmer (&lt; € 55.000,-- Umsatz p.a.)</label>
@@ -269,7 +275,7 @@ hidden: true
             <input type="radio" id="ust-5" name="USt_Behandlung" value="Gemeinde - Kein Betrieb gewerblicher Art">
             <label for="ust-5">Gemeinde – Kein Betrieb gewerblicher Art</label>
           </div>
-        </div>
+        </fieldset>
 
         <div class="f4e-check" style="margin-top:16px;">
           <input type="checkbox" id="steuer-confirm" name="Steuerliche_Bestaetigung" value="Ja" required>
