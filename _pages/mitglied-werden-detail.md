@@ -41,7 +41,7 @@ teilnehmen wollen, dann gilt für Sie zusätzlich zu den obigen Voraussetzungen 
 * Sie benötigen eine aufrechte und gültige Stromliefervereinbarung mit einem Abnehmer Ihrer Wahl.
   Die Teilnahme an der Energiegemeinschaft ist eine Ergänzung dazu und ersetzt diesen nicht.
 
-Bitte beachten Sie dazu unsere Mitgliedschafts-Arten. Diese finden Sie [hier](/infos).
+Die Arten der Mitgliedschaft finden Sie unter [Mitglied werden](/mitglied-werden/#arten-der-mitgliedschaft).
 
 ### Unternehmer
 
