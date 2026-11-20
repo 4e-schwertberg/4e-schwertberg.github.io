@@ -78,11 +78,18 @@ costs:
         taxPercent: 20.0
 
 # Formulare und verlinkte Dokumente
+# download: file name the browser saves the PDF under (the URL stays the same so old links keep working)
 form_buyer:
   url: "/assets/docs/Aufnahmeantrag-Kaeufer.pdf"
   text: "Anmeldeformular Bezieher"
+  download: "4e-Aufnahmeantrag-Bezieher.pdf"
 form_buyer_seller_url:
   url: "/assets/docs/Aufnahmeantrag-Einspeiser.pdf"
   text: "Anmeldeformular Einspeiser"
+  download: "4e-Aufnahmeantrag-Einspeiser.pdf"
+form_sepa:
+  url: "/assets/docs/SEPA-Lastschriftmandat-template.pdf"
+  text: "SEPA-Lastschriftmandat"
+  download: "4e-SEPA-Lastschriftmandat.pdf"
 statuten:
   url: "/assets/docs/Vereinsstatuten_4E_Schwertberg.pdf"

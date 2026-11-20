@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Mitglied werden - Details
+title: Anmeldung Schritt für Schritt
 permalink: /mitglied-werden-detail/
 toc: true
 icon: fas fa-file-text
 ---
+
+Die Kurzfassung mit Checkliste finden Sie unter [Mitglied werden](/mitglied-werden/).
 
 > Derzeit ist eine Teilnahme aus technischen Gründen nur im Versorgungsbereich der Linz Netz GmbH möglich. 4E ist eine regionale Energiegemeinschaft in der **regionalen Zone EGR00047**. Sie können Ihre Zählpunktnummer [hier](https://www.linznetz.at/portal/de/home/online_services/versorgungsbereichsabfrage/grafischer_versorgungsbereich.html#) vorab prüfen.
 {: .prompt-info }
@@ -69,10 +71,11 @@ Verrechnung von Energie innerhalb der Energiegemeinschaft!
 
 ### Ausfüllen des Anmeldeformulars
 
-Unsere Anmeldeformulare finden Sie nachfolgend verlinkt zum Download.
+Am einfachsten geht es mit unserem [Online-Antrag](/aufnahmeantrag/): Er erstellt den Aufnahmeantrag und das SEPA-Lastschriftmandat als PDF. Wenn Sie lieber Papier verwenden, drucken Sie das passende Formular und das SEPA-Lastschriftmandat aus:
 
-- [{{ site.data.config4e.form_buyer.text }}]({{ site.data.config4e.form_buyer.url }})
-- [{{ site.data.config4e.form_buyer_seller_url.text }}]({{ site.data.config4e.form_buyer_seller_url.url }})
+- [{{ site.data.config4e.form_buyer.text }}]({{ site.data.config4e.form_buyer.url }}){: download="{{ site.data.config4e.form_buyer.download }}"}
+- [{{ site.data.config4e.form_buyer_seller_url.text }}]({{ site.data.config4e.form_buyer_seller_url.url }}){: download="{{ site.data.config4e.form_buyer_seller_url.download }}"}
+- [{{ site.data.config4e.form_sepa.text }}]({{ site.data.config4e.form_sepa.url }}){: download="{{ site.data.config4e.form_sepa.download }}"}
 
 Bitte füllen Sie das Formular gewissenhaft, vollständig und wahrheitsgemäß aus. Wir möchten ausdrücklich darauf
 hinweisen, dass Sie für die Richtigkeit der Angaben verantwortlich sind und
@@ -80,12 +83,9 @@ falsche Angaben - vor allem zur steuerlichen Situation - zu rechtlichen Konseque
 
 ### Übermittlung des Anmeldeformulars
 
-Das vollständig ausgefüllte und geprüfte Formular übermitteln Sie bitte via E-Mail an `{{ site.data.config4e.contact.mailRegister }}`.
-Wir bitten um Verständnis, dass wir Anmeldungen ausschließlich an diese Mail-Adresse akzeptieren.
+Schicken Sie den vollständig ausgefüllten Aufnahmeantrag und das unterschriebene SEPA-Lastschriftmandat per E-Mail an `{{ site.data.config4e.contact.mailRegister }}`. Oder werfen Sie beides in unseren Briefkasten: {{ site.data.config4e.contact.street }}, {{ site.data.config4e.contact.zip }} {{ site.data.config4e.contact.town }}.
 
-Alternativ werfen Sie das ausgefüllte Formular bitte in unseren Postkasten in der {{ site.data.config4e.contact.street }} ein.
-
-Bitte übermitteln Sie Ihre Anmeldung ausschließlich wie hier beschrieben, um verloren gegangenen Anmeldungen vorzubeugen.
+Bitte verwenden Sie nur diese beiden Wege. Anmeldungen an andere E-Mail-Adressen können verloren gehen.
 
 ### Antragsprüfung
 

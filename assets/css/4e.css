@@ -138,4 +138,20 @@
   border-color: #80c433;
 }
 
+/* Checklist on /mitglied-werden/: check icons instead of tick boxes. #4a8f22 reaches >= 3.7:1 on the light and dark page background. */
+ul.checklist {
+  list-style: none;
+  padding-left: 0;
+}
+ul.checklist > li {
+  position: relative;
+  padding-left: 1.75rem;
+  margin: 0.5rem 0;
+}
+ul.checklist > li > .fa-check:first-child {
+  position: absolute;
+  left: 0;
+  top: 0.3em;
+  color: #4a8f22;
+}
 /*# sourceMappingURL=style-2025-10-25-23-55-02-420_button.css.map */
