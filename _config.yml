@@ -137,16 +137,6 @@ assets:
     # only works if `assets.self_host.enabled` is 'true'
     env: production # [development | production]
 
-pwa:
-  enabled: true # The option for PWA feature (installable)
-  cache:
-    enabled: false # The option for PWA offline cache
-    # Paths defined here will be excluded from the PWA cache.
-    # Usually its value is the `baseurl` of another website that
-    # shares the same domain name as the current website.
-    deny_paths:
-      # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
-
 paginate: 10
 
 # The base URL of your site
@@ -194,14 +184,6 @@ defaults:
     values:
       layout: page
       permalink: /:title/
-  - scope:
-      path: assets/img/favicons
-    values:
-      swcache: true
-  - scope:
-      path: assets/js/dist
-    values:
-      swcache: true
 
 sass:
   style: compressed
