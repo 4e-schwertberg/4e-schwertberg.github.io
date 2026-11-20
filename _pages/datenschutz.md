@@ -2,8 +2,6 @@
 layout: page
 title: Datenschutz
 permalink: /datenschutz/
-icon: fas fa-info-circle
-order: 7
 ---
 
 {% assign c = site.data.config4e.contact %}

@@ -7,8 +7,8 @@ permalink: /kontakt/
 
 Sie erreichen uns unter:
 
-- <i class="fas fa-envelope"></i> {{ site.data.config4e.contact.mailInfo }}
+- <i class="fas fa-envelope"></i> {{ site.data.config4e.contact.mailInfo }} – für allgemeine Fragen
+- <i class="fas fa-envelope"></i> {{ site.data.config4e.contact.mailRegister }} – für Anmeldungen
 - <i class="fas fa-phone"></i> {{ site.data.config4e.contact.phoneNumber }}
 
-
-<!--  https://mdbootstrap.com/docs/standard/extended/registration/  -->
+**Post und Briefkasten:** {{ site.data.config4e.contact.fullName }}, {{ site.data.config4e.contact.street }}, {{ site.data.config4e.contact.zip }} {{ site.data.config4e.contact.town }}

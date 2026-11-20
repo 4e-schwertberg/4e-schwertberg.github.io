@@ -2,8 +2,6 @@
 layout: page
 title: Impressum
 permalink: /impressum/
-icon: fas fa-info-circle
-order: 8
 ---
 
 **Medieninhaber**
