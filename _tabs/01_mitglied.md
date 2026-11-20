@@ -36,7 +36,7 @@ Sie füllen lieber Papier aus? Drucken Sie das passende Formular aus – [{{ sit
 1. **Antrag senden:** Unterschreiben Sie den Aufnahmeantrag und das SEPA-Lastschriftmandat. Schicken Sie beides per E-Mail an **[{{ site.data.config4e.contact.mailRegister }}](mailto:{{ site.data.config4e.contact.mailRegister }})** oder werfen Sie es in unseren Briefkasten ({{ site.data.config4e.contact.street }}, {{ site.data.config4e.contact.zip }} {{ site.data.config4e.contact.town }}). Mit dem Online-Antrag erhalten Sie beide Dokumente als PDF. Beim Papierformular drucken Sie das SEPA-Lastschriftmandat zusätzlich aus (siehe oben).
 2. **Viertelstundenwerte aktivieren:** Melden Sie sich im [Kundenportal der Linz Netz](https://www.linznetz.at/) an und aktivieren Sie unter „Online-Services – Meine Verbräuche“ die Viertelstundenwerte. Das können Sie schon erledigen, während wir Ihren Antrag prüfen.
 3. **Wir prüfen Ihren Antrag** und melden uns per E-Mail.
-4. **Vollmacht erteilen:** Sobald Ihr Zählpunkt der Gemeinschaft zugeordnet ist, bekommen Sie eine E-Mail. Stimmen Sie darin zu, dass Ihre Viertelstundenwerte für die Abrechnung weitergegeben werden. <i class="fas fa-exclamation-circle"></i> Erst ab dieser Zustimmung wird abgerechnet.
+4. **Vollmacht erteilen:** Sobald Ihr Zählpunkt der Gemeinschaft zugeordnet ist, bekommen Sie eine E-Mail. Stimmen Sie darin zu, dass die Linz Netz GmbH Ihre Viertelstundenwerte an uns und unseren Abrechnungsdienstleister weitergibt. <i class="fas fa-exclamation-circle"></i> Erst ab dieser Zustimmung wird abgerechnet.
 
 **So können Sie unterschreiben:**
 
@@ -59,7 +59,7 @@ Teilnahmefaktor
 : Welcher Anteil Ihres Zählpunkts der 4E zugeordnet ist. Normalerweise 100 %. Weniger nur, wenn Sie gleichzeitig bei einer anderen Energiegemeinschaft mitmachen.
 
 Vollmacht
-: Ihre Zustimmung, dass die Linz Netz GmbH Ihre Viertelstundenwerte an unseren Abrechnungsdienstleister weitergibt. Ohne diese Zustimmung können wir nicht abrechnen.
+: Ihre Zustimmung, dass die Linz Netz GmbH Ihre Viertelstundenwerte an uns und unseren Abrechnungsdienstleister weitergibt. Ohne diese Zustimmung können wir nicht abrechnen.
 
 ## Sie brauchen Hilfe?
 Rufen Sie uns an oder schreiben Sie uns:

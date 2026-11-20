@@ -14,9 +14,6 @@ Die Kurzfassung mit Checkliste finden Sie unter [Mitglied werden](/mitglied-werd
 > Kündigen Sie **keinesfalls** Ihre bestehenden Verträge (Lieferung und Bezug). Der Vertrag mit 4E Schwertberg ist eine Ergänzung zu diesen und ersetzt sie nicht. Siehe Kapitel Voraussetzungen.
 {: .prompt-danger }
 
-> Wenn Sie noch weitere Fragen haben, erreichen Sie uns telefonisch unter <i class="fas fa-phone"></i> {{ site.data.config4e.contact.phoneNumber }}
-{: .prompt-tip }
-
 Wir freuen uns sehr, dass Sie sich für eine Teilnahme an der Energiegemeinschaft 4E Schwertberg interessieren.
 Bitte beachten Sie, dass dafür einige Voraussetzungen erfüllt sein müssen und der Ablauf der Anmeldung
 teilweise gesetzliche Vorgaben erfüllen muss.
@@ -27,7 +24,7 @@ Wir wollen Sie beim Anmeldeprozess so gut wie möglich begleiten. Deshalb erklä
 
 Bevor Sie mit der Anmeldung fortfahren, prüfen Sie bitte, ob alle notwendigen Voraussetzungen zur Teilnahme an einer Energiegemeinschaft Ihrerseits erfüllt sind.
 
-* Sie benötigen einen intelligenten Stromzähler, ein sogenanntes [Smartmeter][smartmeter]. Basis der Verrechnung sind Viertelstundenwerte.
+* Sie benötigen einen intelligenten Stromzähler, einen sogenannten Smart Meter. Basis der Verrechnung sind Viertelstundenwerte.
   Der Zähler muss in der Lage sein, diese aufzuzeichnen und übertragen zu können. Leider kann dies nicht jeder Smartmeter. Ihr Netzbetreiber gibt Ihnen Auskunft darüber.
   
   Mit einem alten Zähler (mit Drehscheibe) ist aus technischen Gründen eine Teilnahme nicht möglich.
@@ -50,8 +47,6 @@ Die Arten der Mitgliedschaft finden Sie unter [Mitglied werden](/mitglied-werden
 Der Gesetzgeber erlaubt Klein- und Mittelbetrieben, deren Hauptzweck _nicht_ der Energiehandel ist,
 die Teilnahme an einer Energiegemeinschaft.
 
-[smartmeter]: https://www.e-control.at/konsumenten/smart-meter
-
 ## Der Ablauf
 
 Der Ablauf der Anmeldung ist wie folgt:
@@ -62,8 +57,8 @@ Der Ablauf der Anmeldung ist wie folgt:
 * Sie werden via E-Mail über den Status Ihres Antrags informiert.
 * Registrierung am Portal des Netzbetreibers (Linz Netz GmbH)
 * Aktivierung der Viertelstundenwerte Übermittlung
-* Unser Abrechnungsdienstleister (LINZ STROM Vertrieb GmbH & Co KG) kontaktiert Sie per E-Mail, sobald er Ihren Zählpunkt der Energiegemeinschaft zugeordnet hat
-* Erteilen der Genehmigung zur Übermittlung der Viertelstundenwerte von der Linz Netz GmbH an unseren Abrechnungsdienstleister
+* Unser Abrechnungsdienstleister kontaktiert Sie per E-Mail, sobald er Ihren Zählpunkt der Energiegemeinschaft zugeordnet hat
+* Erteilen der Genehmigung zur Übermittlung der Viertelstundenwerte von der Linz Netz GmbH an uns und unseren Abrechnungsdienstleister
 
 > Erst **nach** erteilter Genehmigung zur Übermittlung der Viertelstundenwerte beginnt eine
 Verrechnung von Energie innerhalb der Energiegemeinschaft!
@@ -132,10 +127,10 @@ Dort finden Sie auch einen [Leitfaden zur Freischaltung][linznetz-leitfaden], de
 
 Dies ist der letzte Schritt zu Ihrer Teilnahme bei der Energiegemeinschaft 4E Schwertberg.
 
-Unser Abrechnungsdienstleister (LINZ STROM Vertrieb GmbH & Co KG) wird Ihren Zählpunkt nach Freigabe Ihrer Mitgliedschaft durch den 
-Vorstand der Energiegemeinschaft 4E Schwertberg zuordnen. Nach erfolgreicher Zuordnung wird Sie unser 
+Unser Abrechnungsdienstleister wird Ihren Zählpunkt nach Freigabe Ihrer Mitgliedschaft durch den
+Vorstand der Energiegemeinschaft 4E Schwertberg zuordnen. Nach erfolgreicher Zuordnung wird Sie unser
 Abrechnungsdienstleister via E-Mail kontaktieren, da aufgrund der aktuellen Gesetzeslage eine explizite Freigabe
-der Übermittlung der Viertelstundenwerte von der _Linz Netz GmbH_ an unseren Abrechnungsdienstleister notwendig ist.
+der Übermittlung der Viertelstundenwerte von der _Linz Netz GmbH_ an uns und unseren Abrechnungsdienstleister notwendig ist.
 
 Eine Anleitung zur Vorgangsweise finden Sie im [Leitfaden zur Vollmachtserteilung](https://www.linznetz.at//media/linz_netz_website/netz_dokumente/leitfaden-ccm.pdf).
 Sie sollten die Übermittlung der
