@@ -25,8 +25,8 @@ UID: {{ site.data.config4e.details.uid }}
 {% for m in site.data.config4e.contact.boardMember %}
 <li>{{ m.role }}: {{ m.firstName }} {{ m.lastName }}</li>
 {% endfor %}
-{% endif %}
 </ul>
+{% endif %}
 
 **Vereinsstatuten**
 : [Vereinsstatuten_4E_Schwertberg.pdf]({{ site.data.config4e.statuten.url }})
@@ -45,9 +45,8 @@ sozialgemeinschaftlicher Zielsetzungen (§ 79 Abs 2 EAG):
 - Speicherung von Energie
 - Energiedienstleistungen, insbesondere auch Energieberatungen zu den Themen "Energiesparen" und "Energieeffizienz"
 
-**Angaben zur Streitbeilegung**
-: Verbraucher haben die Möglichkeit, Beschwerden an die Online-Streitbelegungsplattform der EU zu richten: [https://ec.europa.eu/odr](https://ec.europa.eu/odr).
-Sie können allfällige Beschwerde auch an die oben angegebene E-Mai-Adresse richten.
+**Beschwerden**
+: Beschwerden richten Sie bitte an die oben angegebene E-Mail-Adresse.
 
 **Haftungshinweis**
 : Trotz sorgfältiger inhaltlicher Kontrolle können wir keine Haftung für die Inhalte externer Links übernehmen. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich. 
