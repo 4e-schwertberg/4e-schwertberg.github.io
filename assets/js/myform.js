@@ -67,6 +67,32 @@
   zpBezieher.addEventListener('input', updateZaehlpunktValidity);
   zpEinspeiser.addEventListener('input', updateZaehlpunktValidity);
 
+  /* --- IBAN validation (ISO 13616 mod-97 checksum) --- */
+  var ibanInput = document.getElementById('f-iban');
+
+  function compactUpper(raw){ return raw.replace(/[\s\-]/g, '').toUpperCase(); }
+
+  function isValidIban(raw){
+    var v = compactUpper(raw);
+    if (!/^[A-Z]{2}\d{2}[A-Z0-9]{11,30}$/.test(v)) return false;
+    if (v.slice(0, 2) === 'AT' && v.length !== 20) return false;
+    var r = v.slice(4) + v.slice(0, 4), rem = 0;
+    for (var i = 0; i < r.length; i++){
+      var d = String(parseInt(r[i], 36));               // A=10 … Z=35, digits unchanged
+      for (var j = 0; j < d.length; j++) rem = (rem * 10 + Number(d[j])) % 97;
+    }
+    return rem === 1;
+  }
+
+  function formatIban(raw){ return compactUpper(raw).replace(/(.{4})/g, '$1 ').trim(); }
+
+  function updateIbanValidity(){
+    var empty = compactUpper(ibanInput.value) === '';
+    ibanInput.setCustomValidity(empty || isValidIban(ibanInput.value) ? '' :
+      'Diese IBAN ist ungültig. Bitte prüfen Sie jede Stelle. Eine österreichische IBAN hat 20 Zeichen und beginnt mit AT.');
+  }
+  ibanInput.addEventListener('input', updateIbanValidity);
+
   /* --- Membership type --- */
   var rolleRadios = form.querySelectorAll('input[name="Rolle"]');
   var blockStrombedarf = document.getElementById('block-strombedarf');
@@ -152,7 +178,7 @@
     setText('nbrBezieherTeilnahmefaktor',   data.Teilnahmefaktor_Bezieher);
     setText('nbrBezieherStrombedarf',       data.Strombedarf_kWh);
     setText('txtBezieherKontoName',         data.Kontoinhaber);
-    setText('txtBezieherKontoIban',         data.IBAN);
+    setText('txtBezieherKontoIban',         formatIban(data.IBAN));
     if (data.Vereinsstatuten_Erhalt) checkField('chkBezieherStatuten');
 
     // Einspeiser page (page 1) — only for combined membership
@@ -167,7 +193,7 @@
       setText('nbrEinspeiserTeilnahmefaktor',   data.Teilnahmefaktor_Einspeiser);
       setText('nbrEinspeiserAnlagengroesse',    data.Anlagengroesse_kWp);
       setText('txtEinspeiserKontoName',         data.Kontoinhaber);
-      setText('txtEinspeiserKontoIban',         data.IBAN);
+      setText('txtEinspeiserKontoIban',         formatIban(data.IBAN));
       if (data.Vereinsstatuten_Erhalt) checkField('chkEinspeiserStatuten');
     }
 
@@ -231,8 +257,8 @@
 
     setText('txtSepaZahlerName',      name);
     setText('txtSepaZahlerAdresse',   fullAddress);
-    setText('txtSepaIban',            data.IBAN);
-    setText('txtSepaBic',             data.BIC);
+    setText('txtSepaIban',            formatIban(data.IBAN));
+    setText('txtSepaBic',             compactUpper(data.BIC || ''));
     setText('txtSepaKreditinstitut',  data.Kreditinstitut);
     setText('txtSepaDatum',           datum);
 
@@ -252,6 +278,7 @@
 
   document.getElementById('btn-pdf').addEventListener('click', function(){
     updateZaehlpunktValidity();
+    updateIbanValidity();
     if (!form.reportValidity()) return;
     var btn = this;
     var originalText = btn.textContent;

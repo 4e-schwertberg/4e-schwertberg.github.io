@@ -292,7 +292,8 @@ hidden: true
         <div class="f4e-row">
           <div class="f4e-field" style="flex:2;">
             <label for="f-iban">IBAN</label>
-            <input type="text" id="f-iban" name="IBAN" placeholder="AT..." required autocomplete="off" style="text-transform:uppercase;">
+            <input type="text" id="f-iban" name="IBAN" placeholder="AT..." required inputmode="text" autocomplete="off" spellcheck="false" aria-describedby="hint-iban" style="text-transform:uppercase;">
+            <p class="f4e-hint" id="hint-iban">Die IBAN finden Sie auf Ihrer Bankkarte oder im Online-Banking.</p>
           </div>
           <div class="f4e-field" style="flex:1;">
             <label for="f-bic">BIC <span style="font-weight:400;color:var(--f4e-muted);">(optional)</span></label>
