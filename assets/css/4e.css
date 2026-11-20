@@ -57,7 +57,8 @@
   background-color: #e6f3d6;
   border-color: #d9edc2;
 }
-.alert-4egreen .alert-link {
+.alert-4egreen .alert-link,
+.alert-4egreen a:not(.btn) {
   color: #3e5e19;
 }
 
