@@ -33,10 +33,14 @@ Sie füllen lieber Papier aus? Drucken Sie das passende Formular aus – [{{ sit
 
 ## So geht es nach dem Antrag weiter
 
-1. **Antrag senden:** Schicken Sie den Aufnahmeantrag und das unterschriebene SEPA-Lastschriftmandat per E-Mail an {{ site.data.config4e.contact.mailRegister }} oder werfen Sie beides in unseren Briefkasten ({{ site.data.config4e.contact.street }}, {{ site.data.config4e.contact.zip }} {{ site.data.config4e.contact.town }}). Mit dem Online-Antrag erhalten Sie beide Dokumente als PDF. Beim Papierformular drucken Sie das SEPA-Lastschriftmandat zusätzlich aus (siehe oben).
+1. **Antrag senden:** Unterschreiben Sie den Aufnahmeantrag und das SEPA-Lastschriftmandat. Schicken Sie beides per E-Mail an **[{{ site.data.config4e.contact.mailRegister }}](mailto:{{ site.data.config4e.contact.mailRegister }})** oder werfen Sie es in unseren Briefkasten ({{ site.data.config4e.contact.street }}, {{ site.data.config4e.contact.zip }} {{ site.data.config4e.contact.town }}). Mit dem Online-Antrag erhalten Sie beide Dokumente als PDF. Beim Papierformular drucken Sie das SEPA-Lastschriftmandat zusätzlich aus (siehe oben).
 2. **Viertelstundenwerte aktivieren:** Melden Sie sich im [Kundenportal der Linz Netz](https://www.linznetz.at/) an und aktivieren Sie unter „Online-Services – Meine Verbräuche“ die Viertelstundenwerte. Das können Sie schon erledigen, während wir Ihren Antrag prüfen.
 3. **Wir prüfen Ihren Antrag** und melden uns per E-Mail.
 4. **Vollmacht erteilen:** Sobald Ihr Zählpunkt der Gemeinschaft zugeordnet ist, bekommen Sie eine E-Mail. Stimmen Sie darin zu, dass Ihre Viertelstundenwerte für die Abrechnung weitergegeben werden. <i class="fas fa-exclamation-circle"></i> Erst ab dieser Zustimmung wird abgerechnet.
+
+**So können Sie unterschreiben:**
+
+{% include sign-hint.html %}
 
 Alle Schritte ausführlich: [Anmeldung Schritt für Schritt](/mitglied-werden-detail/)
 

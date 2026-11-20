@@ -83,7 +83,11 @@ falsche Angaben - vor allem zur steuerlichen Situation - zu rechtlichen Konseque
 
 ### Übermittlung des Anmeldeformulars
 
-Schicken Sie den vollständig ausgefüllten Aufnahmeantrag und das unterschriebene SEPA-Lastschriftmandat per E-Mail an `{{ site.data.config4e.contact.mailRegister }}`. Oder werfen Sie beides in unseren Briefkasten: {{ site.data.config4e.contact.street }}, {{ site.data.config4e.contact.zip }} {{ site.data.config4e.contact.town }}.
+Unterschreiben Sie den vollständig ausgefüllten Aufnahmeantrag und das SEPA-Lastschriftmandat. Schicken Sie beides per E-Mail an `{{ site.data.config4e.contact.mailRegister }}`. Oder werfen Sie beides in unseren Briefkasten: {{ site.data.config4e.contact.street }}, {{ site.data.config4e.contact.zip }} {{ site.data.config4e.contact.town }}.
+
+So können Sie unterschreiben:
+
+{% include sign-hint.html %}
 
 Bitte verwenden Sie nur diese beiden Wege. Anmeldungen an andere E-Mail-Adressen können verloren gehen.
 

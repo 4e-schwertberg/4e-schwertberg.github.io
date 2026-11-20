@@ -127,7 +127,7 @@ hidden: true
     </svg>
     <p class="f4e-eyebrow">Aufnahmeantrag</p>
     <h2>Mitglied werden bei 4E Schwertberg</h2>
-    <p>Füllen Sie das Formular aus. Am Ende erhalten Sie zwei PDFs, die Sie uns schicken.</p>
+    <p>Füllen Sie das Formular aus. Am Ende erhalten Sie zwei PDFs, die Sie unterschreiben und uns schicken.</p>
   </div>
 
   <div class="f4e-body">
@@ -365,16 +365,16 @@ hidden: true
             </div>
           </li>
           <li>
-            <strong>SEPA-Lastschriftmandat unterschreiben.</strong> Drucken Sie es aus, unterschreiben Sie es und machen Sie ein Foto oder einen Scan davon. Ohne Unterschrift kann Ihre Bank die Abbuchung ablehnen.
+            <strong>Beide PDFs unterschreiben.</strong> Ohne Unterschrift auf dem SEPA-Lastschriftmandat kann Ihre Bank die Abbuchung ablehnen. So können Sie unterschreiben:
+            {% include sign-hint.html %}
           </li>
           <li>
-            <strong>Beides an uns senden:</strong> den Aufnahmeantrag und das unterschriebene SEPA-Lastschriftmandat per E-Mail an <a href="mailto:{{ site.data.config4e.contact.mailRegister }}?subject=Aufnahmeantrag%204E%20Schwertberg">{{ site.data.config4e.contact.mailRegister }}</a>. Oder werfen Sie die Ausdrucke in unseren Briefkasten: {{ site.data.config4e.contact.street }}, {{ site.data.config4e.contact.zip }} {{ site.data.config4e.contact.town }}.
+            <strong>Beides an uns senden:</strong> die unterschriebenen PDFs bzw. Scans oder Fotos per E-Mail an <a href="mailto:{{ site.data.config4e.contact.mailRegister }}?subject=Aufnahmeantrag%204E%20Schwertberg">{{ site.data.config4e.contact.mailRegister }}</a>. Oder werfen Sie die unterschriebenen Ausdrucke in unseren Briefkasten: {{ site.data.config4e.contact.street }}, {{ site.data.config4e.contact.zip }} {{ site.data.config4e.contact.town }}.
           </li>
         </ol>
         <button type="button" class="f4e-pdf-btn" id="btn-share" hidden>PDFs teilen (z. B. per E-Mail)</button>
         <p class="f4e-hint" id="share-hint" hidden>Tipp für Handy und Tablet: Mit „PDFs teilen“ können Sie die Dateien direkt speichern, drucken oder an eine E-Mail anhängen.</p>
         <p class="f4e-hint">Wir prüfen Ihren Antrag und melden uns per E-Mail bei Ihnen.</p>
-        {% comment %} TODO(Florian): Muss auch der Aufnahmeantrag unterschrieben werden (die PDF-Vorlage hat eine Unterschriftszeile)? Falls ja, Punkt 2 ersetzen durch: „<strong>Beide PDFs unterschreiben.</strong> Drucken Sie den Aufnahmeantrag und das SEPA-Lastschriftmandat aus, unterschreiben Sie beide und machen Sie ein Foto oder einen Scan davon. Ohne Unterschrift kann Ihre Bank die Abbuchung ablehnen.“ und in Punkt 3 „den Aufnahmeantrag und das unterschriebene SEPA-Lastschriftmandat“ durch „beide unterschriebenen PDFs“. {% endcomment %}
       </div>
       <p class="f4e-foot">
         Die PDFs werden direkt in Ihrem Browser erstellt. Ihre Eingaben werden dabei nicht übertragen.
