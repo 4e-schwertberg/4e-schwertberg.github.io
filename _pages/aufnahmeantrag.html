@@ -59,7 +59,7 @@ hidden: true
   .f4e-row > .f4e-field{flex:1; min-width:0;}
   .f4e-field{margin-bottom:18px;}
   .f4e-field label{display:block; font-size:14px; font-weight:600; margin-bottom:6px;}
-  .f4e-field .f4e-hint{font-size:12.5px; color:var(--f4e-muted); margin-top:5px; line-height:1.45;}
+  .f4e-field .f4e-hint, .f4e-section > .f4e-hint{font-size:12.5px; color:var(--f4e-muted); margin-top:5px; line-height:1.45;}
   .f4e-field input[type=text], .f4e-field input[type=email], .f4e-field input[type=tel], .f4e-field input[type=number]{
     width:100%; padding:11px 12px; border:1px solid var(--f4e-border); border-radius:8px;
     font-size:15px; font-family:inherit; color:var(--f4e-text); background:var(--f4e-bg-soft);
@@ -319,7 +319,7 @@ hidden: true
 
       <!-- Confirmations & consent -->
       <div class="f4e-section">
-        <p class="f4e-section-label">Bestätigung &amp; Einwilligung</p>
+        <p class="f4e-section-label">Bestätigung &amp; Datenschutz</p>
 
         <div class="f4e-check">
           <input type="checkbox" id="statuten-confirm" name="Vereinsstatuten_Erhalt" value="Ja" required>
@@ -328,29 +328,23 @@ hidden: true
           </label>
         </div>
 
-        <div class="f4e-check">
-          <input type="checkbox" id="consent1" name="Bestaetigung_Angaben" value="Ja" required>
-          <label for="consent1">
-            Ich bestätige, dass meine Angaben richtig sind und vom Verein im Rahmen der Vereinstätigkeiten verarbeitet werden dürfen. Änderungen melde ich umgehend.<span class="f4e-tag">Pflicht</span>
-          </label>
+        <div class="f4e-info-box" id="datenschutz-hinweis">
+          <strong>Datenschutz – kurz erklärt</strong><br>
+          <strong>Verantwortlich:</strong> {{ site.data.config4e.contact.fullName }}, {{ site.data.config4e.contact.street }}, {{ site.data.config4e.contact.zip }} {{ site.data.config4e.contact.town }}, {{ site.data.config4e.contact.mailInfo }}.<br>
+          <strong>Wofür:</strong> Wir verwenden Ihre Angaben, um Ihren Antrag zu prüfen, Ihre Mitgliedschaft zu verwalten und Strom sowie Mitgliedsbeitrag abzurechnen. Das ist für die Mitgliedschaft notwendig (Art. 6 Abs. 1 lit. b DSGVO) und teilweise gesetzlich vorgeschrieben, etwa im Energie- und Steuerrecht (Art. 6 Abs. 1 lit. c DSGVO). Eine Einwilligung brauchen wir dafür nicht.<br>
+          <strong>Wer Daten bekommt:</strong> unser Abrechnungsdienstleister LINZ STROM Vertrieb GmbH &amp; Co KG, der Netzbetreiber Linz Netz GmbH (über den Datenaustausch der Energiewirtschaft, EDA), die beteiligten Banken und unser E-Mail-Anbieter.<br>
+          <strong>Wie lange:</strong> abgelehnte Anträge höchstens sechs Wochen, sonst solange Sie Mitglied sind; Abrechnungsunterlagen sieben Jahre (§ 132 BAO).<br>
+          <strong>Ihre Rechte:</strong> Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerspruch und Beschwerde bei der Datenschutzbehörde.<br>
+          Alle Details: <a href="/datenschutz/#mitgliedschaft">Datenschutzerklärung</a>
         </div>
 
-        <div class="f4e-check">
-          <input type="checkbox" id="consent2" name="Einwilligung_Abrechnung" value="Ja" required>
-          <label for="consent2">
-            Ich willige ein, dass meine Daten dem Abrechnungsdienstleister zur Abrechnung im Rahmen der 4E Schwertberg zur Verfügung gestellt und verarbeitet werden dürfen.<span class="f4e-tag">Pflicht</span>
-          </label>
-        </div>
-
-        <p class="f4e-field" style="font-size:12.5px;color:var(--f4e-muted);margin-top:14px;">
-          Die Zustimmung zur Datenverarbeitung kann jederzeit schriftlich widerrufen werden. Weitere Unterlagen (z.B. Netzzusatzvertrag, 1/4h-Auslesebestätigung) reichen Sie bitte separat nach.
-        </p>
+        <p class="f4e-hint">Weitere Unterlagen (z. B. Netzzusatzvertrag, 1/4h-Auslesebestätigung) reichen Sie bitte separat nach.</p>
       </div>
 
       <button type="button" class="f4e-pdf-btn" id="btn-pdf">📄 Antrag als ausgefülltes PDF herunterladen</button>
       <div class="f4e-msg" id="f4e-msg"></div>
       <p class="f4e-foot">
-        Der PDF-Download erfolgt lokal in Ihrem Browser, ohne dass Daten an Dritte übertragen werden.
+        Die PDFs werden direkt in Ihrem Browser erstellt. Ihre Eingaben werden dabei nicht übertragen.
       </p>
     </form>
   </div>
