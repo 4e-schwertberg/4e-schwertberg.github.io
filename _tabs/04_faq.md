@@ -1,7 +1,7 @@
 ---
 layout: page
 title: FAQ
-order: 5
+order: 4
 permalink: /faq/
 icon: "fas fa-question-circle"
 ---
