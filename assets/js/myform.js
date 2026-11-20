@@ -220,16 +220,7 @@
     pdfForm.flatten();
     if (!isBeidemitglied) pdfDoc.removePage(1);
 
-    var outBytes = await pdfDoc.save();
-    var blob = new Blob([outBytes], { type: 'application/pdf' });
-    var url = URL.createObjectURL(blob);
-    var a = document.createElement('a');
-    a.href = url;
-    a.download = 'Aufnahmeantrag-4E-Schwertberg.pdf';
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    URL.revokeObjectURL(url);
+    return pdfDoc.save();
   }
 
   // Path to the SEPA direct debit mandate PDF template.
@@ -264,39 +255,69 @@
 
     pdfForm.flatten();
 
-    var outBytes = await pdfDoc.save();
-    var blob = new Blob([outBytes], { type: 'application/pdf' });
-    var url = URL.createObjectURL(blob);
-    var a = document.createElement('a');
-    a.href = url;
-    a.download = 'SEPA-Lastschriftmandat-4E-Schwertberg.pdf';
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    URL.revokeObjectURL(url);
+    return pdfDoc.save();
   }
 
-  document.getElementById('btn-pdf').addEventListener('click', function(){
+  /* --- Result: download links, share button, next steps --- */
+  var btnPdf = document.getElementById('btn-pdf');
+  var nextBox = document.getElementById('f4e-next');
+  var dlAntrag = document.getElementById('dl-antrag');
+  var dlSepa = document.getElementById('dl-sepa');
+  var btnShare = document.getElementById('btn-share');
+  var shareHint = document.getElementById('share-hint');
+  var objectUrls = [];
+  var shareFiles = [];
+
+  function showError(text){
+    msg.textContent = 'Die PDFs konnten nicht erstellt werden. Bitte versuchen Sie es noch einmal oder verwenden Sie das Papierformular. (Technische Details: ' + text + ')';
+    msg.className = 'f4e-msg show err';
+  }
+
+  function showResult(antragBytes, sepaBytes){
+    // Old URLs are only revoked when new PDFs replace them; revoking right after a click breaks downloads in Safari/Firefox.
+    objectUrls.forEach(function(u){ URL.revokeObjectURL(u); });
+    var antrag = new File([antragBytes], '4e-Aufnahmeantrag.pdf', { type: 'application/pdf' });
+    var sepa = new File([sepaBytes], '4e-SEPA-Lastschriftmandat.pdf', { type: 'application/pdf' });
+    shareFiles = [antrag, sepa];
+    dlAntrag.href = URL.createObjectURL(antrag);
+    dlSepa.href = URL.createObjectURL(sepa);
+    objectUrls = [dlAntrag.href, dlSepa.href];
+    btnShare.hidden = !(navigator.canShare && navigator.canShare({ files: shareFiles }));
+    shareHint.hidden = btnShare.hidden;
+    nextBox.hidden = false;
+    nextBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    nextBox.focus({ preventScroll: true });
+  }
+
+  btnShare.addEventListener('click', function(){
+    navigator.share({ files: shareFiles, title: 'Aufnahmeantrag 4E Schwertberg' }).catch(function(e){
+      if (e && e.name === 'AbortError') return;
+      msg.textContent = 'Das Teilen hat nicht funktioniert. Bitte speichern Sie die beiden PDFs über die Schaltflächen oben und hängen Sie sie selbst an Ihre E-Mail an. (Technische Details: ' + (e && e.message ? e.message : String(e)) + ')';
+      msg.className = 'f4e-msg show err';
+    });
+  });
+
+  // Edited answers would leave the PDFs shown here out of date.
+  function hideResult(){ nextBox.hidden = true; }
+  form.addEventListener('input', hideResult);
+  form.addEventListener('change', hideResult);
+
+  btnPdf.addEventListener('click', function(){
     updateZaehlpunktValidity();
     updateIbanValidity();
     if (!form.reportValidity()) return;
-    var btn = this;
-    var originalText = btn.textContent;
-    btn.disabled = true;
-    btn.textContent = 'PDF wird erstellt …';
+    btnPdf.disabled = true;
+    btnPdf.textContent = 'PDFs werden erstellt …';
     msg.className = 'f4e-msg';
-    Promise.allSettled([generatePdf(), generateSepa()])
-      .then(function(results){
-        var failed = results.filter(function(r){ return r.status === 'rejected'; });
-        if (failed.length){
-          console.error(failed);
-          msg.textContent = 'PDF konnte nicht erstellt werden: ' + failed.map(function(r){ return r.reason.message; }).join(' | ');
-          msg.className = 'f4e-msg show err';
-        }
+    Promise.all([generatePdf(), generateSepa()])
+      .then(function(pdfs){ showResult(pdfs[0], pdfs[1]); })
+      .catch(function(e){
+        console.error(e);
+        showError(e && e.message ? e.message : String(e));
       })
       .finally(function(){
-        btn.disabled = false;
-        btn.textContent = originalText;
+        btnPdf.disabled = false;
+        btnPdf.textContent = 'Antrag erstellen (2 PDFs)';
       });
   });
 })();
