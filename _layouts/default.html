@@ -1,0 +1,49 @@
+{%- comment -%} Based on jekyll-theme-chirpy 7.6.0 (MIT, (c) 2019 Cotes Chung) {%- endcomment -%}
+<!doctype html>
+<html lang="{{ site.lang }}">
+  {% include head.html %}
+
+  <body>
+    {% include sidebar.html %}
+
+    <div id="main-wrapper" class="d-flex justify-content-center">
+      <div class="container d-flex flex-column px-xxl-5">
+        {% include topbar.html %}
+
+        <div class="row flex-grow-1">
+          <main aria-label="Hauptinhalt" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            {%- comment -%} Wide tables scroll inside a wrapper; task-list checkboxes become Font Awesome icons. {%- endcomment -%}
+            {%- assign _content = content -%}
+            {%- if _content contains '<table' -%}
+              {%- assign _content = _content
+                | replace: '<table', '<div class="table-wrapper"><table'
+                | replace: '</table>', '</table></div>' -%}
+            {%- endif -%}
+            {%- if _content contains '<input type="checkbox"' -%}
+              {%- assign _content = _content
+                | replace: '<input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />', '<i class="fas fa-check-circle fa-fw checked"></i>'
+                | replace: '<input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />', '<i class="far fa-circle fa-fw"></i>' -%}
+            {%- endif -%}
+            {{ _content }}
+          </main>
+        </div>
+
+        <div class="row">
+          <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            {% include footer.html %}
+          </div>
+        </div>
+      </div>
+
+      <aside aria-label="Nach oben">
+        <button id="back-to-top" type="button" class="btn btn-lg btn-box-shadow" aria-label="Nach oben">
+          <i class="fas fa-angle-up"></i>
+        </button>
+      </aside>
+    </div>
+
+    <div id="mask" class="d-none position-fixed w-100 h-100 z-1"></div>
+
+    <script src="/assets/js/site.js" defer></script>
+  </body>
+</html>

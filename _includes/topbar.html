@@ -1,0 +1,21 @@
+{%- comment -%} Based on jekyll-theme-chirpy 7.6.0 (MIT, (c) 2019 Cotes Chung) {%- endcomment -%}
+<header id="topbar-wrapper" class="flex-shrink-0" aria-label="Kopfleiste">
+  <div id="topbar" class="d-flex align-items-center justify-content-between px-lg-3 h-100">
+    <nav id="breadcrumb" aria-label="Pfadnavigation">
+      {% if page.url == '/' %}
+        <span>Startseite</span>
+      {% else %}
+        <span><a href="/">Startseite</a></span>
+        <span>{{ page.title }}</span>
+      {% endif %}
+    </nav>
+
+    <button type="button" id="sidebar-trigger" class="btn btn-link" aria-label="Menü">
+      <i class="fas fa-bars fa-fw"></i>
+    </button>
+
+    <div id="topbar-title">
+      {%- if page.url == '/' -%}{{ site.title }}{%- else -%}{{ page.title }}{%- endif -%}
+    </div>
+  </div>
+</header>

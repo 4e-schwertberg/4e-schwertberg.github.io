@@ -1,0 +1,50 @@
+{%- comment -%} Based on jekyll-theme-chirpy 7.6.0 (MIT, (c) 2019 Cotes Chung) {%- endcomment -%}
+<aside aria-label="Seitenleiste" id="sidebar" class="d-flex flex-column align-items-end">
+  <header class="profile-wrapper">
+    <a href="/" id="avatar" class="rounded-circle">
+      <img src="{{ site.avatar }}" width="112" height="112" alt="4E Schwertberg Logo">
+    </a>
+
+    <a class="site-title d-block" href="/">{{ site.title }}</a>
+    <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p>
+  </header>
+
+  <nav class="flex-column flex-grow-1 w-100 ps-0" aria-label="Hauptmenü">
+    <ul class="nav">
+      <li class="nav-item{% if page.url == '/' %} active{% endif %}">
+        <a href="/" class="nav-link">
+          <i class="fa-fw fas fa-home"></i>
+          <span>STARTSEITE</span>
+        </a>
+      </li>
+      {% for tab in site.tabs %}
+        <li class="nav-item{% if tab.url == page.url %} active{% endif %}">
+          <a href="{{ tab.url }}" class="nav-link">
+            <i class="fa-fw {{ tab.icon }}"></i>
+            <span>{{ tab.title | upcase }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <div class="sidebar-bottom d-flex flex-wrap align-items-center w-100">
+    <button type="button" class="btn btn-link nav-link" id="mode-toggle" aria-label="Darstellung">
+      <i class="fa-regular fa-sun" data-theme-mode="light"></i>
+      <i class="fa-regular fa-moon" data-theme-mode="dark"></i>
+      <i class="fa-solid fa-display" data-theme-mode="system"></i>
+    </button>
+
+    {% if site.data.contact.size > 0 %}
+      <span class="icon-border"></span>
+    {% endif %}
+
+    {% for entry in site.data.contact %}
+      {% if entry.type == 'email' %}
+        <a href="mailto:{{ site.social.email }}" aria-label="E-Mail"><i class="{{ entry.icon }}"></i></a>
+      {% elsif entry.type == 'phone' %}
+        <a href="{{ entry.url }}" aria-label="Telefon"><i class="{{ entry.icon }}"></i></a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</aside>

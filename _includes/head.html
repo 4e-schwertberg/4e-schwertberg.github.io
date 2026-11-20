@@ -1,0 +1,31 @@
+{%- comment -%} Based on jekyll-theme-chirpy 7.6.0 (MIT, (c) 2019 Cotes Chung) {%- endcomment -%}
+<head>
+  <script>
+    // Apply the stored colour mode before first paint to avoid a flash.
+    (function () {
+      var t = null; try { t = localStorage.getItem('theme'); } catch (e) {}
+      var d = document.documentElement;
+      if (t === 'light' || t === 'dark') { d.setAttribute('data-bs-theme', t); d.setAttribute('data-theme-persisted', ''); }
+      else { d.setAttribute('data-bs-theme', matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); }
+    })();
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  {% seo %}
+
+  <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicons/favicon.svg">
+  <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/vendor/fonts/main.css">
+  <link rel="stylesheet" href="/assets/vendor/fontawesome-free-6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/4e.css">
+  <link rel="stylesheet" href="/assets/css/energy-chart.css">
+</head>
