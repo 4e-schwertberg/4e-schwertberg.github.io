@@ -41,7 +41,7 @@ sass:
 
 exclude:
   - README.md
-  - LICENSE
+  - LICENSES
   - Gemfile
   - Gemfile.lock
   - vendor

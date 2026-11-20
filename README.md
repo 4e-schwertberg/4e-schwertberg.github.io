@@ -1,43 +1,50 @@
-# Chirpy Starter
+# 4E Schwertberg – Website
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+Website of the renewable energy community 4E Schwertberg: https://www.4e-schwertberg.at
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
+Static site built with [Jekyll](https://jekyllrb.com) and deployed to GitHub Pages by
+`.github/workflows/pages-deploy.yml` on every push to `main`.
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
+## Local development
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
+With the devcontainer (VS Code “Reopen in Container”):
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
-```
+    bundle install
+    bundle exec jekyll serve          # http://127.0.0.1:4000
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+Without it (Docker):
 
-## Usage
+    docker run --rm -it -p 4000:4000 -v "$PWD":/srv -w /srv ruby:3.3 \
+      bash -c 'bundle install && bundle exec jekyll serve -H 0.0.0.0'
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+Check links like CI does:
 
-## Contributing
+    JEKYLL_ENV=production bundle exec jekyll build
+    bundle exec htmlproofer _site --disable-external
 
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
+## Where things are
+
+- `index.html` – homepage; news go under "Aktuelles".
+- `_tabs/` – pages in the sidebar. Front matter: `title`, `icon` (Font Awesome class), `order`, `permalink`.
+- `_pages/` – other pages (Datenschutz, Impressum, Aufnahmeantrag …).
+- `_data/config4e.yml` – contact data, prices, fees, chart values; `_data/faq.yml` – FAQ.
+- `_layouts/`, `_includes/`, `assets/js/site.js` – page frame (sidebar, topbar, footer, colour mode).
+- `_sass/chirpy/` – layout styles (trimmed Chirpy); `assets/css/4e.css` – our own styles.
+- Boxes in Markdown: add `{: .prompt-tip }` (or `-info`, `-warning`, `-danger`) on the line after a `>` quote.
+- `_pages/aufnahmeantrag.html` + `assets/js/myform.js` – online membership form; creates the PDFs in the
+  browser with pdf-lib (`assets/vendor/pdf-lib-1.17.1`) from `assets/docs/*-template.pdf`.
+  `myform.js` is the readable source; the deploy workflow minifies it.
+- `sw.min.js` – removes the service worker of the former site from visitors' browsers; keep until end of 2027.
+
+## Credits
+
+The layout and styles are based on the Jekyll theme [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy)
+by Cotes Chung (MIT License, see `LICENSES/jekyll-theme-chirpy.txt`). Fonts: Lato (SIL OFL),
+icons: Font Awesome Free 6.7.1 (CC BY 4.0 / OFL / MIT), CSS framework: Bootstrap 5.3.6 (MIT),
+PDF generation: pdf-lib 1.17.1 (MIT).
 
 ## License
 
-This work is published under [MIT][mit] License.
-
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+The texts, images and other content of this website are © 4E Schwertberg, all rights reserved. There is no
+open-source licence for the association's own content. Third-party parts keep their own licences: the Chirpy
+licences are in `LICENSES/`.
