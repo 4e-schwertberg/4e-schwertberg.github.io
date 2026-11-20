@@ -14,7 +14,8 @@ permalink: /impressum/
 <i class="fas fa-phone"></i> {{ site.data.config4e.contact.phoneNumber }}\\
 \\
 ZVR: {{ site.data.config4e.details.zvr }}\\
-UID: {{ site.data.config4e.details.uid }}
+UID: {{ site.data.config4e.details.uid }}\\
+Marktpartner-ID (Energiegemeinschaft): {{ site.data.config4e.details.marketPartnerId }}
 
 {% if site.data.config4e.contact.boardMember %}
 **Vorstandsmitglieder**

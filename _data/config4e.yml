@@ -53,6 +53,7 @@ details:
   zvr: "1922887273"
   uid: "ATU80460519"
   sepaCreditorId: "AT70ZZZ00000077537"
+  marketPartnerId: "RC100527" # Marktpartnerkennung der EEG (ebUtilities/EDA), not the 33-character Gemeinschafts-ID
 
 # Kosten und Preise
 costs:
