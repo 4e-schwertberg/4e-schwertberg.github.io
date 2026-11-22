@@ -32,8 +32,6 @@ Wenn Sie die Website aufrufen, überträgt Ihr Browser technisch notwendige Date
 - Wir selbst bekommen diese Daten nicht zu sehen und werten sie nicht aus.
 - Mehr dazu: [Datenschutzerklärung von GitHub](https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement)
 
-{% comment %} TODO(Florian): Unter https://www.dataprivacyframework.gov/list prüfen, ob „GitHub, Inc.“ aktiv zertifiziert ist. Falls nicht, den Punkt „Übermittlung in die USA“ neu formulieren. {% endcomment %}
-
 ### Keine Cookies, keine Analyse
 
 Wir setzen keine Cookies und verwenden keine Analyse- oder Tracking-Werkzeuge. Schriften, Symbole und Programmteile liegen auf unserem eigenen Webspace. Es werden keine Inhalte von anderen Anbietern nachgeladen.
@@ -50,9 +48,7 @@ Wenn Sie uns schreiben oder anrufen, verwenden wir Ihre Angaben nur, um Ihre Anf
 
 - Rechtsgrundlage: Geht es um eine Mitgliedschaft, ist das für die Mitgliedschaft notwendig (Art. 6 Abs. 1 lit. b DSGVO). Sonst beruht es auf unserem berechtigten Interesse, Anfragen zu beantworten (Art. 6 Abs. 1 lit. f DSGVO).
 - Speicherdauer: Wir bewahren Ihre Nachrichten drei Jahre nach Abschluss Ihrer Anfrage auf. So können wir später nachvollziehen, was wir Ihnen geantwortet haben. Ansprüche daraus verjähren in der Regel nach drei Jahren (§ 1489 ABGB). Rechtsgrundlage ist unser berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO). Gehören die Nachrichten zu Ihrer Mitgliedschaft oder Abrechnung, gilt die Speicherdauer im nächsten Abschnitt.
-- Unsere E-Mails liegen bei unserem E-Mail-Anbieter Zoho Corporation B.V., Beneluxlaan 4B, 3527 HT Utrecht, Niederlande. Er verarbeitet die Daten in unserem Auftrag in Rechenzentren in der EU.
-
-{% comment %} TODO(Florian): Bestätigen, dass die Postfächer bei Zoho liegen, das Konto in der EU-Region (zoho.eu) läuft und ein Auftragsverarbeitungsvertrag (DPA) abgeschlossen ist. Sonst Anbieter, Anschrift und Ort der Verarbeitung anpassen. {% endcomment %}
+- Unsere E-Mails liegen bei unserem E-Mail-Anbieter Zoho Corporation B.V., Beneluxlaan 4B, 3527 HT Utrecht, Niederlande. Zoho verarbeitet die Daten in unserem Auftrag als Auftragsverarbeiter (Art. 28 DSGVO) in Rechenzentren in der EU.
 
 ## Mitgliedschaft und Abrechnung {#mitgliedschaft}
 
@@ -81,15 +77,13 @@ Ohne die Pflichtangaben im Antrag können wir Sie nicht aufnehmen. Für diese Ve
 
 ### Wer bekommt Ihre Daten?
 
-- Unser Abrechnungsdienstleister erstellt in unserem Auftrag die Abrechnungen und Gutschriften. Er verarbeitet dafür Ihre Mitglieds-, Bank- und Energiedaten. Den Namen des Unternehmens nennen wir Ihnen gerne auf Anfrage.
+- Unser Abrechnungsdienstleister erstellt in unserem Auftrag die Abrechnungen und Gutschriften. Dafür verarbeitet er Ihre Mitglieds-, Bank- und Energiedaten als Auftragsverarbeiter (Art. 28 DSGVO) in der EU. Den Namen des Unternehmens nennen wir Ihnen gerne auf Anfrage.
 - Der Netzbetreiber Linz Netz GmbH ordnet Ihren Zählpunkt der Energiegemeinschaft zu und liefert die Viertelstundenwerte. Der Datenaustausch läuft über das Datenaustausch-System der österreichischen Energiewirtschaft (EDA).
 - Unsere Bank und Ihre Bank erhalten die Daten, die für Abbuchungen und Gutschriften nötig sind.
 - Unser E-Mail-Anbieter (siehe oben), wenn Sie uns per E-Mail schreiben.
 - Behörden, Gerichte oder unsere Steuerberatung, wenn wir gesetzlich dazu verpflichtet sind.
 
 Im Verein sehen nur die Vorstandsmitglieder, die für Aufnahme und Abrechnung zuständig sind, sowie die Rechnungsprüfer:innen Ihre Daten. Wir verkaufen Ihre Daten nicht und verwenden sie nicht für Werbung.
-
-{% comment %} TODO(Florian): Abrechnungsdienstleister bis 31.12.2026 LINZ STROM Vertrieb GmbH & Co KG, ab 1.1.2027 eegfaktura (Name nur auf Anfrage, Art. 13 Abs. 1 lit. e DSGVO). Für beide prüfen, ob ein Auftragsverarbeitungsvertrag besteht und ob die Daten in der EU verarbeitet werden; wenn ja, „in der EU“ ergänzen. Tritt ein Dienstleister als eigene Verantwortliche auf, „in unserem Auftrag“ streichen. {% endcomment %}
 
 ### Wie lange speichern wir?
 
