@@ -48,7 +48,7 @@ Wenn Sie uns schreiben oder anrufen, verwenden wir Ihre Angaben nur, um Ihre Anf
 
 - Rechtsgrundlage: Geht es um eine Mitgliedschaft, ist das für die Mitgliedschaft notwendig (Art. 6 Abs. 1 lit. b DSGVO). Sonst beruht es auf unserem berechtigten Interesse, Anfragen zu beantworten (Art. 6 Abs. 1 lit. f DSGVO).
 - Speicherdauer: Wir bewahren Ihre Nachrichten drei Jahre nach Abschluss Ihrer Anfrage auf. So können wir später nachvollziehen, was wir Ihnen geantwortet haben. Ansprüche daraus verjähren in der Regel nach drei Jahren (§ 1489 ABGB). Rechtsgrundlage ist unser berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO). Gehören die Nachrichten zu Ihrer Mitgliedschaft oder Abrechnung, gilt die Speicherdauer im nächsten Abschnitt.
-- Unsere E-Mails liegen bei unserem E-Mail-Anbieter Zoho Corporation GmbH, Trinkausstraße 7, 40213 Düsseldorf, Deutschland. Zoho verarbeitet die Daten in unserem Auftrag als Auftragsverarbeiter (Art. 28 DSGVO) in Rechenzentren in der EU. Zoho kann die Daten auch an Unternehmen der Zoho-Gruppe außerhalb der EU übermitteln, etwa nach Indien, und stützt sich dafür auf Standardvertragsklauseln der EU-Kommission (Art. 46 DSGVO).
+- Unsere E-Mails liegen bei unserem E-Mail-Anbieter Zoho Corporation GmbH, II. Hagen 7, 45127 Essen, Deutschland. Zoho verarbeitet die Daten in unserem Auftrag als Auftragsverarbeiter (Art. 28 DSGVO) in Rechenzentren in der EU. Zoho kann die Daten auch an Unternehmen der Zoho-Gruppe außerhalb der EU übermitteln, etwa nach Indien, und stützt sich dafür auf Standardvertragsklauseln der EU-Kommission (Art. 46 DSGVO).
 
 ## Mitgliedschaft und Abrechnung {#mitgliedschaft}
 
