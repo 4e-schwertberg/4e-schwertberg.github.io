@@ -103,7 +103,6 @@
     var isBeidemitglied = rolle === 'Bezieher und Einspeiser';
     blockStrombedarf.hidden = false;
     blockAnlagengroesse.hidden = !isBeidemitglied;
-    document.getElementById('f-anlagengroesse').required = isBeidemitglied;
     document.getElementById('block-zaehlpunkt-einspeiser').hidden = !isBeidemitglied;
     document.getElementById('f-zaehlpunkt-einspeiser').required = isBeidemitglied;
     document.getElementById('block-teilnahmefaktor-einspeiser').hidden = !isBeidemitglied;
