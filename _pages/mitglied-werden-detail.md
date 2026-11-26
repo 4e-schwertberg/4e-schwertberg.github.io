@@ -1,19 +1,18 @@
 ---
 layout: page
-title: Mitglied werden - Details
+title: Anmeldung Schritt für Schritt
 permalink: /mitglied-werden-detail/
 toc: true
 icon: fas fa-file-text
 ---
 
-> Derzeit ist eine Teilnahme aus technischen Gründen nur im Versorgungsbereich der Linz Netz GmbH möglich. 4E ist eine regional Energiegemeinschaft in der **regionalen Zone EGR00047**. Sie können Ihre Zählpunktnummer [hier](https://www.linznetz.at/portal/de/home/online_services/versorgungsbereichsabfrage/grafischer_versorgungsbereich.html#) vorab prüfen.
+Die Kurzfassung mit Checkliste finden Sie unter [Mitglied werden](/mitglied-werden/).
+
+> Derzeit ist eine Teilnahme aus technischen Gründen nur im Versorgungsbereich der Linz Netz GmbH möglich. 4E ist eine regionale Energiegemeinschaft in der **regionalen Zone EGR00047**. Sie können Ihre Zählpunktnummer [hier](https://www.linznetz.at/portal/de/home/online_services/versorgungsbereichsabfrage/grafischer_versorgungsbereich.html#) vorab prüfen.
 {: .prompt-info }
 
 > Kündigen Sie **keinesfalls** Ihre bestehenden Verträge (Lieferung und Bezug). Der Vertrag mit 4E Schwertberg ist eine Ergänzung zu diesen und ersetzt sie nicht. Siehe Kapitel Voraussetzungen.
 {: .prompt-danger }
-
-> Wenn Sie noch weitere Fragen haben, erreichen Sie uns telefonisch unter <i class="fas fa-phone"></i> {{ site.data.config4e.contact.phoneNumber }}
-{: .prompt-tip }
 
 Wir freuen uns sehr, dass Sie sich für eine Teilnahme an der Energiegemeinschaft 4E Schwertberg interessieren.
 Bitte beachten Sie, dass dafür einige Voraussetzungen erfüllt sein müssen und der Ablauf der Anmeldung
@@ -25,7 +24,7 @@ Wir wollen Sie beim Anmeldeprozess so gut wie möglich begleiten. Deshalb erklä
 
 Bevor Sie mit der Anmeldung fortfahren, prüfen Sie bitte, ob alle notwendigen Voraussetzungen zur Teilnahme an einer Energiegemeinschaft Ihrerseits erfüllt sind.
 
-* Sie benötigen einen intelligenten Stromzähler, ein sogenanntes [Smartmeter][smartmeter]. Basis der Verrechnung sind Viertelstundenwerte.
+* Sie benötigen einen intelligenten Stromzähler, einen sogenannten Smart Meter. Basis der Verrechnung sind Viertelstundenwerte.
   Der Zähler muss in der Lage sein, diese aufzuzeichnen und übertragen zu können. Leider kann dies nicht jeder Smartmeter. Ihr Netzbetreiber gibt Ihnen Auskunft darüber.
   
   Mit einem alten Zähler (mit Drehscheibe) ist aus technischen Gründen eine Teilnahme nicht möglich.
@@ -41,14 +40,12 @@ teilnehmen wollen, dann gilt für Sie zusätzlich zu den obigen Voraussetzungen 
 * Sie benötigen eine aufrechte und gültige Stromliefervereinbarung mit einem Abnehmer Ihrer Wahl.
   Die Teilnahme an der Energiegemeinschaft ist eine Ergänzung dazu und ersetzt diesen nicht.
 
-Bitte beachten Sie dazu unsere Mitgliedschafts-Arten. Diese finden Sie [hier](/infos).
+Die Arten der Mitgliedschaft finden Sie unter [Mitglied werden](/mitglied-werden/#arten-der-mitgliedschaft).
 
 ### Unternehmer
 
 Der Gesetzgeber erlaubt Klein- und Mittelbetrieben, deren Hauptzweck _nicht_ der Energiehandel ist,
 die Teilnahme an einer Energiegemeinschaft.
-
-[smartmeter]: https://www.e-control.at/konsumenten/smart-meter
 
 ## Der Ablauf
 
@@ -60,8 +57,8 @@ Der Ablauf der Anmeldung ist wie folgt:
 * Sie werden via E-Mail über den Status Ihres Antrags informiert.
 * Registrierung am Portal des Netzbetreibers (Linz Netz GmbH)
 * Aktivierung der Viertelstundenwerte Übermittlung
-* Unser Abrechnungsdienstleister (Linz AG) kontaktiert Sie via E-Mail sobald dieser Ihren Zählpunkt der Energiegemeinschaft zugeordnet hat
-* Erteilen der Genehmigung zur Übermittlung der Viertelstundenwerte von Linz Netz GmbH an die Linz AG
+* Unser Abrechnungsdienstleister kontaktiert Sie per E-Mail, sobald er Ihren Zählpunkt der Energiegemeinschaft zugeordnet hat
+* Erteilen der Genehmigung zur Übermittlung der Viertelstundenwerte von der Linz Netz GmbH an uns und unseren Abrechnungsdienstleister
 
 > Erst **nach** erteilter Genehmigung zur Übermittlung der Viertelstundenwerte beginnt eine
 Verrechnung von Energie innerhalb der Energiegemeinschaft!
@@ -69,10 +66,11 @@ Verrechnung von Energie innerhalb der Energiegemeinschaft!
 
 ### Ausfüllen des Anmeldeformulars
 
-Unsere Anmeldeformulare finden Sie nachfolgend verlinkt zum Download.
+Am einfachsten geht es mit unserem [Online-Antrag](/aufnahmeantrag/): Er erstellt den Aufnahmeantrag und das SEPA-Lastschriftmandat als PDF. Wenn Sie lieber Papier verwenden, drucken Sie das passende Formular und das SEPA-Lastschriftmandat aus:
 
-- [{{ site.data.config4e.form_buyer.text }}]({{ site.data.config4e.form_buyer.url }})
-- [{{ site.data.config4e.form_buyer_seller_url.text }}]({{ site.data.config4e.form_buyer_seller_url.url }})
+- [{{ site.data.config4e.form_buyer.text }}]({{ site.data.config4e.form_buyer.url }}){: download="{{ site.data.config4e.form_buyer.download }}"}
+- [{{ site.data.config4e.form_buyer_seller_url.text }}]({{ site.data.config4e.form_buyer_seller_url.url }}){: download="{{ site.data.config4e.form_buyer_seller_url.download }}"}
+- [{{ site.data.config4e.form_sepa.text }}]({{ site.data.config4e.form_sepa.url }}){: download="{{ site.data.config4e.form_sepa.download }}"}
 
 Bitte füllen Sie das Formular gewissenhaft, vollständig und wahrheitsgemäß aus. Wir möchten ausdrücklich darauf
 hinweisen, dass Sie für die Richtigkeit der Angaben verantwortlich sind und
@@ -80,12 +78,13 @@ falsche Angaben - vor allem zur steuerlichen Situation - zu rechtlichen Konseque
 
 ### Übermittlung des Anmeldeformulars
 
-Das vollständig ausgefüllte und geprüfte Formular übermitteln Sie bitte via E-Mail an `{{ site.data.config4e.contact.mailRegister }}`.
-Wir bitten um Verständnis, dass wir Anmeldungen ausschließlich an diese Mail-Adresse akzeptieren.
+Unterschreiben Sie den vollständig ausgefüllten Aufnahmeantrag und das SEPA-Lastschriftmandat. Schicken Sie beides per E-Mail an `{{ site.data.config4e.contact.mailRegister }}`. Oder werfen Sie beides in unseren Briefkasten: {{ site.data.config4e.contact.street }}, {{ site.data.config4e.contact.zip }} {{ site.data.config4e.contact.town }}.
 
-Alternativ werfen Sie das ausgefüllte Formular bitte in unseren Postkasten in der `Unterkogelbergstraße 1` ein.
+So können Sie unterschreiben:
 
-Bitte Übermitteln Sie Ihre Anmeldung ausschließlich wie hier beschrieben, um verloren gegangenen Anmeldungen vorzubeugen.
+{% include sign-hint.html %}
+
+Bitte verwenden Sie nur diese beiden Wege. Anmeldungen an andere E-Mail-Adressen können verloren gehen.
 
 ### Antragsprüfung
 
@@ -111,7 +110,7 @@ Viertelstundenwertauslesung, welche die Grundlage der Verrechnung ist.
 Das Portal der Linz Netz GmbH finden Sie unter folgender Adresse: [https://www.linznetz.at/portal/de/home#](https://www.linznetz.at/)
 
 
-### Aktivierung der Viertelstundenwert Übermittlung
+### Aktivierung der Übermittlung der Viertelstundenwerte
 
 > Dieser Schritt kann bereits während der Antragsprüfung durchgeführt werden.
 {: .prompt-info }
@@ -128,10 +127,10 @@ Dort finden Sie auch einen [Leitfaden zur Freischaltung][linznetz-leitfaden], de
 
 Dies ist der letzte Schritt zu Ihrer Teilnahme bei der Energiegemeinschaft 4E Schwertberg.
 
-Unser Abrechnungsdienstleister (Linz AG) wird Ihren Zählpunkt nach Freigabe Ihrer Mitgliedschaft durch den 
-Vorstand der Energiegemeinschaft 4E Schwertberg zuordnen. Nach erfolgreicher Zuordnung wird Sie unser 
+Unser Abrechnungsdienstleister wird Ihren Zählpunkt nach Freigabe Ihrer Mitgliedschaft durch den
+Vorstand der Energiegemeinschaft 4E Schwertberg zuordnen. Nach erfolgreicher Zuordnung wird Sie unser
 Abrechnungsdienstleister via E-Mail kontaktieren, da aufgrund der aktuellen Gesetzeslage eine explizite Freigabe
-der Übermittlung der Viertelstundenwerte von der _Linz Netz GmbH_ an die _Linz AG_ notwendig ist.
+der Übermittlung der Viertelstundenwerte von der _Linz Netz GmbH_ an uns und unseren Abrechnungsdienstleister notwendig ist.
 
 Eine Anleitung zur Vorgangsweise finden Sie im [Leitfaden zur Vollmachtserteilung](https://www.linznetz.at//media/linz_netz_website/netz_dokumente/leitfaden-ccm.pdf).
 Sie sollten die Übermittlung der
@@ -144,8 +143,5 @@ Vollmacht erteilt wurde.
 Sollten Sie die Vollmacht widerrufen, ist _keine_ Verrechnung von Energie aus der Energiegemeinschaft mehr
 möglich.
 
-> Die aktuell geltende Gesetzeslage macht es notwendig, dass _jeder_ Teilnehmer diesen Schritt explizit 
-selbstständig durchführt.
-Vorschläge zur Novellierung bzw. Lockerung dieser Regelung existieren bereits, sind allerdings noch
-nicht ratifiziert.
+> Auch nach dem neuen Elektrizitätswirtschaftsgesetz (ElWG, in Kraft seit 1. Oktober 2026) muss _jedes_ Mitglied der Weitergabe seiner Viertelstundenwerte selbst zustimmen. Das kann der Verein nicht für Sie erledigen.
 {: .prompt-info }

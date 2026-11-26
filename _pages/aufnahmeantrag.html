@@ -10,10 +10,10 @@ hidden: true
 
 <style>
   .f4e-card{
-    --f4e-green:#1B5E45;
-    --f4e-green-dark:#0F3D2C;
-    --f4e-turquoise:#0FA9A0;
-    --f4e-turquoise-dark:#0B847D;
+    --f4e-green:#80c433;
+    --f4e-green-dark:#2f4813;
+    --f4e-turquoise:#24b6c5;
+    --f4e-turquoise-dark:#1b8681;
     --f4e-turquoise-tint:#E6F6F4;
     --f4e-bg:#FFFFFF;
     --f4e-bg-soft:#F4F8F6;
@@ -43,8 +43,10 @@ hidden: true
   .f4e-head p{margin:10px 0 0; font-size:14px; line-height:1.5; color:#E3F2EE; max-width:480px;}
   .f4e-body{padding:28px 32px 32px;}
 
-  .f4e-segment{display:flex; gap:8px; margin-bottom:22px; background:var(--f4e-bg-soft); border:1px solid var(--f4e-border); border-radius:10px; padding:5px;}
-  .f4e-segment input{position:absolute; opacity:0; pointer-events:none;}
+  .f4e-segment{min-width:0; margin:0 0 22px; display:flex; gap:8px; background:var(--f4e-bg-soft); border:1px solid var(--f4e-border); border-radius:10px; padding:5px;}
+  .f4e-segment input{position:absolute; opacity:0; width:1px; height:1px;}
+  .f4e-segment input:focus-visible + label{outline:3px solid var(--f4e-turquoise); outline-offset:2px;}
+  .f4e-sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;}
   .f4e-segment label{flex:1; text-align:center; padding:11px 10px; border-radius:7px; font-size:14px; font-weight:600; cursor:pointer; color:var(--f4e-muted); transition:background .15s, color .15s;}
   .f4e-segment input:checked + label{background:var(--f4e-green); color:#fff;}
   .f4e-segment label .f4e-segment-sub{display:block; font-weight:400; font-size:11.5px; margin-top:2px; opacity:.85;}
@@ -59,23 +61,20 @@ hidden: true
   .f4e-row > .f4e-field{flex:1; min-width:0;}
   .f4e-field{margin-bottom:18px;}
   .f4e-field label{display:block; font-size:14px; font-weight:600; margin-bottom:6px;}
-  .f4e-field .f4e-hint{font-size:12.5px; color:var(--f4e-muted); margin-top:5px; line-height:1.45;}
+  .f4e-field .f4e-hint, .f4e-section > .f4e-hint, .f4e-next .f4e-hint{font-size:12.5px; color:var(--f4e-muted); margin-top:5px; line-height:1.45;}
   .f4e-field input[type=text], .f4e-field input[type=email], .f4e-field input[type=tel], .f4e-field input[type=number]{
     width:100%; padding:11px 12px; border:1px solid var(--f4e-border); border-radius:8px;
     font-size:15px; font-family:inherit; color:var(--f4e-text); background:var(--f4e-bg-soft);
     transition:border-color .15s, box-shadow .15s;
   }
   .f4e-field input:focus{outline:none; border-color:var(--f4e-turquoise); box-shadow:0 0 0 3px rgba(15,169,160,.18); background:#fff;}
-  .f4e-zp-row{display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
-  .f4e-zp-prefix{font-family:monospace; font-size:15px; font-weight:700; background:var(--f4e-bg-soft); border:1px solid var(--f4e-border); border-radius:8px; padding:11px 12px; color:var(--f4e-muted); white-space:nowrap;}
-  .f4e-zp-row input{flex:1; min-width:160px; font-family:monospace; letter-spacing:1px;}
 
   .f4e-field-inline-btn{display:flex; gap:8px; align-items:center;}
   .f4e-field-inline-btn input{flex:1;}
   .f4e-btn-secondary{flex-shrink:0; padding:10px 14px; font-size:13px; font-weight:600; border:1px solid var(--f4e-turquoise); color:var(--f4e-turquoise-dark); background:#fff; border-radius:8px; cursor:pointer; white-space:nowrap; transition:background .15s;}
   .f4e-btn-secondary:hover{background:var(--f4e-turquoise-tint);}
 
-  .f4e-radio-list{display:flex; flex-direction:column; gap:8px;}
+  .f4e-radio-list{display:flex; flex-direction:column; gap:8px; border:0; padding:0; margin:0; min-width:0;}
   .f4e-radio-item{display:flex; gap:10px; align-items:flex-start; padding:11px 12px; border:1px solid var(--f4e-border); border-radius:8px; background:var(--f4e-bg-soft); cursor:pointer;}
   .f4e-radio-item input{margin-top:2px; accent-color:var(--f4e-green); flex-shrink:0; cursor:pointer;}
   .f4e-radio-item label{font-size:14px; cursor:pointer;}
@@ -97,6 +96,11 @@ hidden: true
   .f4e-foot a{color:var(--f4e-turquoise-dark);}
   .f4e-msg{margin-top:16px; padding:12px 14px; border-radius:8px; font-size:14px; display:none;}
   .f4e-msg.show{display:block;}
+  .f4e-next{margin-top:20px; padding:18px 20px; border:2px solid var(--f4e-green); border-radius:10px; background:#EAF4EF; color:var(--f4e-text);}
+  .f4e-next h3{margin:0 0 10px; font-size:18px; color:var(--f4e-green-dark);}
+  .f4e-next ol{margin:0 0 12px; padding-left:20px;} .f4e-next li{margin-bottom:10px; font-size:14px; line-height:1.55;}
+  .f4e-next-files{display:flex; flex-wrap:wrap; gap:8px; margin-top:8px;}
+  .f4e-next a.f4e-btn-secondary{text-decoration:none; display:inline-block;}
   .f4e-msg.ok{background:#E1F3ED; color:var(--f4e-green-dark); border:1px solid #BCE3D4;}
   .f4e-msg.err{background:#FBEAE9; color:var(--f4e-error); border:1px solid #F3C8C5;}
 
@@ -123,21 +127,23 @@ hidden: true
     </svg>
     <p class="f4e-eyebrow">Aufnahmeantrag</p>
     <h2>Mitglied werden bei 4E Schwertberg</h2>
-    <p>Bitte füllen Sie alle Abschnitte vollständig aus.</p>
+    <p>Füllen Sie das Formular aus. Am Ende erhalten Sie zwei PDFs, die Sie unterschreiben und uns schicken.</p>
   </div>
 
   <div class="f4e-body">
     <form id="f4e-form">
+      <p class="f4e-hint" style="margin-top:0;">Alle Felder ohne den Zusatz „optional“ müssen ausgefüllt werden.</p>
       <!-- Personal details -->
       <div class="f4e-section">
         <p class="f4e-section-label">Persönliche Angaben</p>
 
-        <div class="f4e-segment">
+        <fieldset class="f4e-segment">
+          <legend class="f4e-sr-only">Antragsteller:in</legend>
           <input type="radio" id="typ-person" name="Antragstellertyp" value="Person" checked>
           <label for="typ-person">Privatperson</label>
           <input type="radio" id="typ-firma" name="Antragstellertyp" value="Firma">
           <label for="typ-firma">Firma</label>
-        </div>
+        </fieldset>
 
         <div id="block-person">
           <div class="f4e-row">
@@ -195,12 +201,13 @@ hidden: true
       <!-- Membership type -->
       <div class="f4e-section">
         <p class="f4e-section-label">Art der Teilnahme</p>
-        <div class="f4e-segment">
+        <fieldset class="f4e-segment">
+          <legend class="f4e-sr-only">Art der Teilnahme</legend>
           <input type="radio" id="rolle-bezieher" name="Rolle" value="Bezieher" checked>
           <label for="rolle-bezieher">Bezieher</label>
           <input type="radio" id="rolle-bezieher-einspeiser" name="Rolle" value="Bezieher und Einspeiser">
           <label for="rolle-bezieher-einspeiser">Bezieher und Einspeiser</label>
-        </div>
+        </fieldset>
       </div>
 
       <!-- Meter point -->
@@ -208,41 +215,37 @@ hidden: true
         <p class="f4e-section-label">Zählpunkt</p>
 
         <div class="f4e-field" id="block-zaehlpunkt-bezieher">
-          <label for="f-zaehlpunkt-bezieher">Zählpunktnummer Bezieher <span style="font-weight:400;color:var(--f4e-muted);">(steht auf der Stromrechnung oder Netzzugangszusage)</span></label>
-          <div class="f4e-zp-row">
-            <span class="f4e-zp-prefix">AT 003100 00000</span>
-            <input type="text" id="f-zaehlpunkt-bezieher" name="Zaehlpunkt_Bezieher_Rest" inputmode="numeric" pattern="[0-9]{20}" maxlength="20" placeholder="20 weitere Ziffern" required>
-          </div>
+          <label for="f-zaehlpunkt-bezieher">Zählpunktnummer für den Strombezug</label>
+          <input type="text" id="f-zaehlpunkt-bezieher" name="Zaehlpunkt_Bezieher_Rest" inputmode="text" autocomplete="off" spellcheck="false" maxlength="45" placeholder="AT 003100 00000 …" style="font-family:monospace;" aria-describedby="hint-zp-bezieher" required>
+          <p class="f4e-hint" id="hint-zp-bezieher">Steht auf Ihrer Stromrechnung (33 Zeichen, beginnt mit AT 003100 00000). Sie können die ganze Nummer einfügen oder nur die letzten 20 Ziffern. Leerzeichen sind egal.</p>
         </div>
 
         <div class="f4e-field">
           <label for="f-teilnahmefaktor-bezieher">Teilnahmefaktor Bezieher (%)</label>
-          <input type="number" id="f-teilnahmefaktor-bezieher" name="Teilnahmefaktor_Bezieher" min="1" max="100" step="1" value="100" required>
-          <p class="f4e-hint">100 % bedeuten, Sie beziehen keine Energie aus einer anderen Energiegemeinschaft.</p>
+          <input type="number" id="f-teilnahmefaktor-bezieher" name="Teilnahmefaktor_Bezieher" min="1" max="100" step="1" value="100" aria-describedby="hint-teilnahmefaktor-bezieher" required>
+          <p class="f4e-hint" id="hint-teilnahmefaktor-bezieher">Normalerweise 100 %. Weniger nur, wenn Sie auch von einer anderen Energiegemeinschaft Strom beziehen.</p>
         </div>
         <div class="f4e-field" id="block-strombedarf">
           <label for="f-strombedarf">Strombedarf pro Jahr <span style="font-weight:400;color:var(--f4e-muted);">(optional, geschätzt, kWh)</span></label>
-          <input type="number" id="f-strombedarf" name="Strombedarf_kWh" min="0" step="1">
-          <p class="f4e-hint" id="hint-preis-kaeufer">Zum <a href="/preise">Preis</a> gem. Vereinsbeschluss von erneuerbarer Energie gem. dem Vereinszweck.</p>
+          <input type="number" id="f-strombedarf" name="Strombedarf_kWh" min="0" step="1" aria-describedby="hint-strombedarf">
+          <p class="f4e-hint" id="hint-strombedarf">Ihre Angabe hilft uns bei der Planung.</p>
         </div>
 
         <div class="f4e-field" id="block-zaehlpunkt-einspeiser" hidden>
-          <label for="f-zaehlpunkt-einspeiser">Zählpunktnummer Einspeiser <span style="font-weight:400;color:var(--f4e-muted);">(steht auf der Stromrechnung oder Netzzugangszusage, startet mit '99')</span></label>
-          <div class="f4e-zp-row">
-            <span class="f4e-zp-prefix">AT 003100 00000</span>
-            <input type="text" id="f-zaehlpunkt-einspeiser" name="Zaehlpunkt_Einspeiser_Rest" inputmode="numeric" pattern="99[0-9]{18}" maxlength="20" placeholder="20 weitere Ziffern" required>
-          </div>
+          <label for="f-zaehlpunkt-einspeiser">Zählpunktnummer für die Einspeisung</label>
+          <input type="text" id="f-zaehlpunkt-einspeiser" name="Zaehlpunkt_Einspeiser_Rest" inputmode="text" autocomplete="off" spellcheck="false" maxlength="45" placeholder="AT 003100 00000 99…" style="font-family:monospace;" aria-describedby="hint-zp-einspeiser" required>
+          <p class="f4e-hint" id="hint-zp-einspeiser">Eigene Nummer für Ihre Einspeisung, steht auf der Einspeise-Rechnung oder Netzzugangszusage. Nach AT 003100 00000 folgen 20 Ziffern, die mit 99 beginnen.</p>
         </div>
         <div class="f4e-field" id="block-teilnahmefaktor-einspeiser" hidden>
           <label for="f-teilnahmefaktor-einspeiser">Teilnahmefaktor Einspeiser (%)</label>
-          <input type="number" id="f-teilnahmefaktor-einspeiser" name="Teilnahmefaktor_Einspeiser" min="1" max="100" step="1" value="100">
-          <p class="f4e-hint">100 % bedeuten, Sie verkaufen keine Energie an eine andere Energiegemeinschaft.</p>
+          <input type="number" id="f-teilnahmefaktor-einspeiser" name="Teilnahmefaktor_Einspeiser" min="1" max="100" step="1" value="100" aria-describedby="hint-teilnahmefaktor-einspeiser">
+          <p class="f4e-hint" id="hint-teilnahmefaktor-einspeiser">Normalerweise 100 %. Weniger nur, wenn Sie auch an eine andere Energiegemeinschaft Strom liefern.</p>
         </div>
 
         <div class="f4e-field" id="block-anlagengroesse" hidden>
-          <label for="f-anlagengroesse">Anlagengröße (kWp)</label>
-          <input type="number" id="f-anlagengroesse" name="Anlagengroesse_kWp" min="0" step="0.1">
-          <p class="f4e-hint">Zum <a href="/preise">Preis</a> gem. Vereinsbeschluss von erneuerbarer Energie gem. dem Vereinszweck.</p>
+          <label for="f-anlagengroesse">Anlagengröße <span style="font-weight:400;color:var(--f4e-muted);">(optional, kWp)</span></label>
+          <input type="number" id="f-anlagengroesse" name="Anlagengroesse_kWp" min="0" step="0.1" aria-describedby="hint-anlagengroesse">
+          <p class="f4e-hint" id="hint-anlagengroesse">Ihre Angabe hilft uns bei der Planung.</p>
         </div>
       </div>
 
@@ -250,7 +253,8 @@ hidden: true
       <div class="f4e-section">
         <p class="f4e-section-label">USt-steuerliche Behandlung, ich bin ein(e)</p>
 
-        <div class="f4e-radio-list" id="ust-radio-list">
+        <fieldset class="f4e-radio-list" id="ust-radio-list">
+          <legend class="f4e-sr-only">USt-steuerliche Behandlung</legend>
           <div class="f4e-radio-item">
             <input type="radio" id="ust-1" name="USt_Behandlung" value="Privater bzw. Kleinunternehmer (< € 55.000,-- Umsatz p.a.)" required>
             <label for="ust-1">Privater bzw. Kleinunternehmer (&lt; € 55.000,-- Umsatz p.a.)</label>
@@ -271,7 +275,7 @@ hidden: true
             <input type="radio" id="ust-5" name="USt_Behandlung" value="Gemeinde - Kein Betrieb gewerblicher Art">
             <label for="ust-5">Gemeinde – Kein Betrieb gewerblicher Art</label>
           </div>
-        </div>
+        </fieldset>
 
         <div class="f4e-check" style="margin-top:16px;">
           <input type="checkbox" id="steuer-confirm" name="Steuerliche_Bestaetigung" value="Ja" required>
@@ -286,9 +290,9 @@ hidden: true
         <p class="f4e-section-label">Bankverbindung &amp; SEPA-Lastschriftmandat</p>
 
         <div class="f4e-info-box">
-          <strong>Mitgliedsbeitrag:</strong> € 12,50 pro Kalenderjahr und Mitglied (exkl. 20 % USt). Zahlungen/Gutschriften erfolgen ausschließlich mittels Bankeinzug.<br><br>
-          <strong>Gläubiger-Identifikationsnummer von 4E Schwertberg:</strong> AT70ZZZ00000077537<br>
-          4E Schwertberg – Erneuerbare Energie Effizient Einsetzen, Unterkoglbergstraße 1, 4311 Schwertberg. Die Mandatsreferenz wird Ihnen nach Annahme Ihres Antrags separat mitgeteilt.
+          <strong>Mitgliedsbeitrag:</strong> € {{ site.data.config4e.costs.membershipFeeNet }} zuzüglich {{ site.data.config4e.costs.vat }} USt (= € {{ site.data.config4e.costs.membershipFeeWithVAT }},00) pro Kalenderjahr und Zählpunkt. Zahlungen und Gutschriften laufen ausschließlich über Ihr Bankkonto.<br><br>
+          <strong>Gläubiger-Identifikationsnummer von 4E Schwertberg:</strong> {{ site.data.config4e.details.sepaCreditorId }}<br>
+          {{ site.data.config4e.contact.fullName }}, {{ site.data.config4e.contact.street }}, {{ site.data.config4e.contact.zip }} {{ site.data.config4e.contact.town }}.
         </div>
 
         <div class="f4e-field">
@@ -299,7 +303,8 @@ hidden: true
         <div class="f4e-row">
           <div class="f4e-field" style="flex:2;">
             <label for="f-iban">IBAN</label>
-            <input type="text" id="f-iban" name="IBAN" placeholder="AT..." required autocomplete="off" style="text-transform:uppercase;">
+            <input type="text" id="f-iban" name="IBAN" placeholder="AT..." required inputmode="text" autocomplete="off" spellcheck="false" aria-describedby="hint-iban" style="text-transform:uppercase;">
+            <p class="f4e-hint" id="hint-iban">Die IBAN finden Sie auf Ihrer Bankkarte oder im Online-Banking.</p>
           </div>
           <div class="f4e-field" style="flex:1;">
             <label for="f-bic">BIC <span style="font-weight:400;color:var(--f4e-muted);">(optional)</span></label>
@@ -325,7 +330,7 @@ hidden: true
 
       <!-- Confirmations & consent -->
       <div class="f4e-section">
-        <p class="f4e-section-label">Bestätigung &amp; Einwilligung</p>
+        <p class="f4e-section-label">Bestätigung &amp; Datenschutz</p>
 
         <div class="f4e-check">
           <input type="checkbox" id="statuten-confirm" name="Vereinsstatuten_Erhalt" value="Ja" required>
@@ -334,33 +339,49 @@ hidden: true
           </label>
         </div>
 
-        <div class="f4e-check">
-          <input type="checkbox" id="consent1" name="Bestaetigung_Angaben" value="Ja" required>
-          <label for="consent1">
-            Ich bestätige, dass meine Angaben richtig sind und vom Verein im Rahmen der Vereinstätigkeiten verarbeitet werden dürfen. Änderungen melde ich umgehend.<span class="f4e-tag">Pflicht</span>
-          </label>
+        <div class="f4e-info-box" id="datenschutz-hinweis">
+          <strong>Datenschutz – kurz erklärt</strong><br>
+          <strong>Verantwortlich:</strong> {{ site.data.config4e.contact.fullName }}, {{ site.data.config4e.contact.street }}, {{ site.data.config4e.contact.zip }} {{ site.data.config4e.contact.town }}, {{ site.data.config4e.contact.mailInfo }}.<br>
+          <strong>Wofür:</strong> Wir verwenden Ihre Angaben, um Ihren Antrag zu prüfen, Ihre Mitgliedschaft zu verwalten und Strom sowie Mitgliedsbeitrag abzurechnen. Das ist für die Mitgliedschaft notwendig (Art. 6 Abs. 1 lit. b DSGVO) und teilweise gesetzlich vorgeschrieben, etwa im Energie- und Steuerrecht (Art. 6 Abs. 1 lit. c DSGVO).<br>
+          <strong>Wer Daten bekommt:</strong> unser Abrechnungsdienstleister (erstellt in unserem Auftrag Abrechnungen und Gutschriften; den Namen nennen wir Ihnen auf Anfrage), der Netzbetreiber Linz Netz GmbH (über den Datenaustausch der Energiewirtschaft, EDA), die beteiligten Banken und unser E-Mail-Anbieter.<br>
+          <strong>Wie lange:</strong> solange Sie Mitglied sind; Abrechnungsunterlagen danach sieben Jahre ab Ende des Jahres der letzten Abrechnung (§ 132 BAO). Abgelehnte oder zurückgezogene Anträge samt SEPA-Lastschriftmandat höchstens ein Jahr.<br>
+          <strong>Ihre Rechte:</strong> Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerspruch und Beschwerde bei der Datenschutzbehörde.<br>
+          Alle Details: <a href="/datenschutz/#mitgliedschaft">Datenschutzerklärung</a>
         </div>
 
-        <div class="f4e-check">
-          <input type="checkbox" id="consent2" name="Einwilligung_Abrechnung" value="Ja" required>
-          <label for="consent2">
-            Ich willige ein, dass meine Daten dem Abrechnungsdienstleister zur Abrechnung im Rahmen der 4E Schwertberg zur Verfügung gestellt und verarbeitet werden dürfen.<span class="f4e-tag">Pflicht</span>
-          </label>
-        </div>
-
-        <p class="f4e-field" style="font-size:12.5px;color:var(--f4e-muted);margin-top:14px;">
-          Die Zustimmung zur Datenverarbeitung kann jederzeit schriftlich widerrufen werden. Weitere Unterlagen (z.B. Netzzusatzvertrag, 1/4h-Auslesebestätigung) reichen Sie bitte separat nach.
-        </p>
+        <p class="f4e-hint">Weitere Unterlagen (z. B. Netzzusatzvertrag, 1/4h-Auslesebestätigung) reichen Sie bitte separat auf Anfrage nach.</p>
       </div>
 
-      <button type="button" class="f4e-pdf-btn" id="btn-pdf">📄 Antrag als ausgefülltes PDF herunterladen</button>
+      <button type="button" class="f4e-pdf-btn" id="btn-pdf">Antrag erstellen (2 PDFs)</button>
       <div class="f4e-msg" id="f4e-msg"></div>
+      <div class="f4e-next" id="f4e-next" hidden tabindex="-1">
+        <h3>Fast geschafft – so geht es weiter</h3>
+        <ol>
+          <li>
+            <strong>Beide PDFs speichern.</strong>
+            <div class="f4e-next-files">
+              <a class="f4e-btn-secondary" id="dl-antrag" href="#" download="4e-Aufnahmeantrag.pdf">Aufnahmeantrag (PDF)</a>
+              <a class="f4e-btn-secondary" id="dl-sepa" href="#" download="4e-SEPA-Lastschriftmandat.pdf">SEPA-Lastschriftmandat (PDF)</a>
+            </div>
+          </li>
+          <li>
+            <strong>Beide PDFs unterschreiben.</strong> Ohne Unterschrift auf dem SEPA-Lastschriftmandat kann Ihre Bank die Abbuchung ablehnen. So können Sie unterschreiben:
+            {% include sign-hint.html %}
+          </li>
+          <li>
+            <strong>Beides an uns senden:</strong> die unterschriebenen PDFs bzw. Scans oder Fotos per E-Mail an <a href="mailto:{{ site.data.config4e.contact.mailRegister }}?subject=Aufnahmeantrag%204E%20Schwertberg">{{ site.data.config4e.contact.mailRegister }}</a>. Oder werfen Sie die unterschriebenen Ausdrucke in unseren Briefkasten: {{ site.data.config4e.contact.street }}, {{ site.data.config4e.contact.zip }} {{ site.data.config4e.contact.town }}.
+          </li>
+        </ol>
+        <button type="button" class="f4e-pdf-btn" id="btn-share" hidden>PDFs teilen (z. B. per E-Mail)</button>
+        <p class="f4e-hint" id="share-hint" hidden>Tipp für Handy und Tablet: Mit „PDFs teilen“ können Sie die Dateien direkt speichern, drucken oder an eine E-Mail anhängen.</p>
+        <p class="f4e-hint">Wir prüfen Ihren Antrag und melden uns per E-Mail bei Ihnen.</p>
+      </div>
       <p class="f4e-foot">
-        Der PDF-Download erfolgt lokal in Ihrem Browser, ohne dass Daten an Dritte übertragen werden.
+        Die PDFs werden direkt in Ihrem Browser erstellt. Ihre Eingaben werden dabei nicht übertragen.
       </p>
     </form>
   </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<script src="/assets/vendor/pdf-lib-1.17.1/pdf-lib.min.js"></script>
 <script src="/assets/js/myform.js"></script>

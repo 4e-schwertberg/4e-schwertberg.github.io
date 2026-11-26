@@ -1,23 +1,64 @@
 - q: Wer kann mitmachen?
-  a: Haushalte, Betriebe und Gemeinden in Schwertberg und Umgebung.
+  a: >-
+    Haushalte, Betriebe und Gemeinden, deren Stromanschluss im Netz der Linz Netz GmbH in unserem
+    Regionalbereich (Regional-ID EGR00047) liegt – zum Beispiel in Schwertberg, Mauthausen,
+    Ried in der Riedmark, Langenstein und Tragwein. Ein Teil von Schwertberg wird vom
+    Elektrizitätswerk Perg versorgt. Dort ist eine Teilnahme derzeit leider nicht möglich.
+    [Bin ich dabei?](/#bin-ich-dabei)
 - q: Welche Daten brauche ich für den Beitritt?
-  a: Zählpunktnummer, Kontaktdaten, IBAN für Gutschriften.
+  a: >-
+    Ihre Kontaktdaten, Ihre Zählpunktnummer (steht auf der Stromrechnung, 33 Zeichen, beginnt mit
+    AT 003100) und Ihre IBAN. Wenn Sie auch Strom einspeisen, brauchen Sie zusätzlich die
+    Zählpunktnummer Ihrer Einspeisung. Ihren geschätzten Jahresverbrauch und die Größe Ihrer Anlage
+    in kWp verwenden wir für die Planung.
 - q: Was ist eine Erneuerbare-Energie-Gemeinschaft (EEG) und wie funktioniert sie?
-  a: Eine Erneuerbare-Energie-Gemeinschaft (EEG) ist eine Gruppe von Personen oder Unternehmen, die gemeinsam erneuerbare Energie erzeugen und verbrauchen. Bei 4E Schwertberg erhalten Sie Energie aus regionaler, erneuerbarer Produktion. Durch die Teilnahme an unserer Gemeinschaft tragen Sie aktiv zum Klimaschutz bei und unterstützen die Regionalität.
+  a: >-
+    In einer Erneuerbare-Energie-Gemeinschaft (EEG) teilen Nachbarinnen und Nachbarn Strom aus
+    erneuerbaren Quellen, zum Beispiel von PV-Anlagen auf Hausdächern oder regionale Wasser- und Windkraft.
+    Wer mehr Strom erzeugt, als er selbst braucht, gibt ihn über das öffentliche Netz an andere Mitglieder ab.
+    Der Netzbetreiber misst jede Viertelstunde, wie viel Strom erzeugt und verbraucht wird, und teilt
+    ihn rechnerisch auf.
 - q: Muss ich meinen aktuellen Stromvertrag kündigen, wenn ich Mitglied bei 4E Schwertberg werde?
-  a: Nein, Sie müssen Ihren bestehenden Stromvertrag nicht kündigen. Der Vertrag mit 4E Schwertberg ersetzt keine bestehenden Verträge, sondern ist eine Ergänzung dazu. Sie benötigen weiterhin gültige Strombezugs- und/oder Stromlieferverträge, um Teil der Gemeinschaft zu werden.
-- q: Kann ich meinen Stromanbieter wechseln, wenn ich Mitglied bei 4E Schwertberg bin?
-  a: Ja, der Wechsel des Stromanbieters ist weiterhin möglich. Die Teilnahme an unserer Energiegemeinschaft hindert Sie nicht daran, den Anbieter zu wechseln. Sie können dies jederzeit tun, da wir keine Garantie auf eine ständige Energieversorgung durch die Gemeinschaft geben können.
-- q: Welche Vorteile habe ich als Mitglied von 4E Schwertberg?
-  a: |
-    Als Mitglied profitieren Sie von verschiedenen Vorteilen. Sie erhalten nicht nur erneuerbare Energie zu stabilen und fairen Preisen, sondern sparen auch bei Abgaben wie der Elektrizitätsabgabe und Netzgebühren (28%). Und darüber hinaus tragen Sie zum Umwelt- und Klimaschutz bei.
-- q: Muss ich eine PV-Anlage haben um bei der 4E mitmachen zu können?
-  a: Nein, jeder Verbraucher kann teilnehmen.
+  a: >-
+    Nein. Bitte kündigen Sie Ihren Stromvertrag nicht. Die Mitgliedschaft bei 4E Schwertberg ist eine
+    Ergänzung dazu. Die Gemeinschaft deckt nur einen Teil Ihres Verbrauchs ab, den Rest liefert
+    weiterhin Ihr Stromlieferant. Wenn Sie einspeisen, brauchen Sie auch weiterhin einen Abnehmer für
+    den übrigen Strom.
+- q: Kann ich meinen Stromlieferanten wechseln, wenn ich Mitglied bin?
+  a: >-
+    Ja, jederzeit. Die Mitgliedschaft bei 4E Schwertberg hängt nicht von Ihrem Stromlieferanten ab.
+- q: Welche Vorteile habe ich als Mitglied?
+  a: >-
+    Für den Strom, den Sie aus der Gemeinschaft beziehen, gilt unser stabiler Preis. Dazu kommen
+    gesetzliche Ermäßigungen – aber nur für diese Strommenge: ein geringeres Netznutzungsentgelt
+    (2026 um 28 % günstiger), keine Elektrizitätsabgabe und kein Erneuerbaren-Förderbeitrag.
+    Details und Einschränkungen finden Sie unter [Preise](/preise/#vorteile).
+- q: Muss ich eine PV-Anlage haben, um bei der 4E mitmachen zu können?
+  a: >-
+    Nein. Sie können auch nur Strom beziehen. Eine eigene PV-Anlage brauchen Sie nur, wenn Sie selbst
+    Strom in die Gemeinschaft einspeisen möchten.
 - q: Wie kann ich aus dem Verein austreten?
-  a: Eine Email an den Verein genügt. Die Kündigungsfrist beträgt ein Monat. Man scheidet dann immer zum Ende jenes Quartals aus, in dem die Kündigungsfrist endet.
-- q: Von wem und wann bekomme ich die Stromabrechnung/Stromgutschrift ?
-  a: Die Linz AG rechnet für die 4E jeweils vierteljährlich im Nachhinein ab. Es gibt keine Vorauszahlungen.
+  a: >-
+    Teilen Sie uns Ihren Austritt schriftlich mit. Eine E-Mail an info@4e-schwertberg.at genügt.
+    Die Kündigungsfrist beträgt mindestens einen Monat.
+    Der Austritt wird zum Ende der laufenden Abrechnungsperiode wirksam. Eine Abrechnungsperiode ist
+    derzeit ein Quartal. Beispiel: Erreicht uns Ihre Kündigung bis Ende Februar, endet Ihre
+    Mitgliedschaft am 31. März. Bereits bezahlte Mitgliedsbeiträge werden nicht zurückerstattet.
+- q: Von wem und wann bekomme ich die Stromabrechnung bzw. Gutschrift?
+  a: >-
+    Die 4E rechnet vierteljährlich im Nachhinein ab. Es gibt keine Vorauszahlungen.
+    Beträge werden von Ihrem Konto abgebucht, Gutschriften auf Ihr Konto überwiesen.
 - q: Wer verrechnet die verminderten Netzkosten?
-  a: Das günstigere Netzentgelt wird wie bisher auf der Abrechnung ihres Stromanbieters verrechnet. Wenn sie bisher eine separate Rechnung von der Linz Netz bekommen haben, dann werden auch dort die Kosten der 4E abgerechnet.
+  a: >-
+    Das ermäßigte Netzentgelt verrechnet wie bisher die Linz Netz GmbH, meist über die Rechnung Ihres
+    Stromlieferanten. Wenn Sie bisher eine eigene Netzrechnung von der Linz Netz bekommen haben, finden
+    Sie die Ermäßigung dort.
 - q: Was brauche ich zum Registrieren bei der Linz Netz?
-  a: Für die erstmalige Registrierung ist die Kundennummer und Verrechnungskontonummer der Linz AG erforderlich. Sie können diese auch unter 0732/3403-9050 anfragen/anfordern.
+  a: >-
+    Für die erste Anmeldung im Kundenportal der Linz Netz brauchen Sie Ihre Kundennummer und Ihre
+    Verrechnungskontonummer der Linz AG. Beides können Sie auch telefonisch unter 0732 3403-9050
+    erfragen.
+- q: Was ändert sich durch das neue Elektrizitätswirtschaftsgesetz (ElWG)?
+  a: >-
+    Seit 1. Oktober 2026 gilt das ElWG. Energiegemeinschaften heißen dort „gemeinsame
+    Energienutzung“. Für bestehende Mitglieder ändert sich nichts. Sie müssen nichts tun.

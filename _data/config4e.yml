@@ -52,10 +52,13 @@ contact:
 details:
   zvr: "1922887273"
   uid: "ATU80460519"
+  sepaCreditorId: "AT70ZZZ00000077537"
+  marketPartnerId: "RC100527" # Marktpartnerkennung der EEG (ebUtilities/EDA), not the 33-character Gemeinschafts-ID
 
 # Kosten und Preise
 costs:
   membershipFeeWithVAT: "15"
+  membershipFeeNet: "12,50"
   vat: "20%"
   price_buyer: "12"
   price_buyer_unit: "ct/kWh"
@@ -63,10 +66,11 @@ costs:
   price_seller_unit: "ct/kWh"
   price_last_change: "01.04.2026"
 
+  # Linz Netz 2026, NE 7 ohne Leistungsmessung: grid = Netznutzung 5,57 + Netzverlust 0,487; eeg grid = 4,01 (regional, -28 %) + 0,487; levies = Elektrizitätsabgabe 0,1 + Erneuerbaren-Förderbeitrag 0,583 (auf Netznutzung) + 0,037 (auf Netzverlust, laut Linz Netz Preisblatt) (ct/kWh netto)
   energy_chart:
     conventional:
       grid: 6.057
-      levies: 0.723
+      levies: 0.720
       taxPercent: 20.0
     eeg:
       regional:
@@ -75,11 +79,18 @@ costs:
         taxPercent: 20.0
 
 # Formulare und verlinkte Dokumente
+# download: file name the browser saves the PDF under (the URL stays the same so old links keep working)
 form_buyer:
   url: "/assets/docs/Aufnahmeantrag-Kaeufer.pdf"
   text: "Anmeldeformular Bezieher"
+  download: "4e-Aufnahmeantrag-Bezieher.pdf"
 form_buyer_seller_url:
   url: "/assets/docs/Aufnahmeantrag-Einspeiser.pdf"
   text: "Anmeldeformular Einspeiser"
+  download: "4e-Aufnahmeantrag-Einspeiser.pdf"
+form_sepa:
+  url: "/assets/docs/SEPA-Lastschriftmandat-template.pdf"
+  text: "SEPA-Lastschriftmandat"
+  download: "4e-SEPA-Lastschriftmandat.pdf"
 statuten:
   url: "/assets/docs/Vereinsstatuten_4E_Schwertberg.pdf"

@@ -17,27 +17,27 @@
 {% assign eeg_vat = eeg_sub | times: eeg_vat_rate %}
 {% assign eeg_total = eeg_sub | plus: eeg_vat %}
 
-{% assign savings = conv_total | minus: eeg_total | times: -1.0 %}
+{% assign savings = conv_total | minus: eeg_total %}
 
 <div class="energy-chart-wrapper">
 
   <!-- LEFT: CHART -->
-  <div class="energy-chart">
+  <div class="energy-chart" aria-hidden="true">
 
     <!-- STANDARD -->
     <div class="bar-container">
       <div class="bar">
 
-        <div class="seg energy" style="height: {{ energy | times: 10 }}px"      title="Energie: {{ energy }} ct/kWh"></div>
-        <div class="seg grid"   style="height: {{ conv.grid | times: 10 }}px"   title="Netzgebühren: {{ conv.grid }} ct/kWh"></div>
-        <div class="seg taxes"  style="height: {{ conv.levies | times: 10 }}px" title="Abgaben: {{ conv.levies }} ct/kWh"></div>
-        <div class="seg vat"    style="height: {{ conv_vat | times: 10 }}px"    title="Steuern: {{ conv_vat }} ct/kWh"></div>
+        <div class="seg energy" style="height: {{ energy | times: 10 }}px"      title="Energie: {{ energy | round: 2 | replace: '.', ',' }} ct/kWh"></div>
+        <div class="seg grid"   style="height: {{ conv.grid | times: 10 }}px"   title="Netzkosten: {{ conv.grid | round: 2 | replace: '.', ',' }} ct/kWh"></div>
+        <div class="seg taxes"  style="height: {{ conv.levies | times: 10 }}px" title="Abgaben: {{ conv.levies | round: 2 | replace: '.', ',' }} ct/kWh"></div>
+        <div class="seg vat"    style="height: {{ conv_vat | times: 10 }}px"    title="Umsatzsteuer: {{ conv_vat | round: 2 | replace: '.', ',' }} ct/kWh"></div>
 
       </div>
 
       <div class="label">
-        Conventional<br>
-        <b>{{ conv_total | round: 2 }} ct/kWh</b>
+        Herkömmlich<br>
+        <b>{{ conv_total | round: 2 | replace: '.', ',' }} ct/kWh</b>
       </div>
     </div>
 
@@ -45,20 +45,20 @@
     <div class="bar-container">
       <div class="bar">
 
-        <div class="seg energy" style="height: {{ energy | times: 10 }}px"     title="Energie: {{ energy }} ct/kWh"></div>
-        <div class="seg grid"   style="height: {{ eeg_grid | times: 10 }}px"   title="Netzgebühren: {{ eeg_grid }} ct/kWh"></div>
-        <div class="seg taxes"  style="height: {{ eeg.levies | times: 10 }}px" title="Abgaben: {{ eeg.levies }} ct/kWh"></div>
-        <div class="seg vat"    style="height: {{ eeg_vat | times: 10 }}px"    title="Steuern: {{ eeg_vat }} ct/kWh"></div>
+        <div class="seg energy" style="height: {{ energy | times: 10 }}px"     title="Energie: {{ energy | round: 2 | replace: '.', ',' }} ct/kWh"></div>
+        <div class="seg grid"   style="height: {{ eeg_grid | times: 10 }}px"   title="Netzkosten: {{ eeg_grid | round: 2 | replace: '.', ',' }} ct/kWh"></div>
+        <div class="seg taxes"  style="height: {{ eeg.levies | times: 10 }}px" title="Abgaben: {{ eeg.levies | round: 2 | replace: '.', ',' }} ct/kWh"></div>
+        <div class="seg vat"    style="height: {{ eeg_vat | times: 10 }}px"    title="Umsatzsteuer: {{ eeg_vat | round: 2 | replace: '.', ',' }} ct/kWh"></div>
 
         <div class="savings" style="height: {{ savings | times: 10 }}px">
-          {{ savings | round: 2 }} ct
+          {{ savings | round: 2 | replace: '.', ',' }} ct weniger
         </div>
 
       </div>
 
       <div class="label">
         4E Schwertberg<br>
-        <b>{{ eeg_total | round: 2 }} ct/kWh</b>
+        <b>{{ eeg_total | round: 2 | replace: '.', ',' }} ct/kWh</b>
       </div>
     </div>
 
@@ -71,28 +71,44 @@
     <div class="legend-title">
       Einsparung
       <div class="legend-sub">
-        EEG vs. konventionell
+        4E Schwertberg im Vergleich zu herkömmlich
       </div>
     </div>
 
     <!-- DELTA BADGE -->
     <div class="delta-badge">
-      ↘ {{ savings | round: 2 }} ct/kWh
+      Sie sparen {{ savings | round: 2 | replace: '.', ',' }} ct/kWh
     </div>
 
     <!-- LEGEND ITEMS -->
     <div class="legend-item">
-      <span class="dot vat"></span> Mehrwertsteuer
+      <span class="dot vat"></span> Umsatzsteuer
     </div>
     <div class="legend-item">
       <span class="dot taxes"></span> Abgaben
     </div>
     <div class="legend-item">
-      <span class="dot grid"></span> Netzgebühren
+      <span class="dot grid"></span> Netzkosten
     </div>
     <div class="legend-item">
       <span class="dot energy"></span> Energiepreis
     </div>
   </div>
 
-</div>
+</div><!-- wrapper -->
+
+<table class="energy-table">
+  <caption>Preis pro kWh in Cent</caption>
+  <thead>
+    <tr><th scope="col">Bestandteil</th><th scope="col">Herkömmlich</th><th scope="col">4E Schwertberg</th></tr>
+  </thead>
+  <tbody>
+    <tr><th scope="row">Energiepreis (netto)</th><td>{{ energy | round: 2 | replace: '.', ',' }}</td><td>{{ energy | round: 2 | replace: '.', ',' }}</td></tr>
+    <tr><th scope="row">Netzkosten (Netznutzung und Netzverlust, netto)</th><td>{{ conv.grid | round: 2 | replace: '.', ',' }}</td><td>{{ eeg_grid | round: 2 | replace: '.', ',' }}</td></tr>
+    <tr><th scope="row">Abgaben (netto)</th><td>{{ conv.levies | round: 2 | replace: '.', ',' }}</td><td>{{ eeg.levies | round: 2 | replace: '.', ',' }}</td></tr>
+    <tr><th scope="row">Umsatzsteuer</th><td>{{ conv_vat | round: 2 | replace: '.', ',' }}</td><td>{{ eeg_vat | round: 2 | replace: '.', ',' }}</td></tr>
+  </tbody>
+  <tfoot>
+    <tr><th scope="row">Gesamt (brutto)</th><td><strong>{{ conv_total | round: 2 | replace: '.', ',' }}</strong></td><td><strong>{{ eeg_total | round: 2 | replace: '.', ',' }}</strong></td></tr>
+  </tfoot>
+</table>
