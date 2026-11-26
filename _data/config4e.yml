@@ -4,7 +4,7 @@ contact:
   mailInfo: "info@4e-schwertberg.at"
   mailRegister: "anmeldung@4e-schwertberg.at"
   phoneNumber: "+43 677 629 39 156"
-  street: "Unterkogelbergstraße 1" # TODO(Florian): Schreibweise bestätigen (Statuten: "Unterkogelbergstrasse 1", altes Online-Formular: "Unterkoglbergstraße").
+  street: "Unterkogelbergstraße 1"
   zip: "4311"
   town: "Schwertberg"
   boardMember: [

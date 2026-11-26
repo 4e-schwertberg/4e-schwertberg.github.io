@@ -7,7 +7,7 @@ order: 1
 ---
 
 **Schön, dass Sie dabei sein möchten!**\\
-Die Anmeldung dauert etwa zehn Minuten. Prüfen Sie vorher, ob diese Punkte auf Sie zutreffen. Ankreuzen müssen Sie hier nichts.
+Die Anmeldung dauert etwa zehn Minuten. Prüfen Sie vorher, ob diese Punkte auf Sie zutreffen.
 
 ## Checkliste
 

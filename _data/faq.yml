@@ -9,13 +9,15 @@
   a: >-
     Ihre Kontaktdaten, Ihre Zählpunktnummer (steht auf der Stromrechnung, 33 Zeichen, beginnt mit
     AT 003100) und Ihre IBAN. Wenn Sie auch Strom einspeisen, brauchen Sie zusätzlich die
-    Zählpunktnummer Ihrer Einspeisung und die Größe Ihrer Anlage in kWp.
+    Zählpunktnummer Ihrer Einspeisung. Ihren geschätzten Jahresverbrauch und die Größe Ihrer Anlage
+    in kWp verwenden wir für die Planung.
 - q: Was ist eine Erneuerbare-Energie-Gemeinschaft (EEG) und wie funktioniert sie?
   a: >-
     In einer Erneuerbare-Energie-Gemeinschaft (EEG) teilen Nachbarinnen und Nachbarn Strom aus
-    erneuerbaren Quellen, zum Beispiel von PV-Anlagen auf Hausdächern. Wer mehr Strom erzeugt, als er
-    selbst braucht, gibt ihn über das öffentliche Netz an andere Mitglieder ab. Der Netzbetreiber misst
-    jede Viertelstunde, wie viel Strom erzeugt und verbraucht wird, und teilt ihn rechnerisch auf.
+    erneuerbaren Quellen, zum Beispiel von PV-Anlagen auf Hausdächern oder regionale Wasser- und Windkraft.
+    Wer mehr Strom erzeugt, als er selbst braucht, gibt ihn über das öffentliche Netz an andere Mitglieder ab.
+    Der Netzbetreiber misst jede Viertelstunde, wie viel Strom erzeugt und verbraucht wird, und teilt
+    ihn rechnerisch auf.
 - q: Muss ich meinen aktuellen Stromvertrag kündigen, wenn ich Mitglied bei 4E Schwertberg werde?
   a: >-
     Nein. Bitte kündigen Sie Ihren Stromvertrag nicht. Die Mitgliedschaft bei 4E Schwertberg ist eine
@@ -36,20 +38,16 @@
     Nein. Sie können auch nur Strom beziehen. Eine eigene PV-Anlage brauchen Sie nur, wenn Sie selbst
     Strom in die Gemeinschaft einspeisen möchten.
 - q: Wie kann ich aus dem Verein austreten?
-  # TODO(Florian): Sobald die Statutenänderung „schriftlich (auch per E-Mail)“ beschlossen ist und gilt,
-  # den ersten Satz ersetzen durch: "Teilen Sie uns Ihren Austritt schriftlich mit. Eine E-Mail an
-  # info@4e-schwertberg.at genügt."
   a: >-
-    Teilen Sie uns Ihren Austritt schriftlich mit, am einfachsten mit einem unterschriebenen Brief an
-    unsere Adresse (siehe [Impressum](/impressum/)). Die Kündigungsfrist beträgt mindestens einen Monat.
+    Teilen Sie uns Ihren Austritt schriftlich mit. Eine E-Mail an info@4e-schwertberg.at genügt.
+    Die Kündigungsfrist beträgt mindestens einen Monat.
     Der Austritt wird zum Ende der laufenden Abrechnungsperiode wirksam. Eine Abrechnungsperiode ist
     derzeit ein Quartal. Beispiel: Erreicht uns Ihre Kündigung bis Ende Februar, endet Ihre
     Mitgliedschaft am 31. März. Bereits bezahlte Mitgliedsbeiträge werden nicht zurückerstattet.
 - q: Von wem und wann bekomme ich die Stromabrechnung bzw. Gutschrift?
   a: >-
-    Unser Abrechnungsdienstleister rechnet im Auftrag der 4E
-    vierteljährlich im Nachhinein ab. Es gibt keine Vorauszahlungen. Beträge werden von Ihrem Konto
-    abgebucht, Gutschriften auf Ihr Konto überwiesen.
+    Die 4E rechnet vierteljährlich im Nachhinein ab. Es gibt keine Vorauszahlungen.
+    Beträge werden von Ihrem Konto abgebucht, Gutschriften auf Ihr Konto überwiesen.
 - q: Wer verrechnet die verminderten Netzkosten?
   a: >-
     Das ermäßigte Netzentgelt verrechnet wie bisher die Linz Netz GmbH, meist über die Rechnung Ihres

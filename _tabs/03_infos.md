@@ -21,7 +21,7 @@ Leider können derzeit nicht alle Gebiete mitmachen: Einige liegen im Netz eines
 
 Neben der **Förderung der Regionalität** und dem **Beitrag zum Klimaschutz** gibt es gesetzliche Ermäßigungen. Sie gelten nur für den Strom, den Sie aus der Gemeinschaft beziehen:
 
-- **Geringeres Netznutzungsentgelt** – 2026 um 28 % günstiger (ab 2027 laut Entwurf 22 %).
+- **Geringeres Netznutzungsentgelt** – 2026 um 28 % günstiger.
 - **Keine Elektrizitätsabgabe** – 2026 sind das für Haushalte 0,1 Cent pro kWh, ab 2027 nach derzeitigem Gesetz 1,5 Cent pro kWh.
 - **Kein Erneuerbaren-Förderbeitrag pro kWh** – die jährlichen Pauschalbeträge zahlen Sie aber weiterhin.
 

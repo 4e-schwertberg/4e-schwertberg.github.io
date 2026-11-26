@@ -13,7 +13,7 @@ order: 2
 
 ## Mitgliedsbeitrag
 
-Der Mitgliedsbeitrag beträgt **{{ costs.membershipFeeWithVAT }} Euro pro Jahr** ({{ costs.membershipFeeNet }} Euro zuzüglich {{ costs.vat }} USt) für jeden Zählpunkt.
+Der Mitgliedsbeitrag beträgt **{{ costs.membershipFeeWithVAT }} Euro pro Jahr** ({{ costs.membershipFeeNet }} Euro zuzüglich {{ costs.vat }} MWSt) für jeden Zählpunkt.
 
 ## Tarife
 
@@ -53,7 +53,7 @@ Die Teilnahme an einer **Energiegemeinschaft** ist ein Beitrag zum Klimaschutz u
 > **Ausblick 2027:** Laut einem Verordnungsentwurf der E-Control soll die Ermäßigung beim Netznutzungsentgelt ab 1. Jänner 2027 im Regionalbereich nur noch 22 % betragen. Die endgültigen Werte stehen noch nicht fest. Wir aktualisieren diese Seite, sobald sie beschlossen sind.
 {: .prompt-info }
 
-{% comment %} TODO(Florian): Sobald die Systemnutzungsentgelte-Verordnung 2027 kundgemacht ist: Prozentsatz hier, auf /infos/ und im FAQ anpassen, energy_chart in config4e.yml auf 2027 umstellen (Elektrizitätsabgabe ab 1.1.2027: 1,5 statt 0,1 Cent, § 4 Abs. 2 ElAbgG; auch im Punkt „So haben wir gerechnet“) und den Ausblick entfernen. {% endcomment %}
+{% comment %} TODO(admin): Sobald die Systemnutzungsentgelte-Verordnung 2027 kundgemacht ist: Prozentsatz hier, auf /infos/ und im FAQ anpassen, energy_chart in config4e.yml auf 2027 umstellen (Elektrizitätsabgabe ab 1.1.2027: 1,5 statt 0,1 Cent, § 4 Abs. 2 ElAbgG; auch im Punkt „So haben wir gerechnet“) und den Ausblick entfernen. {% endcomment %}
 
 > Auch wenn Ihr Stromlieferant den gleichen Energiepreis verlangt: Für den Strom aus der Gemeinschaft zahlen Sie wegen dieser Ermäßigungen insgesamt weniger.
 {: .prompt-tip }
